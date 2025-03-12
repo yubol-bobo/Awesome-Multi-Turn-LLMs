@@ -3,6 +3,7 @@ A curated list of papers on multi-turn interactions with Large Language Models (
 
 ![](https://img.shields.io/badge/PaperNumber-78-brightgreen)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 List of **Papers**, **Datasets** and **Code Repositories** for ***Multi-turn Large Language Models***. This repository compiles a majority of research works in the multi-turn LLM field, though it may not be fully exhaustive.
 
