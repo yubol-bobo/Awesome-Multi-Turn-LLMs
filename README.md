@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9c5fcb7e-03fc-4caf-b699-bcc5fdac725e)# Awesome-Multi-Turn-LLMs
+# Awesome-Multi-Turn-LLMs
 A curated list of papers on multi-turn interactions with Large Language Models (LLMs), as featured in our survey paper.
 ![](https://img.shields.io/badge/PaperNumber-78-brightgreen)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
