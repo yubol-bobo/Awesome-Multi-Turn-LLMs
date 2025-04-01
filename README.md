@@ -42,7 +42,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 
 
-## Multi-Turn LLM Tasks
+## <span style="color: #1E90FF;">Multi-Turn LLM Tasks
 
 ### Instruction Following Tasks
 
