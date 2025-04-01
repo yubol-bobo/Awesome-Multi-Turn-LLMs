@@ -24,7 +24,6 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
       - [Conversational Engagement in Healthcare](#conversational-engagement-in-healthcare)
       - [Conversational Engagement in Education](#conversational-engagement-in-education)
       - [Conversational Engagement in Jailbreak](#conversational-engagement-in-jailbreak)
-  - [Improvements](#improvements)
   - [Open Challenges](#Open-Challenges)
 
 
@@ -103,16 +102,12 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 #### Conversational Engagement in Jailbreak (Total: 0)
 
 
-
-## Improvements
-[Coming Soon ...]
-
 ## Open Challenges
+
+In our survey paper on multi-turn interactions and tasks for large language models (LLMs), we categorize a wide range of tasks, including instruction-following scenarios and more complex conversational engagement tasks. To complement this, we also include an illustration highlighting key open challenges in this domain. If you're interested in the detailed improvement methods and a deeper discussion of the open challenges, please refer to our full paper.
 
 ![](figs/challenges.png)
 
-Despite remarkable advancements in large language models that have silently solved many previously formidable AI obstacles—such as understanding physical rules of the real world, generating human-like text, extending context memory length, and demonstrating creativity—significant challenges persist specifically in multi-turn interactions that limit their robustness, reliability, and alignment with user expectations. While earlier sections of this survey have reviewed common multi-turn tasks and discussed state-of-the-art methods aimed at improving performance, it is crucial to recognize that existing approaches fall short of addressing all complexities comprehensively. As illustrated in the figure above, we systematically categorize these open challenges into six major areas: Context Understanding, Complex Reasoning, Adaptation & Learning, Evaluations, and Ethical & Safety Issues, each with their associated sub-challenges. By highlighting these critical limitations and under-explored areas, we aim to guide future research efforts and encourage the development of LLM multi-turn systems that can maintain coherence, context-awareness, adaptability, and ethical soundness over prolonged interactions.
 
-If you're interested in diving deeper into the challenges and opportunities in this space, feel free to check out our full survey paper.
 
 
