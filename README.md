@@ -50,10 +50,10 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
   <!--*Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, Eric P. Xing, Hao Zhang, Joseph E. Gonzalez, Ion Stoica*-->
 
 
-#### 1.1.2 Instruction Following in Math
+#### Instruction Following in Math
 
 
-#### 1.1.3 Instruction Following in Coding
+#### Instruction Following in Coding
 
 
 
