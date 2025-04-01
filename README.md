@@ -74,5 +74,6 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ## Open Challenges
 
-![](role-playing_key_components.png)
+![](figs/challenges.pdf)
+
 
