@@ -34,7 +34,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ![](https://img.shields.io/badge/SFT-blueviolet) SFT is used in the work.
 
-![](https://img.shields.io/badge/RLHF-pink) RLHF is used in the work.
+![](https://img.shields.io/badge/RLHF-purple) RLHF is used in the work.
 
 ![](https://img.shields.io/badge/Improved-yellow) Improved methods is used in the work.
 
