@@ -81,7 +81,20 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 -  **Instruct Once, Chat Consistently in Multiple Rounds: An Efficient Tuning Framework for Dialogue** [[ACL 2024]](https://aclanthology.org/2024.acl-long.219.pdf) [[Code]](https://github.com/iwangjian/Midi-Tuning) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
 -  **Building Persona Consistent Dialogue Agents with Offline Reinforcement Learning** [[EMNLP2023]](https://aclanthology.org/2023.emnlp-main.110.pdf) ![](https://img.shields.io/badge/RL-purple)   ![](https://img.shields.io/badge/Improved-yellow) 
 -  **Beyond Retrieval: Embracing Compressive Memory in Real-World Long-Term Conversations** [[Arxiv]](https://arxiv.org/abs/2402.11975) [[Code]](https://github.com/nuochenpku/COMEDY)
-    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Improved-yellow)
+                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Improved-yellow)
+- **LaMP: When Large Language Models Meet Personalization** [[ACL 2024]](https://aclanthology.org/2024.acl-long.399.pdf) [[Code]](https://lamp-benchmark.github.io/) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
+- **CharacterEval: A Chinese Benchmark for Role-Playing Conversational Agent Evaluation** [[ACL 2024]](https://aclanthology.org/2024.acl-long.638.pdf) [[Code]](https://github.com/morecry/CharacterEval) ![](https://img.shields.io/badge/Dataset-blue) 
+                   ![](https://img.shields.io/badge/Benchmark-red)
+- **RoleEval: A Bilingual Role Evaluation Benchmark for Large Language Models** [[Arxiv]](https://arxiv.org/abs/2312.16132) [[Code]](https://github.com/Magnetic2014/RoleEval)  ![](https://img.shields.io/badge/Dataset-blue) 
+                   ![](https://img.shields.io/badge/Benchmark-red)
+- **TimeChara: Evaluating Point-in-Time Character Hallucination of Role-Playing Large Language Models**  [[ACL 2024]](https://aclanthology.org/2024.findings-acl.197/) [[Code]](https://github.com/ahnjaewoo/timechara)  ![](https://img.shields.io/badge/Dataset-blue)
+                   ![](https://img.shields.io/badge/Benchmark-red)
+- **InCharacter: Evaluating Personality Fidelity in Role-Playing Agents through Psychological Interviews** [[ACL 2024]](https://aclanthology.org/2024.acl-long.102/) [[Code]](https://incharacter.github.io/) ![](https://img.shields.io/badge/Dataset-blue)
+                   ![](https://img.shields.io/badge/Benchmark-red)
+- **RoleInteract: Evaluating the Social Interaction of Role-Playing Agents** [[Arxiv]](https://arxiv.org/abs/2403.13679) [[Code]](https://github.com/X-PLUG/RoleInteract)  ![](https://img.shields.io/badge/Dataset-blue)
+                   ![](https://img.shields.io/badge/Benchmark-red)
+- **Evaluating Character Understanding of Large Language Models via Character Profiling from Fictional Works** [[EMNLP 2024]](https://aclanthology.org/2024.emnlp-main.456/) [[Code]](https://github.com/Joanna0123/character_profiling)  
+                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
 #### Conversational Engagement in Healthcare
 
