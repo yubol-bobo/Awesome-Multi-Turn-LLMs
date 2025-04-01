@@ -34,7 +34,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ![](https://img.shields.io/badge/SFT-blueviolet) SFT is used in the work.
 
-![](https://img.shields.io/badge/RLHF-purple) RLHF is used in the work.
+![](https://img.shields.io/badge/RL-purple) Reinforcement Learning is used in the work.
 
 ![](https://img.shields.io/badge/Benchmark-red) Benchmark is proposed in the work.
 
@@ -42,7 +42,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 
 
-## <span style="color: #1E90FF;">Multi-Turn LLM Tasks</span>
+## Multi-Turn LLM Tasks
 
 ### Instruction Following Tasks
 
@@ -79,6 +79,9 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - **LLMs + Persona-Plug = Personalized LLMs** [[Arxiv]](https://arxiv.org/abs/2409.11901) [[Hugging Face]](https://huggingface.co/papers/2409.11901) ![](https://img.shields.io/badge/Improved-yellow)
 - **Neeko: Leveraging dynamic lora for efficient multi-character role-playing agent** [[EMNLP 2024]](https://aclanthology.org/2024.emnlp-main.697.pdf) [[Code]](https://github.com/weiyifan1023/Neeko) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
 -  **Instruct Once, Chat Consistently in Multiple Rounds: An Efficient Tuning Framework for Dialogue** [[ACL 2024]](https://aclanthology.org/2024.acl-long.219.pdf) [[Code]](https://github.com/iwangjian/Midi-Tuning) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
+-  **Building Persona Consistent Dialogue Agents with Offline Reinforcement Learning** [[EMNLP2023]](https://aclanthology.org/2023.emnlp-main.110.pdf) ![](https://img.shields.io/badge/RL-purple)   ![](https://img.shields.io/badge/Improved-yellow) 
+-  **Beyond Retrieval: Embracing Compressive Memory in Real-World Long-Term Conversations** [[Arxiv]](https://arxiv.org/abs/2402.11975) [[Code]](https://github.com/nuochenpku/COMEDY)
+    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Improved-yellow)
 
 #### Conversational Engagement in Healthcare
 
