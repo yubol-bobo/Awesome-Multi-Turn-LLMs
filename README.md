@@ -25,6 +25,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
       - [Conversational Engagement in Education](#conversational-engagement-in-education)
       - [Conversational Engagement in Jailbreak](#conversational-engagement-in-jailbreak)
   - [Improvements](#improvements)
+  - [Open Challenges](#Open-Challenges)
 
 
 ### Keywords Convention
@@ -70,4 +71,6 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 
 ## Improvements
+
+## Open Challenges
 
