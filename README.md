@@ -46,7 +46,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 #### Instruction Following in General (Mixed)
 
-- **Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena** [[NeurIPS 2023]](https://arxiv.org/abs/2306.05685) [[Code]](https://github.com/lm-sys/fastchat) ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/SFT-green)
+- **Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena** [[NeurIPS 2023]](https://arxiv.org/abs/2306.05685) [[Code]](https://github.com/lm-sys/fastchat) ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/SFT-blueviolet)
 
   <!--*Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, Eric P. Xing, Hao Zhang, Joseph E. Gonzalez, Ion Stoica*-->
 
@@ -66,10 +66,10 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - **CharacterChat: Learning towards Conversational AI with Personalized Social Support** [[Arxiv]](https://arxiv.org/abs/2308.10278)  [[Code]](https://github.com/morecry/CharacterChat) ![](https://img.shields.io/badge/Dataset-blue)
 - **Better Zero-Shot Reasoning with Role-Play Prompting** [[ACL 2024]](https://aclanthology.org/2024.naacl-long.228.pdf) [[Code]](https://github.com/NKU-HLT/Role-Play-Prompting)
 - **PIPPA: A Partially Synthetic Conversational Dataset** [[Arxiv]](https://arxiv.org/abs/2308.05884) [[Hugging Face]](https://huggingface.co/datasets/PygmalionAI/PIPPA) ![](https://img.shields.io/badge/Dataset-blue)
-- **Enhancing Chat Language Models by Scaling High-quality Instructional Conversations** [[EMNLP 2023]](https://aclanthology.org/2023.emnlp-main.183.pdf) [[Code]](https://github.com/thunlp/UltraChat)   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-green) ![](https://img.shields.io/badge/Improved-yellow)
-- **PRODIGy: a PROfile-based DIalogue Generation dataset** [[ACL 2024]](https://aclanthology.org/2024.findings-naacl.222.pdf) [[code]](https://github.com/LanD-FBK/prodigy-dataset) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-green)
-- **ChatHaruhi: Reviving Anime Character in Reality via Large Language Model** [[Arxiv]](https://arxiv.org/abs/2308.09597) [[Code]](https://github.com/LC1332/Chat-Haruhi-Suzumiya) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-green) ![](https://img.shields.io/badge/Improved-yellow)
-- **CharacterGLM: Customizing Chinese Conversational AI Characters with Large Language Models** [[ACL 2024]](https://aclanthology.org/2024.emnlp-industry.107.pdf) [[Code]](https://github.com/thu-coai/CharacterGLM-6B) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-green)
+- **Enhancing Chat Language Models by Scaling High-quality Instructional Conversations** [[EMNLP 2023]](https://aclanthology.org/2023.emnlp-main.183.pdf) [[Code]](https://github.com/thunlp/UltraChat)   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
+- **PRODIGy: a PROfile-based DIalogue Generation dataset** [[ACL 2024]](https://aclanthology.org/2024.findings-naacl.222.pdf) [[code]](https://github.com/LanD-FBK/prodigy-dataset) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
+- **ChatHaruhi: Reviving Anime Character in Reality via Large Language Model** [[Arxiv]](https://arxiv.org/abs/2308.09597) [[Code]](https://github.com/LC1332/Chat-Haruhi-Suzumiya) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
+- **CharacterGLM: Customizing Chinese Conversational AI Characters with Large Language Models** [[ACL 2024]](https://aclanthology.org/2024.emnlp-industry.107.pdf) [[Code]](https://github.com/thu-coai/CharacterGLM-6B) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 
 #### Conversational Engagement in Healthcare
 
