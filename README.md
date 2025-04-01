@@ -30,11 +30,13 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ### Keywords Convention
 
-![](https://img.shields.io/badge/Dataset-blue) The key contribution  in the work.
+![](https://img.shields.io/badge/Dataset-blue) New dataset is created in the work.
 
 ![](https://img.shields.io/badge/SFT-blueviolet) SFT is used in the work.
 
 ![](https://img.shields.io/badge/RLHF-purple) RLHF is used in the work.
+
+![](https://img.shields.io/badge/Benchmark-red) Benchmark is proposed in the work.
 
 ![](https://img.shields.io/badge/Improved-yellow) Improved methods is used in the work.
 
@@ -70,6 +72,8 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - **PRODIGy: a PROfile-based DIalogue Generation dataset** [[ACL 2024]](https://aclanthology.org/2024.findings-naacl.222.pdf) [[code]](https://github.com/LanD-FBK/prodigy-dataset) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - **ChatHaruhi: Reviving Anime Character in Reality via Large Language Model** [[Arxiv]](https://arxiv.org/abs/2308.09597) [[Code]](https://github.com/LC1332/Chat-Haruhi-Suzumiya) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
 - **CharacterGLM: Customizing Chinese Conversational AI Characters with Large Language Models** [[ACL 2024]](https://aclanthology.org/2024.emnlp-industry.107.pdf) [[Code]](https://github.com/thu-coai/CharacterGLM-6B) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
+- **RoleCraft-GLM: Advancing Personalized Role-Playing in Large Language Models** [[ACL 2024]](https://aclanthology.org/2024.personalize-1.1.pdf) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
+- **Large Language Models are Superpositions of All Characters: Attaining Arbitrary Role-play via Self-Alignment** [[ACL 2024]](https://aclanthology.org/2024.acl-long.423.pdf) [[Code]](https://github.com/OFA-Sys/Ditto)  ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/Improved-yellow)
 
 #### Conversational Engagement in Healthcare
 
