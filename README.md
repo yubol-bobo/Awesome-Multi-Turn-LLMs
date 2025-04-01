@@ -32,7 +32,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ![](https://img.shields.io/badge/Dataset-blue) The key contribution  in the work.
 
-![](https://img.shields.io/badge/SFT-green) SFT is used in the work.
+![](https://img.shields.io/badge/SFT-darkgreen) SFT is used in the work.
 
 ![](https://img.shields.io/badge/RLHF-brown) RLHF is used in the work.
 
