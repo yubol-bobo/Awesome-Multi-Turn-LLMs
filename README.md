@@ -16,6 +16,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 ![](https://img.shields.io/badge/SFT-green) SFT is used in the work.
 
 ![](https://img.shields.io/badge/RLHF-brown) RLHF is used in the work.
+![](https://img.shields.io/badge/Improved-brown) Improved methods is used in the work.
 
 ## 1. Multi-Turn LLM Tasks
 
