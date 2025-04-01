@@ -62,7 +62,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ### Conversational Engagement Tasks
 
-#### Conversational Engagement in Roleplay
+#### Conversational Engagement in Roleplay (24)
 
 - PersonaLLM: Investigating the Ability of Large Language Models to Express Personality Traits [[ACL 2024]](https://aclanthology.org/2024.findings-naacl.229.pdf) [[Code]](https://github.com/hjian42/PersonaLLM)
 - CharacterChat: Learning towards Conversational AI with Personalized Social Support [[Arxiv]](https://arxiv.org/abs/2308.10278)  [[Code]](https://github.com/morecry/CharacterChat) ![](https://img.shields.io/badge/Dataset-blue)
