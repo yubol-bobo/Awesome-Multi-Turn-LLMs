@@ -110,4 +110,8 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ![](figs/challenges.png)
 
+Despite remarkable advancements in large language models that have silently solved many previously formidable AI obstacles—such as understanding physical rules of the real world, generating human-like text, extending context memory length, and demonstrating creativity—significant challenges persist specifically in multi-turn interactions that limit their robustness, reliability, and alignment with user expectations. While earlier sections of this survey have reviewed common multi-turn tasks and discussed state-of-the-art methods aimed at improving performance, it is crucial to recognize that existing approaches fall short of addressing all complexities comprehensively. As illustrated in the figure above, we systematically categorize these open challenges into six major areas: Context Understanding, Complex Reasoning, Adaptation & Learning, Evaluations, and Ethical & Safety Issues, each with their associated sub-challenges. By highlighting these critical limitations and under-explored areas, we aim to guide future research efforts and encourage the development of LLM multi-turn systems that can maintain coherence, context-awareness, adaptability, and ethical soundness over prolonged interactions.
+
+If you're interested in diving deeper into the challenges and opportunities in this space, feel free to check out our full survey paper.
+
 
