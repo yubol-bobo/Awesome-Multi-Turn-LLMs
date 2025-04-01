@@ -74,6 +74,6 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ## Open Challenges
 
-![](figs/challenges.pdf)
+[View Challenges Diagram](figs/challenges.pdf)
 
 
