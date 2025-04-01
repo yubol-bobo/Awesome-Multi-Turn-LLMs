@@ -9,6 +9,24 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 ⭐⭐⭐Our detailed thoughts and review of multi-turn LLMs, including task types, common improvements, and open challenges, are presented in this survey:[**A Survey on Evaluation and Enhancement of Large Language Models Multi-turn Interactions**](https://arxiv.xxx).
 > If you notice any missing research works or spot inaccuracies, feel free to reach out or open an issue!
 
+
+## Table of Contents
+- [Awesome-Multi-Turn-LLMs](#awesome-multi-turn-llms)
+  - [Table of Contents](#table-of-contents)
+  - [Keywords Convention](#keywords-convention)
+  - [Multi-Turn LLM Tasks](#multi-turn-llm-tasks)
+    - [Instruction Following Tasks](#instruction-following-tasks)
+      - [Instruction Following in General (Mixed)](#instruction-following-in-general-mixed)
+      - [Instruction Following in Math](#instruction-following-in-math)
+      - [Instruction Following in Coding](#instruction-following-in-coding)
+    - [Conversational Engagement Tasks](#conversational-engagement-tasks)
+      - [1.2.1 Conversational Engagement in Roleplay](#conversational-engagement-in-roleplay)
+      - [1.2.2 Conversational Engagement in Healthcare](#conversational-engagement-in-healthcare)
+      - [1.2.3 Conversational Engagement in Education](#conversational-engagement-in-education)
+      - [1.2.4 Conversational Engagement in Jailbreak](#conversational-engagement-in-jailbreak)
+  - [2. Improvements](#improvements)
+  - [3. Open Challenges](#open-challenges)
+
 ### Keywords Convention
 
 ![](https://img.shields.io/badge/Dataset-blue) The key contribution  in the work.
@@ -19,9 +37,11 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ![](https://img.shields.io/badge/Improved-yellow) Improved methods is used in the work.
 
-## 1. Multi-Turn LLM Tasks
 
-### 1.1 Instruction Following Tasks
+
+## Multi-Turn LLM Tasks
+
+### Instruction Following Tasks
 
 #### 1.1.1 Instruction Following in General (Mixed)
 
