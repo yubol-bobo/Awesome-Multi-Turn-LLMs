@@ -57,18 +57,17 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 
 
-### 1.2 Conversational Engagement Tasks
+### Conversational Engagement Tasks
 
-#### 1.2.1 Conversational Engagement in Roleplay
+#### Conversational Engagement in Roleplay
 
-#### 1.2.2 Conversational Engagement in Healthcare
+#### Conversational Engagement in Healthcare
 
-#### 1.2.3 Conversational Engagement in Education
+#### Conversational Engagement in Education
 
-#### 1.2.2 Conversational Engagement in Jailbreak
+#### Conversational Engagement in Jailbreak
 
 
 
-## 2. Improvements
+## Improvements
 
-## 3. Open Challenges
