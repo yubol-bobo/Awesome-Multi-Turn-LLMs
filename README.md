@@ -20,12 +20,12 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
       - [Instruction Following in Math](#instruction-following-in-math)
       - [Instruction Following in Coding](#instruction-following-in-coding)
     - [Conversational Engagement Tasks](#conversational-engagement-tasks)
-      - [1.2.1 Conversational Engagement in Roleplay](#conversational-engagement-in-roleplay)
-      - [1.2.2 Conversational Engagement in Healthcare](#conversational-engagement-in-healthcare)
-      - [1.2.3 Conversational Engagement in Education](#conversational-engagement-in-education)
-      - [1.2.4 Conversational Engagement in Jailbreak](#conversational-engagement-in-jailbreak)
-  - [2. Improvements](#improvements)
-  - [3. Open Challenges](#open-challenges)
+      - [Conversational Engagement in Roleplay](#conversational-engagement-in-roleplay)
+      - [Conversational Engagement in Healthcare](#conversational-engagement-in-healthcare)
+      - [Conversational Engagement in Education](#conversational-engagement-in-education)
+      - [Conversational Engagement in Jailbreak](#conversational-engagement-in-jailbreak)
+  - [Improvements](#improvements)
+
 
 ### Keywords Convention
 
