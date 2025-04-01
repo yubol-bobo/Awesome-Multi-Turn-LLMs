@@ -23,24 +23,30 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ### 1.1 Instruction Following Tasks
 
-#### 1.1.1 General (Mixed)
+#### 1.1.1 Instruction Following in General (Mixed)
 
-- **Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena** [[Arxiv]](https://arxiv.org/abs/2306.05685) [[Code]](https://github.com/lm-sys/fastchat) ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/SFT-green)
+- **Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena** [[NeurIPS 2023]](https://arxiv.org/abs/2306.05685) [[Code]](https://github.com/lm-sys/fastchat) ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/SFT-green)
 
   *Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, Eric P. Xing, Hao Zhang, Joseph E. Gonzalez, Ion Stoica*
 
 
-#### 1.1.2 Math
+#### 1.1.2 Instruction Following in Math
 
 
-#### 1.1.3 Coding
+#### 1.1.3 Instruction Following in Coding
 
-#### 1.1.4 Reasoning
-
-#### 1.1.5 Role-Play
 
 
 ### 1.2 Conversational Engagement Tasks
+
+#### 1.2.1 Conversational Engagement in Roleplay
+
+#### 1.2.2 Conversational Engagement in Healthcare
+
+#### 1.2.3 Conversational Engagement in Education
+
+#### 1.2.2 Conversational Engagement in Jailbreak
+
 
 
 ## 2. Improvements
