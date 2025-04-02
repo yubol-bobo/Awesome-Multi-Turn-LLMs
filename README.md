@@ -98,8 +98,8 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - Evaluating Character Understanding of Large Language Models via Character Profiling from Fictional Work [[EMNLP 2024]](https://aclanthology.org/2024.emnlp-main.456/) [[Code]](https://github.com/Joanna0123/character_profiling)  
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
-#### Conversational Engagement in Healthcare (Total: 0)
-- Data Set and Benchmark (MedGPTEval) to Evaluate Responses From Large Language Models in Medicine: Evaluation Development and Validation [[JMIR Med Inform]]([https://arxiv.org/abs/2305.07340](https://medinform.jmir.org/2024/1/e57674))
+#### Conversational Engagement in Healthcare (Total: 19)
+- Data Set and Benchmark (MedGPTEval) to Evaluate Responses From Large Language Models in Medicine: Evaluation Development and Validation [[JMIR Med Inform]](https://medinform.jmir.org/2024/1/e57674)
                    ![](https://img.shields.io/badge/Benchmark-red)
 - Clinical Camel: An Open-Source Expert-Level Medical Language Model with Dialogue-Based Knowledge Encoding [[CoRR 2023]](https://arxiv.org/pdf/2305.12031v2)
                    ![](https://img.shields.io/badge/Improved-yellow) ![](https://img.shields.io/badge/SFT-blueviolet)
@@ -113,31 +113,31 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
                    ![](https://img.shields.io/badge/Benchmark-red)
 - BianQue: Balancing the Questioning and Suggestion Ability of Health LLMs with Multi-turn Health Conversations Polished by ChatGPT [[Arxiv]](https://arxiv.org/abs/2310.15896) [[Code]](https://github.com/scutcyr/BianQue)
                    ![](https://img.shields.io/badge/SFT-blueviolet)
-- Qilin-Med: Multi-stage Knowledge Injection Advanced Medical Large Language Model 
+- Qilin-Med: Multi-stage Knowledge Injection Advanced Medical Large Language Model [[Arxiv]](https://arxiv.org/abs/2310.09089)
                    ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Improved-yellow) 
-- Towards Conversational Diagnostic AI
+- Towards Conversational Diagnostic AI [[Arxiv]](https://arxiv.org/abs/2401.05654)
                    ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow) 
-- CPsyCoun: A Report-based Multi-turn Dialogue Reconstruction and Evaluation Framework for Chinese Psychological Counseling
-                   ![](https://img.shields.io/badge/SFT-blueviolet) 
-- Automatic Interactive Evaluation for Large Language Models with State Aware Patient Simulator
+- CPsyCoun: A Report-based Multi-turn Dialogue Reconstruction and Evaluation Framework for Chinese Psychological Counseling [[Arxiv]](https://arxiv.org/abs/2405.16433) [[Code]](https://github.com/CAS-SIAT-XinHai/CPsyCoun)
+                   ![](https://img.shields.io/badge/Dataset-blue)![](https://img.shields.io/badge/SFT-blueviolet) 
+- Automatic Interactive Evaluation for Large Language Models with State Aware Patient Simulator [[Arxiv]](https://arxiv.org/abs/2403.08495)
                    ![](https://img.shields.io/badge/Benchmark-red)
-- HuatuoGPT-II, One-stage Training for Medical Adaption of LLMs
-                  ![](https://img.shields.io/badge/Improved-yellow) ![](https://img.shields.io/badge/RL-purple)
-- Aqulia-Med LLM: Pioneering Full-Process Open-Source Medical Language Models
+- HuatuoGPT-II, One-stage Training for Medical Adaption of LLMs [[COLM 2024]](https://arxiv.org/abs/2311.09774) [[Code]](https://github.com/FreedomIntelligence/HuatuoGPT-II)
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Improved-yellow) ![IJCNN 2024](https://img.shields.io/badge/RL-purple)
+- Aqulia-Med LLM: Pioneering Full-Process Open-Source Medical Language Models [[Arxiv]](https://arxiv.org/abs/2406.12182) [[Hugging Face]](https://huggingface.co/BAAI/AquilaMed-RL)
                   ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Improved-yellow) 
-- T-Agent: A Term-Aware Agent for Medical Dialogue Generation
+- T-Agent: A Term-Aware Agent for Medical Dialogue Generation [[]](https://ieeexplore.ieee.org/document/10650649/)
                   ![](https://img.shields.io/badge/Improved-yellow) 
-- MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning
+- MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning [[Arxiv]](https://arxiv.org/abs/2406.00922)
                   ![](https://img.shields.io/badge/Benchmark-red)
-- BiMediX: Bilingual Medical Mixture of Experts LLM
+- BiMediX: Bilingual Medical Mixture of Experts LLM [[Arxiv]](https://arxiv.org/abs/2402.13253) [[Code]](https://github.com/mbzuai-oryx/BiMediX)
                   ![](https://img.shields.io/badge/SFT-blueviolet) 
-- PsycoLLM: Enhancing LLM for Psychological Understanding and Evaluation
+- PsycoLLM: Enhancing LLM for Psychological Understanding and Evaluation [[Arxiv]](https://arxiv.org/abs/2407.05721)
                   ![](https://img.shields.io/badge/SFT-blueviolet) 
-- Interactive Evaluation for Medical LLMs via Task-oriented Dialogue System
+- Interactive Evaluation for Medical LLMs via Task-oriented Dialogue System [[COLING 2025]]([https://arxiv.org/abs/2406.12182](https://aclanthology.org/2025.coling-main.325/))
                   ![](https://img.shields.io/badge/Benchmark-red)
-- Ask Patients with Patience: Enabling LLMs for Human-Centric Medical Dialogue with Grounded Reasoning
+- Ask Patients with Patience: Enabling LLMs for Human-Centric Medical Dialogue with Grounded Reasoning [[Arxiv]](https://arxiv.org/abs/2502.07143) [[Code]](https://github.com/SuperMedIntel/AskPatients)
                   ![](https://img.shields.io/badge/Improved-yellow) 
-- An Automatic Evaluation Framework for Multi-turn Medical Consultations Capabilities of Large Language Models
+- An Automatic Evaluation Framework for Multi-turn Medical Consultations Capabilities of Large Language Models [[Arxiv]](https://arxiv.org/abs/2309.02077)
                   ![](https://img.shields.io/badge/Benchmark-red)
 
 
