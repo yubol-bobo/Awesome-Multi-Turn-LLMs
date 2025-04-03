@@ -73,7 +73,9 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - MathTutorBench: A Benchmark for Measuring Open-ended Pedagogical Capabilities of LLM Tutors [[arXiv](https://arxiv.org/pdf/2502.18940)] [[GitHub](https://github.com/eth-lre/mathtutorbench)] ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet) 
 
 #### Instruction Following in Coding (Total: 0)
-
+- Debug like a Human: A Large Language Model Debugger via Verifying Runtime Execution Step by Step [[ACL 2024](https://aclanthology.org/2024.findings-acl.49/)][[GitHub](https://github.com/FloridSleeves/LLMDebugger)] ![](https://img.shields.io/badge/Improved-yellow)
+- Steering Large Language Models between Code Execution and Textual Reasoning [[ICLR 2025](https://openreview.net/forum?id=5X5Z7Ffrjb)][[GitHub](https://yongchao98.github.io/CodeSteer/)] [[HuggingFace](https://huggingface.co/yongchao98/CodeSteer-v1)] 
+![](https://img.shields.io/badge/Benchmark-red) 
 
 
 ### Conversational Engagement Tasks 
