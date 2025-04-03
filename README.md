@@ -61,7 +61,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
  [[arXiv](https://arxiv.org/abs/2402.09404)] [[GitHub](https://github.com/UCSC-VLAA/AQA-Bench)] ![](https://img.shields.io/badge/Benchmark-red)
 - MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback [[ICLR 2024](https://arxiv.org/abs/2309.10691)] [[GitHub](https://github.com/xingyaoww/mint-bench)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
 - WILT: A Multi-Turn, Memorization-Robust Inductive Logic Benchmark for LLMs [[arXiv](https://arxiv.org/abs/2410.10998)] [[GitHub](https://github.com/riotgames/wilt)] ![](https://img.shields.io/badge/Benchmark-red)
-- Firm or Fickle? Evaluating Large Language Models Consistency in Sequential Interactions [[arXiv](https://arxiv.org/abs/2503.22353)]
+- Firm or Fickle? Evaluating Large Language Models Consistency in Sequential Interactions [[arXiv](https://arxiv.org/abs/2503.22353)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
 
 
