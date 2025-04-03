@@ -65,12 +65,12 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 
 
-#### Instruction Following in Math (Total: 0)
+#### Instruction Following in Math (Total: 5)
 - MathChat: Converse to Tackle Challenging Math Problems with LLM Agents [[ICLR 2024 Workshop on LLM Agents](https://openreview.net/pdf/96ec2baf0844fd84504bb79f9230483b1a62f517.pdf)] ![](https://img.shields.io/badge/RL-purple)
 - Building Math Agents with Multi-Turn Iterative Preference Learning [[arXiv](https://arxiv.org/pdf/2409.02392)] ![](https://img.shields.io/badge/Improved-yellow)
 - MathChat: Benchmarking Mathematical Reasoning and Instruction Following in Multi-Turn Interactions [[arXiv](https://arxiv.org/abs/2405.19444)][[GitHub](https://github.com/Zhenwen-NLP/MathChat)] ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Dataset-blue)
 - MathDial: A Dialogue Tutoring Dataset with Rich Pedagogical Properties Grounded in Math Reasoning Problems [[EMNLP 2023](https://aclanthology.org/2023.findings-emnlp.372/)] [[GitHub](https://github.com/eth-nlped/mathdial)] [[Hugging Face](https://huggingface.co/datasets/eth-nlped/mathdial)] ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Dataset-blue)
-- MathTutorBench: A Benchmark for Measuring Open-ended Pedagogical Capabilities of LLM Tutors [[arXiv](https://arxiv.org/pdf/2502.18940)] [[GitHub](https://github.com/eth-lre/mathtutorbench)] ![](https://img.shields.io/badge/Benchmark-red)
+- MathTutorBench: A Benchmark for Measuring Open-ended Pedagogical Capabilities of LLM Tutors [[arXiv](https://arxiv.org/pdf/2502.18940)] [[GitHub](https://github.com/eth-lre/mathtutorbench)] ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet) 
 
 #### Instruction Following in Coding (Total: 0)
 
