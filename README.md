@@ -75,7 +75,10 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 #### Instruction Following in Coding (Total: 0)
 - Debug like a Human: A Large Language Model Debugger via Verifying Runtime Execution Step by Step [[ACL 2024](https://aclanthology.org/2024.findings-acl.49/)][[GitHub](https://github.com/FloridSleeves/LLMDebugger)] ![](https://img.shields.io/badge/Improved-yellow)
 - Steering Large Language Models between Code Execution and Textual Reasoning [[ICLR 2025](https://openreview.net/forum?id=5X5Z7Ffrjb)][[GitHub](https://yongchao98.github.io/CodeSteer/)] [[HuggingFace](https://huggingface.co/yongchao98/CodeSteer-v1)] 
-![](https://img.shields.io/badge/Benchmark-red) 
+![](https://img.shields.io/badge/Benchmark-red)
+- From Code to Correctness: Closing the Last Mile of Code Generation with Hierarchical Debugging[[arXiv](https://arxiv.org/abs/2410.01215)][[GitHub](https://github.com/YerbaPage/MGDebugger)]
+- InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback [[NeurIPS 2023 Dataset and Benchmark] (https://proceedings.neurips.cc/paper_files/paper/2023/file/4b175d846fb008d540d233c188379ff9-Paper-Datasets_and_Benchmarks.pdf)][[GitHub](https://intercode-benchmark.github.io/)] ![](https://img.shields.io/badge/Benchmark-red)
+- What Makes Large Language Models Reason in (Multi-Turn) Code Generation?
 
 
 ### Conversational Engagement Tasks 
