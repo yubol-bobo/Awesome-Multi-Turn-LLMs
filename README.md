@@ -142,10 +142,10 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 
 #### Conversational Engagement in Education (Total: 0)
-- SocraticLM: Exploring Socratic Personalized Teaching with Large Language Models [[NeurIPS 2024]](https://openreview.net/pdf?id=qkoZgJhxsA) [[Code]](https://github.com/Ljyustc/SocraticLM) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
-- Instruct, Not Assist: LLM-based Multi-Turn Planning and Hierarchical Questioning for Socratic Code Debugging  [[EMNLP 2024]](https://aclanthology.org/2024.findings-emnlp.553.pdf)  [[Code]](https://github.com/agarwalishika/TreeInstruct)
-- Towards the Pedagogical Steering of Large Language Models for Tutoring: A Case Study with Modeling Productive Failure [[Arxiv]](https://arxiv.org/abs/2410.03781)  [[Code]](https://github.com/RomainPuech/StratL-Pedagogical-Steering-of-LLMs-for-Tutoring)
-- One Size doesn't Fit All: A Personalized Conversational Tutoring Agent for Mathematics Instruction [[Arxiv]](https://arxiv.org/abs/2502.12633)
+- SocraticLM: Exploring Socratic Personalized Teaching with Large Language Models [[NeurIPS 2024]](https://openreview.net/pdf?id=qkoZgJhxsA) [Code](https://github.com/Ljyustc/SocraticLM) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
+- Instruct, Not Assist: LLM-based Multi-Turn Planning and Hierarchical Questioning for Socratic Code Debugging  [[EMNLP 2024]](https://aclanthology.org/2024.findings-emnlp.553.pdf)  [Code](https://github.com/agarwalishika/TreeInstruct)
+- Towards the Pedagogical Steering of Large Language Models for Tutoring: A Case Study with Modeling Productive Failure [[arXiv]](https://arxiv.org/abs/2410.03781)  [Code](https://github.com/RomainPuech/StratL-Pedagogical-Steering-of-LLMs-for-Tutoring)
+- One Size doesn't Fit All: A Personalized Conversational Tutoring Agent for Mathematics Instruction [[arXiv]](https://arxiv.org/abs/2502.12633)
 - A Step Towards Adaptive Online Learning: Exploring the Role of GPT as Virtual Teaching Assistants in Online Education
 
 #### Conversational Engagement in Jailbreak (Total: 0)
