@@ -45,7 +45,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ### Instruction Following Tasks
 
-#### Instruction Following in General (Mixed)  (Total: 8)
+#### Instruction Following in General (Mixed)  (Total: 12)
 
 - Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena [[NeurIPS 2023](https://arxiv.org/abs/2306.05685)] [[GitHub](https://github.com/lm-sys/fastchat)] ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Improved-yellow)
 - (MT-Bench++) Parrot: Enhancing Multi-Turn Instruction Following for Large Language Models [[ACL 2024](https://aclanthology.org/2024.acl-long.525/)] [[Hugging Face](https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/RL-purple)
@@ -57,6 +57,11 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - FB-Bench: A Fine-Grained Multi-Task Benchmark for Evaluating LLMs' Responsiveness to Human Feedback [[arXiv](https://www.arxiv.org/abs/2410.09412)] [[GitHub](https://github.com/PKU-Baichuan-MLSystemLab/FB-Bench)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) 
 - Multi-IF: Benchmarking LLMs on Multi-Turn and Multilingual Instructions Following [[arXiv](https://arxiv.org/abs/2410.15553)] [[GitHub](https://github.com/facebookresearch/Multi-IF)] [[Hugging Face](https://huggingface.co/datasets/facebook/Multi-IF)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - FairMT-Bench: Benchmarking Fairness for Multi-turn Dialogue in Conversational LLMs [[ICLR 2025](https://openreview.net/forum?id=RSGoXnS9GH)] [[GitHub](https://github.com/FanZT6/FairMT-bench)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
+- AQA-Bench: An Interactive Benchmark for Evaluating LLMs' Sequential Reasoning Ability
+ [[arXiv](https://arxiv.org/abs/2402.09404)] [[GitHub](https://github.com/UCSC-VLAA/AQA-Bench)] ![](https://img.shields.io/badge/Benchmark-red)
+- MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback [[ICLR 2024](https://arxiv.org/abs/2309.10691)] [[GitHub](https://github.com/xingyaoww/mint-bench)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
+- WILT: A Multi-Turn, Memorization-Robust Inductive Logic Benchmark for LLMs [[arXiv](https://arxiv.org/abs/2410.10998)] ![](https://img.shields.io/badge/Benchmark-red)
+- Firm or Fickle? Evaluating Large Language Models Consistency in Sequential Interactions [[arXiv](https://arxiv.org/abs/2503.22353)]
 
 
 
