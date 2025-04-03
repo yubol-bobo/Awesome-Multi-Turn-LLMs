@@ -66,7 +66,9 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 
 #### Instruction Following in Math (Total: 0)
-
+- MathChat: Converse to Tackle Challenging Math Problems with LLM Agents [[ICLR 2024 Workshop on LLM Agents](https://openreview.net/pdf/96ec2baf0844fd84504bb79f9230483b1a62f517.pdf)]
+- Building Math Agents with Multi-Turn Iterative Preference Learning [[arXiv](https://arxiv.org/pdf/2409.02392)]
+- 
 
 #### Instruction Following in Coding (Total: 0)
 
