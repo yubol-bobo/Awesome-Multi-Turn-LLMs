@@ -131,8 +131,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
                   ![](https://img.shields.io/badge/Benchmark-red)
 - BiMediX: Bilingual Medical Mixture of Experts LLM [[Arxiv]](https://arxiv.org/abs/2402.13253) [[Code]](https://github.com/mbzuai-oryx/BiMediX)
                   ![](https://img.shields.io/badge/SFT-blueviolet) 
-- PsycoLLM: Enhancing LLM for Psychological Understanding and Evaluation [[IEEE Transactions on Computational Social Systems
-]](https://ieeexplore.ieee.org/document/10772313) [[Code]](https://github.com/MACLAB-HFUT/PsycoLLM)
+- PsycoLLM: Enhancing LLM for Psychological Understanding and Evaluation [[IEEE Transactions on Computational Social Systems]](https://ieeexplore.ieee.org/document/10772313) [[Code]](https://github.com/MACLAB-HFUT/PsycoLLM)
                   ![](https://img.shields.io/badge/SFT-blueviolet) 
 - Interactive Evaluation for Medical LLMs via Task-oriented Dialogue System [[COLING 2025]]([https://arxiv.org/abs/2406.12182](https://aclanthology.org/2025.coling-main.325/))
                   ![](https://img.shields.io/badge/Benchmark-red)
