@@ -72,7 +72,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - MathDial: A Dialogue Tutoring Dataset with Rich Pedagogical Properties Grounded in Math Reasoning Problems [[EMNLP 2023](https://aclanthology.org/2023.findings-emnlp.372/)] [[GitHub](https://github.com/eth-nlped/mathdial)] [[Hugging Face](https://huggingface.co/datasets/eth-nlped/mathdial)] ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Dataset-blue)
 - MathTutorBench: A Benchmark for Measuring Open-ended Pedagogical Capabilities of LLM Tutors [[arXiv](https://arxiv.org/pdf/2502.18940)] [[GitHub](https://github.com/eth-lre/mathtutorbench)] ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet) 
 
-#### Instruction Following in Coding (Total: 0)
+#### Instruction Following in General Coding (Total: 11)
 - Debug like a Human: A Large Language Model Debugger via Verifying Runtime Execution Step by Step [[ACL 2024](https://aclanthology.org/2024.findings-acl.49/)][[GitHub](https://github.com/FloridSleeves/LLMDebugger)] ![](https://img.shields.io/badge/Improved-yellow)
 - Steering Large Language Models between Code Execution and Textual Reasoning [[ICLR 2025](https://openreview.net/forum?id=5X5Z7Ffrjb)][[GitHub](https://yongchao98.github.io/CodeSteer/)] [[Hugging Face](https://huggingface.co/yongchao98/CodeSteer-v1)] 
 ![](https://img.shields.io/badge/Benchmark-red)
@@ -86,6 +86,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement [[ACL 2024](https://aclanthology.org/2024.findings-acl.762/)] [[GitHub](https://opencodeinterpreter.github.io/)] [[Hugging Face](https://huggingface.co/papers/2402.14658)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - Executable Code Actions Elicit Better LLM Agents [[ICML 2024](https://proceedings.mlr.press/v235/wang24h.html)]  [[GitHub](https://github.com/xingyaoww/code-act)] [[Hugging Face](https://huggingface.co/datasets/xingyaoww/code-act)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 
+#### Instruction Following for SQL Coding (Total: 0)
 
 ### Conversational Engagement Tasks 
 
