@@ -86,8 +86,11 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement [[ACL 2024](https://aclanthology.org/2024.findings-acl.762/)] [[GitHub](https://opencodeinterpreter.github.io/)] [[Hugging Face](https://huggingface.co/papers/2402.14658)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - Executable Code Actions Elicit Better LLM Agents [[ICML 2024](https://proceedings.mlr.press/v235/wang24h.html)]  [[GitHub](https://github.com/xingyaoww/code-act)] [[Hugging Face](https://huggingface.co/datasets/xingyaoww/code-act)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 
-#### Instruction Following for SQL Coding (Total: 0)
-
+#### Instruction Following for SQL Coding (Total: 2)
+- EHRAgent: Code Empowers Large Language Models for Few-shot Complex Tabular Reasoning on Electronic Health Records [[EMNLP 2024](https://aclanthology.org/2024.emnlp-main.1245/)]
+                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Other-yellow)
+- Evaluating and Enhancing LLMs for Multi-turn Text-to-SQL with Multiple Question Types [[IJCNN 2025](https://arxiv.org/abs/2412.17867)] [[GitHub](https://github.com/mcxiaoxiao/MMSQL)]
+                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Other-yellow)
 ### Conversational Engagement Tasks 
 
 #### Conversational Engagement in Roleplay (Total: 24)
@@ -154,17 +157,17 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - T-Agent: A Term-Aware Agent for Medical Dialogue Generation [[IJCNN 2024](https://ieeexplore.ieee.org/document/10650649/)]
                   ![](https://img.shields.io/badge/Other-yellow) 
 - MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning [[NeurIPS 2024](https://proceedings.neurips.cc/paper_files/paper/2024/hash/32b80425554e081204e5988ab1c97e9a-Abstract-Conference.html)] [[Hugging Face](https://huggingface.co/datasets/stellalisy/mediQ)] [[GitHub](https://github.com/stellalisy/mediQ)]
-                  ![](https://img.shields.io/badge/Benchmark-red)
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - BiMediX: Bilingual Medical Mixture of Experts LLM [[arXiv](https://arxiv.org/abs/2402.13253)] [[GitHub](https://github.com/mbzuai-oryx/BiMediX)]
                   ![](https://img.shields.io/badge/SFT-blueviolet) 
 - PsycoLLM: Enhancing LLM for Psychological Understanding and Evaluation [[IEEE Trans. Comput. Soc.](https://ieeexplore.ieee.org/document/10772313)] [[GitHub](https://github.com/MACLAB-HFUT/PsycoLLM)]
                   ![](https://img.shields.io/badge/SFT-blueviolet) 
-- Interactive Evaluation for Medical LLMs via Task-oriented Dialogue System [[COLING 2025](https://aclanthology.org/2025.coling-main.325/)] [[Github](https://github.com/lry00127/MMD-Eval)]
+- Interactive Evaluation for Medical LLMs via Task-oriented Dialogue System [[COLING 2025](https://aclanthology.org/2025.coling-main.325/)] [[GitHub](https://github.com/lry00127/MMD-Eval)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Ask Patients with Patience: Enabling LLMs for Human-Centric Medical Dialogue with Grounded Reasoning [[arXiv](https://arxiv.org/abs/2502.07143)] [[GitHub](https://github.com/SuperMedIntel/AskPatients)]
                   ![](https://img.shields.io/badge/Other-yellow) 
 - An Automatic Evaluation Framework for Multi-turn Medical Consultations Capabilities of Large Language Models [[arXiv](https://arxiv.org/abs/2309.02077)]
-                  ![](https://img.shields.io/badge/Benchmark-red)
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
 
 #### Conversational Engagement in Education (Total: 0)
