@@ -87,7 +87,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - Executable Code Actions Elicit Better LLM Agents [[ICML 2024](https://proceedings.mlr.press/v235/wang24h.html)]  [[GitHub](https://github.com/xingyaoww/code-act)] [[Hugging Face](https://huggingface.co/datasets/xingyaoww/code-act)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 
 #### Instruction Following for SQL Coding (Total: 2)
-- EHRAgent: Code Empowers Large Language Models for Few-shot Complex Tabular Reasoning on Electronic Health Records [[EMNLP 2024](https://aclanthology.org/2024.emnlp-main.1245/)]
+- EHRAgent: Code Empowers Large Language Models for Few-shot Complex Tabular Reasoning on Electronic Health Records [[EMNLP 2024](https://aclanthology.org/2024.emnlp-main.1245/)] [[Github](https://github.com/wshi83/EhrAgent)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Other-yellow)
 - Evaluating and Enhancing LLMs for Multi-turn Text-to-SQL with Multiple Question Types [[IJCNN 2025](https://arxiv.org/abs/2412.17867)] [[GitHub](https://github.com/mcxiaoxiao/MMSQL)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Other-yellow)
