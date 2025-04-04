@@ -6,7 +6,7 @@
 
 A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Multi-turn Large Language Models***. This repository compiles a majority of research works in the multi-turn LLM field, though it may not be fully exhaustive.
 
-⭐⭐⭐Our detailed thoughts and review of multi-turn LLMs, including task types, common improvements, and open challenges, are presented in this survey:[**A Survey on Evaluation and Enhancement of Large Language Models Multi-turn Interactions**](https://arxiv.xxx).
+⭐⭐⭐Our detailed thoughts and review of multi-turn LLMs, including task types, common improvements, and open challenges, are presented in this survey: [**A Survey on Evaluation and Enhancement of Large Language Models Multi-turn Interactions**](https://arxiv.xxx).
 > If you notice any missing research works or spot inaccuracies, feel free to reach out or open an issue!
 
 
@@ -135,7 +135,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
 - Zhongjing: Enhancing the Chinese Medical Capabilities of Large Language Model through Expert Feedback and Real-world Multi-turn Dialogue [[arXiv](https://arxiv.org/pdf/2308.03549)] [[GitHub](https://github.com/SupritYoung/Zhongjing)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
-- An Automatic Evaluation Framework for Multi-turn Medical Consultations Capabilities of Large Language Models [[arXiv](https://arxiv.org/abs/2309.02077)
+- An Automatic Evaluation Framework for Multi-turn Medical Consultations Capabilities of Large Language Models [[arXiv](https://arxiv.org/abs/2309.02077)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - BianQue: Balancing the Questioning and Suggestion Ability of Health LLMs with Multi-turn Health Conversations Polished by ChatGPT [[arXiv](https://arxiv.org/abs/2310.15896)] [[GitHub](https://github.com/scutcyr/BianQue)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
