@@ -158,8 +158,8 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
                   ![](https://img.shields.io/badge/Other-yellow) 
 - MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning [[NeurIPS 2024](https://proceedings.neurips.cc/paper_files/paper/2024/hash/32b80425554e081204e5988ab1c97e9a-Abstract-Conference.html)] [[Hugging Face](https://huggingface.co/datasets/stellalisy/mediQ)] [[GitHub](https://github.com/stellalisy/mediQ)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
-- BiMediX: Bilingual Medical Mixture of Experts LLM [[arXiv](https://arxiv.org/abs/2402.13253)] [[GitHub](https://github.com/mbzuai-oryx/BiMediX)]
-                  ![](https://img.shields.io/badge/SFT-blueviolet) 
+- BiMediX: Bilingual Medical Mixture of Experts LLM [[arXiv](https://arxiv.org/abs/2402.13253)] [[Hugging Face](https://huggingface.co/BiMediX)] [[GitHub](https://github.com/mbzuai-oryx/BiMediX)] 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) 
 - PsycoLLM: Enhancing LLM for Psychological Understanding and Evaluation [[IEEE Trans. Comput. Soc.](https://ieeexplore.ieee.org/document/10772313)] [[GitHub](https://github.com/MACLAB-HFUT/PsycoLLM)]
                   ![](https://img.shields.io/badge/SFT-blueviolet) 
 - Interactive Evaluation for Medical LLMs via Task-oriented Dialogue System [[COLING 2025](https://aclanthology.org/2025.coling-main.325/)] [[GitHub](https://github.com/lry00127/MMD-Eval)]
