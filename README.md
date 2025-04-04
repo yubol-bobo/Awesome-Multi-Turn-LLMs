@@ -37,7 +37,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ![](https://img.shields.io/badge/RL-purple) Reinforcement Learning used in the work.
 
-![](https://img.shields.io/badge/Improved-yellow) Other improvement method(s) used in the work.
+![](https://img.shields.io/badge/Other-yellow) Other improvement method(s) used in the work.
 
 
 
@@ -47,7 +47,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 #### Instruction Following in General (Mixed)  (Total: 12)
 
-- Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena [[NeurIPS 2023](https://arxiv.org/abs/2306.05685)] [[GitHub](https://github.com/lm-sys/fastchat)] ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Improved-yellow)
+- Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena [[NeurIPS 2023](https://arxiv.org/abs/2306.05685)] [[GitHub](https://github.com/lm-sys/fastchat)] ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Other-yellow)
 - (MT-Bench++) Parrot: Enhancing Multi-Turn Instruction Following for Large Language Models [[ACL 2024](https://aclanthology.org/2024.acl-long.525/)] [[Hugging Face](https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/RL-purple)
 - MT-Eval: A Multi-Turn Capabilities Evaluation Benchmark for Large Language Models [[EMNLP 2024](https://aclanthology.org/2024.emnlp-main.1124/)] [[GitHub](https://github.com/KwanWaiChung/MT-Eval)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - MT-Bench-101: A Fine-Grained Benchmark for Evaluating Large Language Models in Multi-Turn Dialogues [[ACL 2024](https://aclanthology.org/2024.acl-long.401/)] [[GitHub](https://github.com/mtbench101/mt-bench-101)] ![](https://img.shields.io/badge/Dataset-blue) 
@@ -67,21 +67,21 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 #### Instruction Following in Math (Total: 5)
 - MathChat: Converse to Tackle Challenging Math Problems with LLM Agents [[ICLR 2024 Workshop on LLM Agents](https://openreview.net/pdf/96ec2baf0844fd84504bb79f9230483b1a62f517.pdf)] ![](https://img.shields.io/badge/RL-purple)
-- Building Math Agents with Multi-Turn Iterative Preference Learning [[arXiv](https://arxiv.org/pdf/2409.02392)] ![](https://img.shields.io/badge/Improved-yellow)
+- Building Math Agents with Multi-Turn Iterative Preference Learning [[arXiv](https://arxiv.org/pdf/2409.02392)] ![](https://img.shields.io/badge/Other-yellow)
 - MathChat: Benchmarking Mathematical Reasoning and Instruction Following in Multi-Turn Interactions [[arXiv](https://arxiv.org/abs/2405.19444)][[GitHub](https://github.com/Zhenwen-NLP/MathChat)] ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Dataset-blue)
 - MathDial: A Dialogue Tutoring Dataset with Rich Pedagogical Properties Grounded in Math Reasoning Problems [[EMNLP 2023](https://aclanthology.org/2023.findings-emnlp.372/)] [[GitHub](https://github.com/eth-nlped/mathdial)] [[Hugging Face](https://huggingface.co/datasets/eth-nlped/mathdial)] ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Dataset-blue)
 - MathTutorBench: A Benchmark for Measuring Open-ended Pedagogical Capabilities of LLM Tutors [[arXiv](https://arxiv.org/pdf/2502.18940)] [[GitHub](https://github.com/eth-lre/mathtutorbench)] ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet) 
 
 #### Instruction Following in General Coding (Total: 11)
-- Debug like a Human: A Large Language Model Debugger via Verifying Runtime Execution Step by Step [[ACL 2024](https://aclanthology.org/2024.findings-acl.49/)][[GitHub](https://github.com/FloridSleeves/LLMDebugger)] ![](https://img.shields.io/badge/Improved-yellow)
+- Debug like a Human: A Large Language Model Debugger via Verifying Runtime Execution Step by Step [[ACL 2024](https://aclanthology.org/2024.findings-acl.49/)][[GitHub](https://github.com/FloridSleeves/LLMDebugger)] ![](https://img.shields.io/badge/Other-yellow)
 - Steering Large Language Models between Code Execution and Textual Reasoning [[ICLR 2025](https://openreview.net/forum?id=5X5Z7Ffrjb)][[GitHub](https://yongchao98.github.io/CodeSteer/)] [[Hugging Face](https://huggingface.co/yongchao98/CodeSteer-v1)] 
 ![](https://img.shields.io/badge/Benchmark-red)
 - From Code to Correctness: Closing the Last Mile of Code Generation with Hierarchical Debugging[[arXiv](https://arxiv.org/abs/2410.01215)][[GitHub](https://github.com/YerbaPage/MGDebugger)]
 - InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback [[NeurIPS 2023 Datasets and Benchmarks](https://openreview.net/forum?id=fvKaLF1ns8)][[GitHub](https://intercode-benchmark.github.io/)] ![](https://img.shields.io/badge/Benchmark-red)
 - What Makes Large Language Models Reason in (Multi-Turn) Code Generation? [[arXiv](https://arxiv.org/abs/2410.08105)] ![](https://img.shields.io/badge/SFT-blueviolet)
 - PyBench: Evaluating LLM Agent on various real-world coding tasks [[arXiv](https://arxiv.org/abs/2407.16732)] [[GitHub](https://github.com/Mercury7353/PyBench)][[Hugging Face](https://huggingface.co/datasets/Mercury7353/PyInstruct)] ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Dataset-blue)
-- CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis [[ICLR 2023](https://openreview.net/forum?id=iaYcJKpY2B_)] [[GitHub](https://github.com/salesforce/CodeGen/tree/main)] [[Hugging Face](https://huggingface.co/models?search=salesforce+codegen)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Improved-yellow)
-- CodeGen2: Lessons for Training LLMs on Programming and Natural Languages [[ICLR 2023](https://arxiv.org/abs/2305.02309)][[GitHub](https://github.com/salesforce/CodeGen/tree/main)] [[Hugging Face](https://huggingface.co/models?search=salesforce+codegen)]  ![](https://img.shields.io/badge/Improved-yellow)
+- CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis [[ICLR 2023](https://openreview.net/forum?id=iaYcJKpY2B_)] [[GitHub](https://github.com/salesforce/CodeGen/tree/main)] [[Hugging Face](https://huggingface.co/models?search=salesforce+codegen)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Other-yellow)
+- CodeGen2: Lessons for Training LLMs on Programming and Natural Languages [[ICLR 2023](https://arxiv.org/abs/2305.02309)][[GitHub](https://github.com/salesforce/CodeGen/tree/main)] [[Hugging Face](https://huggingface.co/models?search=salesforce+codegen)]  ![](https://img.shields.io/badge/Other-yellow)
 - CodeSteer: Symbolic-Augmented Language Models via Code/Text Guidance [[arXiv](https://arxiv.org/abs/2502.04350)][[GitHub](https://github.com/yongchao98/CodeSteer-v1.0?tab=readme-ov-file)] [[Hugging Face](https://huggingface.co/yongchao98/CodeSteer-v1)] ![](https://img.shields.io/badge/Benchmark-red)  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
 - OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement [[ACL 2024](https://aclanthology.org/2024.findings-acl.762/)] [[GitHub](https://opencodeinterpreter.github.io/)] [[Hugging Face](https://huggingface.co/papers/2402.14658)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - Executable Code Actions Elicit Better LLM Agents [[ICML 2024](https://proceedings.mlr.press/v235/wang24h.html)]  [[GitHub](https://github.com/xingyaoww/code-act)] [[Hugging Face](https://huggingface.co/datasets/xingyaoww/code-act)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
@@ -96,20 +96,20 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - CharacterChat: Learning towards Conversational AI with Personalized Social Support [[arXiv](https://arxiv.org/abs/2308.10278)]  [[GitHub](https://github.com/morecry/CharacterChat)] ![](https://img.shields.io/badge/Dataset-blue)
 - Better Zero-Shot Reasoning with Role-Play Prompting [[ACL 2024](https://aclanthology.org/2024.naacl-long.228.pdf)] [[GitHub](https://github.com/NKU-HLT/Role-Play-Prompting)
 - PIPPA: A Partially Synthetic Conversational Dataset [[arXiv](https://arxiv.org/abs/2308.05884)] [[Hugging Face](https://huggingface.co/datasets/PygmalionAI/PIPPA)] ![](https://img.shields.io/badge/Dataset-blue)
-- Enhancing Chat Language Models by Scaling High-quality Instructional Conversations [[EMNLP 2023](https://aclanthology.org/2023.emnlp-main.183.pdf)] [[GitHub](https://github.com/thunlp/UltraChat)]   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
+- Enhancing Chat Language Models by Scaling High-quality Instructional Conversations [[EMNLP 2023](https://aclanthology.org/2023.emnlp-main.183.pdf)] [[GitHub](https://github.com/thunlp/UltraChat)]   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Other-yellow)
 - PRODIGy: a PROfile-based DIalogue Generation dataset [[ACL 2024](https://aclanthology.org/2024.findings-naacl.222.pdf)] [[GitHub](https://github.com/LanD-FBK/prodigy-dataset)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
-- ChatHaruhi: Reviving Anime Character in Reality via Large Language Model [[arXiv](https://arxiv.org/abs/2308.09597)] [[GitHub](https://github.com/LC1332/Chat-Haruhi-Suzumiya)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
+- ChatHaruhi: Reviving Anime Character in Reality via Large Language Model [[arXiv](https://arxiv.org/abs/2308.09597)] [[GitHub](https://github.com/LC1332/Chat-Haruhi-Suzumiya)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Other-yellow)
 - CharacterGLM: Customizing Chinese Conversational AI Characters with Large Language Models [[EMNLP 2024](https://aclanthology.org/2024.emnlp-industry.107.pdf)] [[GitHub](https://github.com/thu-coai/CharacterGLM-6B)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - RoleCraft-GLM: Advancing Personalized Role-Playing in Large Language Models [[ACL 2024](https://aclanthology.org/2024.personalize-1.1.pdf)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
-- Large Language Models are Superpositions of All Characters: Attaining Arbitrary Role-play via Self-Alignment [[ACL 2024](https://aclanthology.org/2024.acl-long.423.pdf)] [[GitHub](https://github.com/OFA-Sys/Ditto)]  ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/Improved-yellow)
-- Character-LLM: A Trainable Agent for Role-Playing [[EMNLP 2023](https://aclanthology.org/2023.emnlp-main.814v2.pdf)] [[GitHub](https://github.com/choosewhatulike/trainable-agents)] ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
-- PersonaPKT: Building Personalized Dialogue Agents via Parameter-efficient Knowledge Transfer [[ACL 2023](https://aclanthology.org/2023.sustainlp-1.21.pdf)]  ![](https://img.shields.io/badge/Improved-yellow)
-- LLMs + Persona-Plug = Personalized LLMs [[arXiv](https://arxiv.org/abs/2409.11901)] [[Hugging Face](https://huggingface.co/papers/2409.11901)] ![](https://img.shields.io/badge/Improved-yellow)
-- Neeko: Leveraging dynamic lora for efficient multi-character role-playing agent [[EMNLP 2024](https://aclanthology.org/2024.emnlp-main.697.pdf)] [[GitHub](https://github.com/weiyifan1023/Neeko)] ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
--  Instruct Once, Chat Consistently in Multiple Rounds: An Efficient Tuning Framework for Dialogue [[ACL 2024](https://aclanthology.org/2024.acl-long.219.pdf)] [[GitHub](https://github.com/iwangjian/Midi-Tuning)] ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
--  Building Persona Consistent Dialogue Agents with Offline Reinforcement Learning [[EMNLP 2023](https://aclanthology.org/2023.emnlp-main.110.pdf)] ![](https://img.shields.io/badge/RL-purple)   ![](https://img.shields.io/badge/Improved-yellow) 
+- Large Language Models are Superpositions of All Characters: Attaining Arbitrary Role-play via Self-Alignment [[ACL 2024](https://aclanthology.org/2024.acl-long.423.pdf)] [[GitHub](https://github.com/OFA-Sys/Ditto)]  ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/Other-yellow)
+- Character-LLM: A Trainable Agent for Role-Playing [[EMNLP 2023](https://aclanthology.org/2023.emnlp-main.814v2.pdf)] [[GitHub](https://github.com/choosewhatulike/trainable-agents)] ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Other-yellow)
+- PersonaPKT: Building Personalized Dialogue Agents via Parameter-efficient Knowledge Transfer [[ACL 2023](https://aclanthology.org/2023.sustainlp-1.21.pdf)]  ![](https://img.shields.io/badge/Other-yellow)
+- LLMs + Persona-Plug = Personalized LLMs [[arXiv](https://arxiv.org/abs/2409.11901)] [[Hugging Face](https://huggingface.co/papers/2409.11901)] ![](https://img.shields.io/badge/Other-yellow)
+- Neeko: Leveraging dynamic lora for efficient multi-character role-playing agent [[EMNLP 2024](https://aclanthology.org/2024.emnlp-main.697.pdf)] [[GitHub](https://github.com/weiyifan1023/Neeko)] ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Other-yellow)
+-  Instruct Once, Chat Consistently in Multiple Rounds: An Efficient Tuning Framework for Dialogue [[ACL 2024](https://aclanthology.org/2024.acl-long.219.pdf)] [[GitHub](https://github.com/iwangjian/Midi-Tuning)] ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Other-yellow)
+-  Building Persona Consistent Dialogue Agents with Offline Reinforcement Learning [[EMNLP 2023](https://aclanthology.org/2023.emnlp-main.110.pdf)] ![](https://img.shields.io/badge/RL-purple)   ![](https://img.shields.io/badge/Other-yellow) 
 -  Beyond Retrieval: Embracing Compressive Memory in Real-World Long-Term Conversations [[arXiv](https://arxiv.org/abs/2402.11975)] [[GitHub](https://github.com/nuochenpku/COMEDY)]
-                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Improved-yellow)
+                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Other-yellow)
 - LaMP: When Large Language Models Meet Personalization [[ACL 2024](https://aclanthology.org/2024.acl-long.399.pdf)] [[GitHub](https://lamp-benchmark.github.io/)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - CharacterEval: A Chinese Benchmark for Role-Playing Conversational Agent Evaluation [[ACL 2024](https://aclanthology.org/2024.acl-long.638.pdf)] [[GitHub](https://github.com/morecry/CharacterEval)] ![](https://img.shields.io/badge/Dataset-blue) 
                    ![](https://img.shields.io/badge/Benchmark-red)
@@ -128,7 +128,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - Data Set and Benchmark (MedGPTEval) to Evaluate Responses From Large Language Models in Medicine: Evaluation Development and Validation [[JMIR Med Inform](https://medinform.jmir.org/2024/1/e57674)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Clinical Camel: An Open-Source Expert-Level Medical Language Model with Dialogue-Based Knowledge Encoding [[CoRR 2023](https://arxiv.org/pdf/2305.12031v2)]
-                   ![](https://img.shields.io/badge/Improved-yellow) ![](https://img.shields.io/badge/SFT-blueviolet)
+                   ![](https://img.shields.io/badge/Other-yellow) ![](https://img.shields.io/badge/SFT-blueviolet)
 - HuatuoGPT, towards Taming Language Model  to Be a Doctor [[arXiv](https://arxiv.org/pdf/2305.15075)] [[GitHub](https://github.com/FreedomIntelligence/HuatuoGPT)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - DISC-MedLLM: Bridging General Large Language Models and Real-World Medical Consultation [[arXiv](https://arxiv.org/pdf/2308.14346)] [[GitHub](https://github.com/FudanDISC/DISC-MedLLM)]
@@ -140,19 +140,19 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - BianQue: Balancing the Questioning and Suggestion Ability of Health LLMs with Multi-turn Health Conversations Polished by ChatGPT [[arXiv](https://arxiv.org/abs/2310.15896)] [[GitHub](https://github.com/scutcyr/BianQue)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - Qilin-Med: Multi-stage Knowledge Injection Advanced Medical Large Language Model [[arXiv](https://arxiv.org/abs/2310.09089)]
-                   ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Improved-yellow) 
+                   ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Other-yellow) 
 - Towards Conversational Diagnostic AI [[arXiv](https://arxiv.org/abs/2401.05654)]
-                   ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow) 
+                   ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Other-yellow) 
 - CPsyCoun: A Report-based Multi-turn Dialogue Reconstruction and Evaluation Framework for Chinese Psychological Counseling [[arXiv](https://arxiv.org/abs/2405.16433)] [[GitHub](https://github.com/CAS-SIAT-XinHai/CPsyCoun)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) 
 - Automatic Interactive Evaluation for Large Language Models with State Aware Patient Simulator [[arXiv](https://arxiv.org/abs/2403.08495)] [[GitHub](https://github.com/bluezeros/automatic_interactive_evaluation)]
                    ![](https://img.shields.io/badge/Benchmark-red)
 - HuatuoGPT-II, One-stage Training for Medical Adaption of LLMs [[COLM 2024](https://arxiv.org/abs/2311.09774)] [[GitHub](https://github.com/FreedomIntelligence/HuatuoGPT-II)]
-                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Improved-yellow) ![IJCNN 2024](https://img.shields.io/badge/RL-purple)
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Other-yellow) ![IJCNN 2024](https://img.shields.io/badge/RL-purple)
 - Aqulia-Med LLM: Pioneering Full-Process Open-Source Medical Language Models [[arXiv](https://arxiv.org/abs/2406.12182)] [[Hugging Face](https://huggingface.co/BAAI/AquilaMed-RL)]
-                  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Improved-yellow) 
+                  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Other-yellow) 
 - T-Agent: A Term-Aware Agent for Medical Dialogue Generation [[IJCNN 2024](https://ieeexplore.ieee.org/document/10650649/)]
-                  ![](https://img.shields.io/badge/Improved-yellow) 
+                  ![](https://img.shields.io/badge/Other-yellow) 
 - MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning [[NeurIPS 2024](https://proceedings.neurips.cc/paper_files/paper/2024/hash/32b80425554e081204e5988ab1c97e9a-Abstract-Conference.html)] [[Hugging Face](https://huggingface.co/datasets/stellalisy/mediQ)] [[GitHub](https://github.com/stellalisy/mediQ)]
                   ![](https://img.shields.io/badge/Benchmark-red)
 - BiMediX: Bilingual Medical Mixture of Experts LLM [[arXiv](https://arxiv.org/abs/2402.13253)] [[GitHub](https://github.com/mbzuai-oryx/BiMediX)]
@@ -162,13 +162,13 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - Interactive Evaluation for Medical LLMs via Task-oriented Dialogue System [[COLING 2025](https://aclanthology.org/2025.coling-main.325/)]
                   ![](https://img.shields.io/badge/Benchmark-red)
 - Ask Patients with Patience: Enabling LLMs for Human-Centric Medical Dialogue with Grounded Reasoning [[arXiv](https://arxiv.org/abs/2502.07143)] [[GitHub](https://github.com/SuperMedIntel/AskPatients)]
-                  ![](https://img.shields.io/badge/Improved-yellow) 
+                  ![](https://img.shields.io/badge/Other-yellow) 
 - An Automatic Evaluation Framework for Multi-turn Medical Consultations Capabilities of Large Language Models [[arXiv](https://arxiv.org/abs/2309.02077)]
                   ![](https://img.shields.io/badge/Benchmark-red)
 
 
 #### Conversational Engagement in Education (Total: 0)
-- SocraticLM: Exploring Socratic Personalized Teaching with Large Language Models [[NeurIPS 2024](https://openreview.net/pdf?id=qkoZgJhxsA)] [Code](https://github.com/Ljyustc/SocraticLM)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Improved-yellow)
+- SocraticLM: Exploring Socratic Personalized Teaching with Large Language Models [[NeurIPS 2024](https://openreview.net/pdf?id=qkoZgJhxsA)] [Code](https://github.com/Ljyustc/SocraticLM)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Other-yellow)
 - Instruct, Not Assist: LLM-based Multi-Turn Planning and Hierarchical Questioning for Socratic Code Debugging  [[EMNLP 2024](https://aclanthology.org/2024.findings-emnlp.553.pdf)]  [[github](https://github.com/agarwalishika/TreeInstruct)]
 - Towards the Pedagogical Steering of Large Language Models for Tutoring: A Case Study with Modeling Productive Failure [[arXiv](https://arxiv.org/abs/2410.03781)]  [[github](https://github.com/RomainPuech/StratL-Pedagogical-Steering-of-LLMs-for-Tutoring)]
 - One Size doesn't Fit All: A Personalized Conversational Tutoring Agent for Mathematics Instruction [[arXiv](https://arxiv.org/abs/2502.12633)]
