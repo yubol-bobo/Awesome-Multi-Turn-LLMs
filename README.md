@@ -79,7 +79,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 ![](https://img.shields.io/badge/Benchmark-red)
 - From Code to Correctness: Closing the Last Mile of Code Generation with Hierarchical Debugging[[arXiv](https://arxiv.org/abs/2410.01215)][[GitHub](https://github.com/YerbaPage/MGDebugger)]
 - InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback [[NeurIPS 2023 Datasets and Benchmarks](https://openreview.net/forum?id=fvKaLF1ns8)][[GitHub](https://intercode-benchmark.github.io/)] 
-                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/RL-purple) Reinforcement Learning used in the work.
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/RL-purple) 
 - What Makes Large Language Models Reason in (Multi-Turn) Code Generation? [[arXiv](https://arxiv.org/abs/2410.08105)] ![](https://img.shields.io/badge/SFT-blueviolet)
 - PyBench: Evaluating LLM Agent on various real-world coding tasks [[arXiv](https://arxiv.org/abs/2407.16732)] [[GitHub](https://github.com/Mercury7353/PyBench)][[Hugging Face](https://huggingface.co/datasets/Mercury7353/PyInstruct)] ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Dataset-blue)
 - CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis [[ICLR 2023](https://openreview.net/forum?id=iaYcJKpY2B_)] [[GitHub](https://github.com/salesforce/CodeGen/tree/main)] [[Hugging Face](https://huggingface.co/models?search=salesforce+codegen)] 
