@@ -159,8 +159,8 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
                   ![](https://img.shields.io/badge/SFT-blueviolet) 
 - PsycoLLM: Enhancing LLM for Psychological Understanding and Evaluation [[IEEE Trans. Comput. Soc.](https://ieeexplore.ieee.org/document/10772313)] [[GitHub](https://github.com/MACLAB-HFUT/PsycoLLM)]
                   ![](https://img.shields.io/badge/SFT-blueviolet) 
-- Interactive Evaluation for Medical LLMs via Task-oriented Dialogue System [[COLING 2025](https://aclanthology.org/2025.coling-main.325/)]
-                  ![](https://img.shields.io/badge/Benchmark-red)
+- Interactive Evaluation for Medical LLMs via Task-oriented Dialogue System [[COLING 2025](https://aclanthology.org/2025.coling-main.325/)] [[Github](https://github.com/lry00127/MMD-Eval)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Ask Patients with Patience: Enabling LLMs for Human-Centric Medical Dialogue with Grounded Reasoning [[arXiv](https://arxiv.org/abs/2502.07143)] [[GitHub](https://github.com/SuperMedIntel/AskPatients)]
                   ![](https://img.shields.io/badge/Other-yellow) 
 - An Automatic Evaluation Framework for Multi-turn Medical Consultations Capabilities of Large Language Models [[arXiv](https://arxiv.org/abs/2309.02077)]
