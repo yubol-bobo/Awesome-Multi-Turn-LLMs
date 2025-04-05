@@ -187,7 +187,15 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - Book2Dial: Generating Teacher-Student Interactions from Textbooks for Cost-Effective Development of Educational Chatbots [[ACL 2024](https://aclanthology.org/2024.findings-acl.578/)] [[Github](https://github.com/eth-lre/book2dial)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 
-#### Conversational Engagement in Jailbreak (Total: 0)
+#### Conversational Engagement in Jailbreak (Total: 8)
+- Crescendo: Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack [[arXiv](https://arxiv.org/abs/2404.01833)] [[GitHub](https://crescendo-the-multiturn-jailbreak.github.io/)]
+- ActorAttack: Derail Yourself: Multi-turn LLM Jailbreak Attack through Self-discovered Clues [[arXiv](https://arxiv.org/abs/2410.10700)] [[GitHub](https://github.com/AI45Lab/ActorAttack)] [[Hugging Face](https://huggingface.co/datasets/SafeMTData/SafeMTData)] ![](https://img.shields.io/badge/Dataset-blue)
+- Emerging Vulnerabilities in Frontier Models: Multi-Turn Jailbreak Attacks [[arXiv](https://arxiv.org/abs/2409.00137)] [[Hugging Face](https://huggingface.co/datasets/tom-gibbs/multi-turn_jailbreak_attack_datasets)] ![](https://img.shields.io/badge/Dataset-blue)
+- Speak Out of Turn: Safety Vulnerability of Large Language Models in Multi-turn Dialogue [[arXiv](https://arxiv.org/abs/2402.17262)]
+- Imposter.AI: Adversarial Attacks with Hidden Intentions towards Aligned Large Language Models [[arXiv](https://arxiv.org/abs/2407.15399)]
+- MRJ-Agent: An Effective Jailbreak Agent for Multi-Round Dialogue [[arXiv](https://arxiv.org/abs/2411.03814)]
+- RED QUEEN: Safeguarding Large Language Models against Concealed Multi-Turn Jailbreaking [[arXiv](https://arxiv.org/abs/2409.17458)] [[GitHub](https://github.com/kriti-hippo/red_queen)]
+- When "Competency" in Reasoning Opens the Door to Vulnerability: Jailbreaking LLMs via Novel Complex Ciphers [[arXiv](https://arxiv.org/abs/2402.10601)] [[GitHub](https://github.com/DivijH/jailbreak_cryptography)]
 
 
 ## Open Challenges
