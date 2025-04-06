@@ -1,6 +1,6 @@
 # Awesome-Multi-Turn-LLMs
 
-![](https://img.shields.io/badge/PaperNumber-78-brightgreen)
+![](https://img.shields.io/badge/PaperNumber-90-brightgreen)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
@@ -45,7 +45,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ### Instruction Following Tasks
 
-#### Instruction Following in General (Mixed)  (Total: 12)
+#### Instruction Following in General (Mixed)  (Total: 13)
 
 - Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena [[NeurIPS 2023](https://arxiv.org/abs/2306.05685)] [[GitHub](https://github.com/lm-sys/fastchat)] ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Other-yellow)
 - (MT-Bench++) Parrot: Enhancing Multi-Turn Instruction Following for Large Language Models [[ACL 2024](https://aclanthology.org/2024.acl-long.525/)] [[Hugging Face](https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/RL-purple)
@@ -76,7 +76,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
                   ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 
 
-#### Instruction Following in General Coding (Total: 11)
+#### Instruction Following in General Coding (Total: 13)
 - Debug like a Human: A Large Language Model Debugger via Verifying Runtime Execution Step by Step [[ACL 2024](https://aclanthology.org/2024.findings-acl.49/)][[GitHub](https://github.com/FloridSleeves/LLMDebugger)] ![](https://img.shields.io/badge/Other-yellow)
 - Steering Large Language Models between Code Execution and Textual Reasoning [[ICLR 2025](https://openreview.net/forum?id=5X5Z7Ffrjb)][[GitHub](https://yongchao98.github.io/CodeSteer/)] [[Hugging Face](https://huggingface.co/yongchao98/CodeSteer-v1)] 
 ![](https://img.shields.io/badge/Benchmark-red)
@@ -91,15 +91,13 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - CodeSteer: Symbolic-Augmented Language Models via Code/Text Guidance [[arXiv](https://arxiv.org/abs/2502.04350)][[GitHub](https://github.com/yongchao98/CodeSteer-v1.0?tab=readme-ov-file)] [[Hugging Face](https://huggingface.co/yongchao98/CodeSteer-v1)] ![](https://img.shields.io/badge/Benchmark-red)  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
 - OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement [[ACL 2024](https://aclanthology.org/2024.findings-acl.762/)] [[GitHub](https://opencodeinterpreter.github.io/)] [[Hugging Face](https://huggingface.co/papers/2402.14658)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - Executable Code Actions Elicit Better LLM Agents [[ICML 2024](https://proceedings.mlr.press/v235/wang24h.html)]  [[GitHub](https://github.com/xingyaoww/code-act)] [[Hugging Face](https://huggingface.co/datasets/xingyaoww/code-act)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
-
-#### Instruction Following for SQL Coding (Total: 2)
 - EHRAgent: Code Empowers Large Language Models for Few-shot Complex Tabular Reasoning on Electronic Health Records [[EMNLP 2024](https://aclanthology.org/2024.emnlp-main.1245/)] [[Github](https://github.com/wshi83/EhrAgent)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Other-yellow)
 - Evaluating and Enhancing LLMs for Multi-turn Text-to-SQL with Multiple Question Types [[IJCNN 2025](https://arxiv.org/abs/2412.17867)] [[GitHub](https://github.com/mcxiaoxiao/MMSQL)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Other-yellow)
 ### Conversational Engagement Tasks 
 
-#### Conversational Engagement in Roleplay (Total: 24)
+#### Conversational Engagement in Roleplay (Total: 25)
 
 - PersonaLLM: Investigating the Ability of Large Language Models to Express Personality Traits [[ACL 2024](https://aclanthology.org/2024.findings-naacl.229.pdf)] [[GitHub](https://github.com/hjian42/PersonaLLM)]
 - CharacterChat: Learning towards Conversational AI with Personalized Social Support [[arXiv](https://arxiv.org/abs/2308.10278)]  [[GitHub](https://github.com/morecry/CharacterChat)] 
@@ -149,7 +147,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - Evaluating Character Understanding of Large Language Models via Character Profiling from Fictional Work [[EMNLP 2024](https://aclanthology.org/2024.emnlp-main.456/)] [[GitHub](https://github.com/Joanna0123/character_profiling)]  
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
-#### Conversational Engagement in Healthcare (Total: 19)
+#### Conversational Engagement in Healthcare (Total: 20)
 - Data Set and Benchmark (MedGPTEval) to Evaluate Responses From Large Language Models in Medicine: Evaluation Development and Validation [[JMIR Med Inform](https://medinform.jmir.org/2024/1/e57674)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Clinical Camel: An Open-Source Expert-Level Medical Language Model with Dialogue-Based Knowledge Encoding [[CoRR 2023](https://arxiv.org/pdf/2305.12031v2)]
@@ -192,7 +190,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
 
-#### Conversational Engagement in Education (Total: 0)
+#### Conversational Engagement in Education (Total: 8)
 - SocraticLM: Exploring Socratic Personalized Teaching with Large Language Models [[NeurIPS 2024](https://openreview.net/pdf?id=qkoZgJhxsA)] [Code](https://github.com/Ljyustc/SocraticLM)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Other-yellow)
 - MathDial: A Dialogue Tutoring Dataset with Rich Pedagogical Properties Grounded in Math Reasoning Problems [[EMNLP 2023](https://aclanthology.org/2023.findings-emnlp.372/)] [[GitHub](https://github.com/eth-nlped/mathdial)] [[Hugging Face](https://huggingface.co/datasets/eth-nlped/mathdial)]
