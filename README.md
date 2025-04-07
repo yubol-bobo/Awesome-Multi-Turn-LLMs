@@ -1,6 +1,6 @@
 # Awesome-Multi-Turn-LLMs
 
-![](https://img.shields.io/badge/PaperNumber-90-brightgreen)
+![](https://img.shields.io/badge/PaperNumber-92-brightgreen)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
@@ -147,7 +147,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - Evaluating Character Understanding of Large Language Models via Character Profiling from Fictional Work [[EMNLP 2024](https://aclanthology.org/2024.emnlp-main.456/)] [[GitHub](https://github.com/Joanna0123/character_profiling)]  
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
-#### Conversational Engagement in Healthcare (Total: 20)
+#### Conversational Engagement in Healthcare (Total: 21)
 - Data Set and Benchmark (MedGPTEval) to Evaluate Responses From Large Language Models in Medicine: Evaluation Development and Validation [[JMIR Med Inform](https://medinform.jmir.org/2024/1/e57674)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Clinical Camel: An Open-Source Expert-Level Medical Language Model with Dialogue-Based Knowledge Encoding [[CoRR 2023](https://arxiv.org/pdf/2305.12031v2)]
@@ -192,11 +192,13 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
 
-#### Conversational Engagement in Education (Total: 8)
+#### Conversational Engagement in Education (Total: 9)
 - SocraticLM: Exploring Socratic Personalized Teaching with Large Language Models [[NeurIPS 2024](https://openreview.net/pdf?id=qkoZgJhxsA)] [Code](https://github.com/Ljyustc/SocraticLM)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Other-yellow)
 - MathDial: A Dialogue Tutoring Dataset with Rich Pedagogical Properties Grounded in Math Reasoning Problems [[EMNLP 2023](https://aclanthology.org/2023.findings-emnlp.372/)] [[GitHub](https://github.com/eth-nlped/mathdial)] [[Hugging Face](https://huggingface.co/datasets/eth-nlped/mathdial)]
-                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
+- Boosting Large Language Models with Socratic Method for Conversational Mathematics Teaching  [[ACM](https://dl.acm.org/doi/10.1145/3627673.3679881)]  [[GitHub](https://github.com/ECNU-ICALK/SocraticMath)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - MathTutorBench: A Benchmark for Measuring Open-ended Pedagogical Capabilities of LLM Tutors [[arXiv](https://arxiv.org/pdf/2502.18940)] [[GitHub](https://github.com/eth-lre/mathtutorbench)] 
                   ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet) 
 - Instruct, Not Assist: LLM-based Multi-Turn Planning and Hierarchical Questioning for Socratic Code Debugging  [[EMNLP 2024](https://aclanthology.org/2024.findings-emnlp.553.pdf)]  [[GitHub](https://github.com/agarwalishika/TreeInstruct)]
