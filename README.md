@@ -226,7 +226,7 @@ In our survey paper on multi-turn interactions and tasks for large language mode
 ![](figs/challenges.png)
 
 ## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=bytebase/star-history\&type=Date)](https://star-history.com/#bytebase/star-history&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=yubol-bobo/Awesome-Multi-Turn-LLMs&type=Date)](https://star-history.com/#bytebase/star-history&Date)
 
 
 
