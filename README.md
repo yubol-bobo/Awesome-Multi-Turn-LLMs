@@ -156,6 +156,8 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - DISC-MedLLM: Bridging General Large Language Models and Real-World Medical Consultation [[arXiv](https://arxiv.org/pdf/2308.14346)] [[GitHub](https://github.com/FudanDISC/DISC-MedLLM)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
+- SMILE: Single-turn to Multi-turn Inclusive Language Expansion via  ChatGPT for Mental Health Support  [[EMNLP 2024](https://aclanthology.org/2024.findings-emnlp.34/)] [[GitHub](https://github.com/qiuhuachuan/smile)]
+                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - Zhongjing: Enhancing the Chinese Medical Capabilities of Large Language Model through Expert Feedback and Real-world Multi-turn Dialogue [[arXiv](https://arxiv.org/pdf/2308.03549)] [[GitHub](https://github.com/SupritYoung/Zhongjing)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
 - An Automatic Evaluation Framework for Multi-turn Medical Consultations Capabilities of Large Language Models [[arXiv](https://arxiv.org/abs/2309.02077)]
