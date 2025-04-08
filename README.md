@@ -6,7 +6,7 @@
 
 A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Multi-turn Large Language Models***. This repository compiles a majority of research works in the multi-turn LLM field, though it may not be fully exhaustive.
 
-⭐⭐⭐Our detailed thoughts and review of multi-turn LLMs, including task types, common improvements, and open challenges, are presented in this survey: [**Beyond Single-Turn: A Survey on Multi-Turn Interactions with Large Language Models**](https://arxiv.xxx).
+⭐⭐⭐Our detailed thoughts and review of multi-turn LLMs, including task types, common improvements, and open challenges, are presented in this survey: [**Beyond Single-Turn: A Survey on Multi-Turn Interactions with Large Language Models**](https://arxiv.org/abs/2504.04717).
 > If you notice any missing research works or spot inaccuracies, feel free to reach out or open an issue. We also welcome submissions of multi-turn related work from everyone!
 
 
@@ -225,7 +225,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ## Open Challenges
 
-In our survey paper on multi-turn interactions and tasks for large language models (LLMs), we categorize a wide range of tasks, including instruction-following scenarios and more complex conversational engagement tasks. To complement this, we also include an illustration highlighting key open challenges in this domain. If you're interested in the detailed improvement methods and a deeper discussion of the open challenges, please refer to our [Full Paper](https://arxiv.xxx).
+In our survey paper on multi-turn interactions and tasks for large language models (LLMs), we categorize a wide range of tasks, including instruction-following scenarios and more complex conversational engagement tasks. To complement this, we also include an illustration highlighting key open challenges in this domain. If you're interested in the detailed improvement methods and a deeper discussion of the open challenges, please refer to our [Full Paper](https://arxiv.org/abs/2504.04717).
 
 ![](figs/challenges.png)
 
