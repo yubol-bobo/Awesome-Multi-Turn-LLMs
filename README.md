@@ -47,21 +47,30 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 #### Instruction Following in General (Mixed)  (Total: 13)
 
-- Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena [[NeurIPS 2023](https://arxiv.org/abs/2306.05685)] [[GitHub](https://github.com/lm-sys/fastchat)] ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Other-yellow)
-- (MT-Bench++) Parrot: Enhancing Multi-Turn Instruction Following for Large Language Models [[ACL 2024](https://aclanthology.org/2024.acl-long.525/)] [[Hugging Face](https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/RL-purple)
-- MT-Eval: A Multi-Turn Capabilities Evaluation Benchmark for Large Language Models [[EMNLP 2024](https://aclanthology.org/2024.emnlp-main.1124/)] [[GitHub](https://github.com/KwanWaiChung/MT-Eval)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
-- MT-Bench-101: A Fine-Grained Benchmark for Evaluating Large Language Models in Multi-Turn Dialogues [[ACL 2024](https://aclanthology.org/2024.acl-long.401/)] [[GitHub](https://github.com/mtbench101/mt-bench-101)] ![](https://img.shields.io/badge/Dataset-blue) 
-               ![](https://img.shields.io/badge/SFT-blueviolet)  ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Benchmark-red)
-
-- M2Lingual: Enhancing Multilingual, Multi-Turn Instruction Alignment in Large Language Models [[arXiv](https://arxiv.org/abs/2406.16783)] [[Hugging Face](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
-- FB-Bench: A Fine-Grained Multi-Task Benchmark for Evaluating LLMs' Responsiveness to Human Feedback [[arXiv](https://www.arxiv.org/abs/2410.09412)] [[GitHub](https://github.com/PKU-Baichuan-MLSystemLab/FB-Bench)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) 
-- Multi-IF: Benchmarking LLMs on Multi-Turn and Multilingual Instructions Following [[arXiv](https://arxiv.org/abs/2410.15553)] [[GitHub](https://github.com/facebookresearch/Multi-IF)] [[Hugging Face](https://huggingface.co/datasets/facebook/Multi-IF)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
-- FairMT-Bench: Benchmarking Fairness for Multi-turn Dialogue in Conversational LLMs [[ICLR 2025](https://openreview.net/forum?id=RSGoXnS9GH)] [[GitHub](https://github.com/FanZT6/FairMT-bench)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
-- AQA-Bench: An Interactive Benchmark for Evaluating LLMs' Sequential Reasoning Ability
- [[arXiv](https://arxiv.org/abs/2402.09404)] [[GitHub](https://github.com/UCSC-VLAA/AQA-Bench)] ![](https://img.shields.io/badge/Benchmark-red)
-- MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback [[ICLR 2024](https://arxiv.org/abs/2309.10691)] [[GitHub](https://github.com/xingyaoww/mint-bench)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
-- WILT: A Multi-Turn, Memorization-Robust Inductive Logic Benchmark for LLMs [[arXiv](https://arxiv.org/abs/2410.10998)] [[GitHub](https://github.com/riotgames/wilt)] ![](https://img.shields.io/badge/Benchmark-red)
-- Firm or Fickle? Evaluating Large Language Models Consistency in Sequential Interactions [[arXiv](https://arxiv.org/abs/2503.22353)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
+- Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena [[NeurIPS 2023](https://arxiv.org/abs/2306.05685)] [[GitHub](https://github.com/lm-sys/fastchat)] 
+                  ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Other-yellow)
+- (MT-Bench++) Parrot: Enhancing Multi-Turn Instruction Following for Large Language Models [[ACL 2024](https://aclanthology.org/2024.acl-long.525/)] [[Hugging Face](https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered)] 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/RL-purple)
+- MT-Eval: A Multi-Turn Capabilities Evaluation Benchmark for Large Language Models [[EMNLP 2024](https://aclanthology.org/2024.emnlp-main.1124/)] [[GitHub](https://github.com/KwanWaiChung/MT-Eval)] 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
+- MT-Bench-101: A Fine-Grained Benchmark for Evaluating Large Language Models in Multi-Turn Dialogues [[ACL 2024](https://aclanthology.org/2024.acl-long.401/)] [[GitHub](https://github.com/mtbench101/mt-bench-101)] 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)  ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Benchmark-red)
+- M2Lingual: Enhancing Multilingual, Multi-Turn Instruction Alignment in Large Language Models [[arXiv](https://arxiv.org/abs/2406.16783)] [[Hugging Face](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual)] 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
+- FB-Bench: A Fine-Grained Multi-Task Benchmark for Evaluating LLMs' Responsiveness to Human Feedback [[arXiv](https://www.arxiv.org/abs/2410.09412)] [[GitHub](https://github.com/PKU-Baichuan-MLSystemLab/FB-Bench)] 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) 
+- Multi-IF: Benchmarking LLMs on Multi-Turn and Multilingual Instructions Following [[arXiv](https://arxiv.org/abs/2410.15553)] [[GitHub](https://github.com/facebookresearch/Multi-IF)] [[Hugging Face](https://huggingface.co/datasets/facebook/Multi-IF)] 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
+- FairMT-Bench: Benchmarking Fairness for Multi-turn Dialogue in Conversational LLMs [[ICLR 2025](https://openreview.net/forum?id=RSGoXnS9GH)] [[GitHub](https://github.com/FanZT6/FairMT-bench)] 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
+- AQA-Bench: An Interactive Benchmark for Evaluating LLMs' Sequential Reasoning Ability  [[arXiv](https://arxiv.org/abs/2402.09404)] [[GitHub](https://github.com/UCSC-VLAA/AQA-Bench)] 
+                  ![](https://img.shields.io/badge/Benchmark-red)
+- MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback [[ICLR 2024](https://arxiv.org/abs/2309.10691)] [[GitHub](https://github.com/xingyaoww/mint-bench)] 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
+- WILT: A Multi-Turn, Memorization-Robust Inductive Logic Benchmark for LLMs [[arXiv](https://arxiv.org/abs/2410.10998)] [[GitHub](https://github.com/riotgames/wilt)] 
+                  ![](https://img.shields.io/badge/Benchmark-red)
+- Firm or Fickle? Evaluating Large Language Models Consistency in Sequential Interactions [[arXiv](https://arxiv.org/abs/2503.22353)] [[GitHub](https://github.com/yubol-bobo/Multi_Turn_PWC)] 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - SysBench: Can Large Language Models Follow System Messages? [[ICLR 2025](https://openreview.net/pdf?id=KZWaxtzIRx)]  [[GitHub](https://github.com/pku-baichuan-mlsystemlab/sysbench)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
@@ -77,20 +86,26 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 
 #### Instruction Following in General Coding (Total: 13)
-- Debug like a Human: A Large Language Model Debugger via Verifying Runtime Execution Step by Step [[ACL 2024](https://aclanthology.org/2024.findings-acl.49/)][[GitHub](https://github.com/FloridSleeves/LLMDebugger)] ![](https://img.shields.io/badge/Other-yellow)
+- Debug like a Human: A Large Language Model Debugger via Verifying Runtime Execution Step by Step [[ACL 2024](https://aclanthology.org/2024.findings-acl.49/)][[GitHub](https://github.com/FloridSleeves/LLMDebugger)] 
+                  ![](https://img.shields.io/badge/Other-yellow)
 - Steering Large Language Models between Code Execution and Textual Reasoning [[ICLR 2025](https://openreview.net/forum?id=5X5Z7Ffrjb)][[GitHub](https://yongchao98.github.io/CodeSteer/)] [[Hugging Face](https://huggingface.co/yongchao98/CodeSteer-v1)] 
-![](https://img.shields.io/badge/Benchmark-red)
+                  ![](https://img.shields.io/badge/Benchmark-red)
 - From Code to Correctness: Closing the Last Mile of Code Generation with Hierarchical Debugging[[arXiv](https://arxiv.org/abs/2410.01215)][[GitHub](https://github.com/YerbaPage/MGDebugger)]
 - InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback [[NeurIPS 2023 Datasets and Benchmarks](https://openreview.net/forum?id=fvKaLF1ns8)][[GitHub](https://intercode-benchmark.github.io/)] 
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/RL-purple) 
 - What Makes Large Language Models Reason in (Multi-Turn) Code Generation? [[arXiv](https://arxiv.org/abs/2410.08105)] ![](https://img.shields.io/badge/SFT-blueviolet)
-- PyBench: Evaluating LLM Agent on various real-world coding tasks [[arXiv](https://arxiv.org/abs/2407.16732)] [[GitHub](https://github.com/Mercury7353/PyBench)][[Hugging Face](https://huggingface.co/datasets/Mercury7353/PyInstruct)] ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Dataset-blue)
+- PyBench: Evaluating LLM Agent on various real-world coding tasks [[arXiv](https://arxiv.org/abs/2407.16732)] [[GitHub](https://github.com/Mercury7353/PyBench)][[Hugging Face](https://huggingface.co/datasets/Mercury7353/PyInstruct)] 
+                  ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Dataset-blue)
 - CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis [[ICLR 2023](https://openreview.net/forum?id=iaYcJKpY2B_)] [[GitHub](https://github.com/salesforce/CodeGen/tree/main)] [[Hugging Face](https://huggingface.co/models?search=salesforce+codegen)] 
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Other-yellow)
-- CodeGen2: Lessons for Training LLMs on Programming and Natural Languages [[ICLR 2023](https://arxiv.org/abs/2305.02309)][[GitHub](https://github.com/salesforce/CodeGen/tree/main)] [[Hugging Face](https://huggingface.co/models?search=salesforce+codegen)]  ![](https://img.shields.io/badge/Other-yellow)
-- CodeSteer: Symbolic-Augmented Language Models via Code/Text Guidance [[arXiv](https://arxiv.org/abs/2502.04350)][[GitHub](https://github.com/yongchao98/CodeSteer-v1.0?tab=readme-ov-file)] [[Hugging Face](https://huggingface.co/yongchao98/CodeSteer-v1)] ![](https://img.shields.io/badge/Benchmark-red)  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
-- OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement [[ACL 2024](https://aclanthology.org/2024.findings-acl.762/)] [[GitHub](https://opencodeinterpreter.github.io/)] [[Hugging Face](https://huggingface.co/papers/2402.14658)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
-- Executable Code Actions Elicit Better LLM Agents [[ICML 2024](https://proceedings.mlr.press/v235/wang24h.html)]  [[GitHub](https://github.com/xingyaoww/code-act)] [[Hugging Face](https://huggingface.co/datasets/xingyaoww/code-act)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
+- CodeGen2: Lessons for Training LLMs on Programming and Natural Languages [[ICLR 2023](https://arxiv.org/abs/2305.02309)][[GitHub](https://github.com/salesforce/CodeGen/tree/main)] [[Hugging Face](https://huggingface.co/models?search=salesforce+codegen)]  
+                  ![](https://img.shields.io/badge/Other-yellow)
+- CodeSteer: Symbolic-Augmented Language Models via Code/Text Guidance [[arXiv](https://arxiv.org/abs/2502.04350)][[GitHub](https://github.com/yongchao98/CodeSteer-v1.0?tab=readme-ov-file)] [[Hugging Face](https://huggingface.co/yongchao98/CodeSteer-v1)] 
+                  ![](https://img.shields.io/badge/Benchmark-red)  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
+- OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement [[ACL 2024](https://aclanthology.org/2024.findings-acl.762/)] [[GitHub](https://opencodeinterpreter.github.io/)] [[Hugging Face](https://huggingface.co/papers/2402.14658)] 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
+- Executable Code Actions Elicit Better LLM Agents [[ICML 2024](https://proceedings.mlr.press/v235/wang24h.html)]  [[GitHub](https://github.com/xingyaoww/code-act)] [[Hugging Face](https://huggingface.co/datasets/xingyaoww/code-act)] 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - EHRAgent: Code Empowers Large Language Models for Few-shot Complex Tabular Reasoning on Electronic Health Records [[EMNLP 2024](https://aclanthology.org/2024.emnlp-main.1245/)] [[GitHub](https://github.com/wshi83/EhrAgent)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Other-yellow)
 - Evaluating and Enhancing LLMs for Multi-turn Text-to-SQL with Multiple Question Types [[IJCNN 2025](https://arxiv.org/abs/2412.17867)] [[GitHub](https://github.com/mcxiaoxiao/MMSQL)]
@@ -135,13 +150,14 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
                   ![](https://img.shields.io/badge/RL-purple)   ![](https://img.shields.io/badge/Other-yellow) 
 -  Beyond Retrieval: Embracing Compressive Memory in Real-World Long-Term Conversations [[arXiv](https://arxiv.org/abs/2402.11975)] [[GitHub](https://github.com/nuochenpku/COMEDY)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/RL-purple) ![](https://img.shields.io/badge/Other-yellow)
-- LaMP: When Large Language Models Meet Personalization [[ACL 2024](https://aclanthology.org/2024.acl-long.399.pdf)] [[GitHub](https://lamp-benchmark.github.io/)] ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
+- LaMP: When Large Language Models Meet Personalization [[ACL 2024](https://aclanthology.org/2024.acl-long.399.pdf)] [[GitHub](https://lamp-benchmark.github.io/)] 
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - CharacterEval: A Chinese Benchmark for Role-Playing Conversational Agent Evaluation [[ACL 2024](https://aclanthology.org/2024.acl-long.638.pdf)] [[GitHub](https://github.com/morecry/CharacterEval)] 
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - RoleEval: A Bilingual Role Evaluation Benchmark for Large Language Models [[arXiv](https://arxiv.org/abs/2312.16132)] [[GitHub](https://github.com/Magnetic2014/RoleEval)]  
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
-- TimeChara: Evaluating Point-in-Time Character Hallucination of Role-Playing Large Language Models  [[ACL 2024](https://aclanthology.org/2024.findings-acl.197/)] [[GitHub](https://github.com/ahnjaewoo/timechara)]  ![](https://img.shields.io/badge/Dataset-blue)
-                   ![](https://img.shields.io/badge/Benchmark-red)
+- TimeChara: Evaluating Point-in-Time Character Hallucination of Role-Playing Large Language Models  [[ACL 2024](https://aclanthology.org/2024.findings-acl.197/)] [[GitHub](https://github.com/ahnjaewoo/timechara)]  
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - InCharacter: Evaluating Personality Fidelity in Role-Playing Agents through Psychological Interviews [[ACL 2024](https://aclanthology.org/2024.acl-long.102/)] [[GitHub](https://incharacter.github.io/)] 
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - RoleInteract: Evaluating the Social Interaction of Role-Playing Agents [[arXiv](https://arxiv.org/abs/2403.13679)] [[GitHub](https://github.com/X-PLUG/RoleInteract)]  
@@ -214,8 +230,10 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 #### Conversational Engagement in Jailbreak (Total: 8)
 - Crescendo: Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack [[arXiv](https://arxiv.org/abs/2404.01833)] [[GitHub](https://crescendo-the-multiturn-jailbreak.github.io/)]
-- ActorAttack: Derail Yourself: Multi-turn LLM Jailbreak Attack through Self-discovered Clues [[arXiv](https://arxiv.org/abs/2410.10700)] [[GitHub](https://github.com/AI45Lab/ActorAttack)] [[Hugging Face](https://huggingface.co/datasets/SafeMTData/SafeMTData)] ![](https://img.shields.io/badge/Dataset-blue)
-- Emerging Vulnerabilities in Frontier Models: Multi-Turn Jailbreak Attacks [[arXiv](https://arxiv.org/abs/2409.00137)] [[Hugging Face](https://huggingface.co/datasets/tom-gibbs/multi-turn_jailbreak_attack_datasets)] ![](https://img.shields.io/badge/Dataset-blue)
+- ActorAttack: Derail Yourself: Multi-turn LLM Jailbreak Attack through Self-discovered Clues [[arXiv](https://arxiv.org/abs/2410.10700)] [[GitHub](https://github.com/AI45Lab/ActorAttack)] [[Hugging Face](https://huggingface.co/datasets/SafeMTData/SafeMTData)] 
+                  ![](https://img.shields.io/badge/Dataset-blue)
+- Emerging Vulnerabilities in Frontier Models: Multi-Turn Jailbreak Attacks [[arXiv](https://arxiv.org/abs/2409.00137)] [[Hugging Face](https://huggingface.co/datasets/tom-gibbs/multi-turn_jailbreak_attack_datasets)] 
+                  ![](https://img.shields.io/badge/Dataset-blue)
 - Speak Out of Turn: Safety Vulnerability of Large Language Models in Multi-turn Dialogue [[arXiv](https://arxiv.org/abs/2402.17262)]
 - Imposter.AI: Adversarial Attacks with Hidden Intentions towards Aligned Large Language Models [[arXiv](https://arxiv.org/abs/2407.15399)]
 - MRJ-Agent: An Effective Jailbreak Agent for Multi-Round Dialogue [[arXiv](https://arxiv.org/abs/2411.03814)]
