@@ -121,7 +121,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - PersonaLLM: Investigating the Ability of Large Language Models to Express Personality Traits [[ACL 2024](https://aclanthology.org/2024.findings-naacl.229.pdf)] [[GitHub](https://github.com/hjian42/PersonaLLM)]
 - CharacterChat: Learning towards Conversational AI with Personalized Social Support [[arXiv](https://arxiv.org/abs/2308.10278)]  [[GitHub](https://github.com/morecry/CharacterChat)] 
                   ![](https://img.shields.io/badge/Dataset-blue)
-- Better Zero-Shot Reasoning with Role-Play Prompting [[ACL 2024](https://aclanthology.org/2024.naacl-long.228.pdf)] [[GitHub](https://github.com/NKU-HLT/Role-Play-Prompting)
+- Better Zero-Shot Reasoning with Role-Play Prompting [[ACL 2024](https://aclanthology.org/2024.naacl-long.228.pdf)] [[GitHub](https://github.com/NKU-HLT/Role-Play-Prompting)]
 - PIPPA: A Partially Synthetic Conversational Dataset [[arXiv](https://arxiv.org/abs/2308.05884)] [[Hugging Face](https://huggingface.co/datasets/PygmalionAI/PIPPA)] 
                   ![](https://img.shields.io/badge/Dataset-blue)
 - Enhancing Chat Language Models by Scaling High-quality Instructional Conversations [[EMNLP 2023](https://aclanthology.org/2023.emnlp-main.183.pdf)] [[GitHub](https://github.com/thunlp/UltraChat)]   
