@@ -1,6 +1,6 @@
 # Awesome-Multi-Turn-LLMs
 
-![](https://img.shields.io/badge/PaperNumber-92-brightgreen)
+![](https://img.shields.io/badge/PaperNumber-95-brightgreen)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
@@ -213,7 +213,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
 
-#### Conversational Engagement in Education (Total: 9)
+#### Conversational Engagement in Education (Total: 12)
 - SocraticLM: Exploring Socratic Personalized Teaching with Large Language Models [[NeurIPS 2024](https://openreview.net/pdf?id=qkoZgJhxsA)] [Code](https://github.com/Ljyustc/SocraticLM)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Other-yellow)
 - MathDial: A Dialogue Tutoring Dataset with Rich Pedagogical Properties Grounded in Math Reasoning Problems [[EMNLP 2023](https://aclanthology.org/2023.findings-emnlp.372/)] [[GitHub](https://github.com/eth-nlped/mathdial)] [[Hugging Face](https://huggingface.co/datasets/eth-nlped/mathdial)]
@@ -228,7 +228,10 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - A Step Towards Adaptive Online Learning: Exploring the Role of GPT as Virtual Teaching Assistants in Online Education
 - Book2Dial: Generating Teacher-Student Interactions from Textbooks for Cost-Effective Development of Educational Chatbots [[ACL 2024](https://aclanthology.org/2024.findings-acl.578/)] [[Github](https://github.com/eth-lre/book2dial)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
-
+- CourseAssist: Pedagogically Appropriate AI Tutor for Computer Science Education [[ACM](https://dl.acm.org/doi/10.1145/3649409.3691094)] [[GitHub](https://github.com/ytyfeng/CourseAssist-Data)]
+- Designing Safe and Relevant Generative Chats for Math Learning in Intelligent Tutoring Systems  [[Journal of Educational Data Mining (https://jedm.educationaldatamining.org/index.php/JEDM/article/view/840)]
+- Training LLM-based Tutors to Improve Student Learning Outcomes in Dialogues [[ArXiv](https://arxiv.org/abs/2503.06424)]  [[GitHub](https://github.com/umass-ml4ed/tutorbot-dpo)]
+  
 #### Conversational Engagement in Jailbreak (Total: 8)
 - Crescendo: Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack [[arXiv](https://arxiv.org/abs/2404.01833)] [[GitHub](https://crescendo-the-multiturn-jailbreak.github.io/)]
 - ActorAttack: Derail Yourself: Multi-turn LLM Jailbreak Attack through Self-discovered Clues [[arXiv](https://arxiv.org/abs/2410.10700)] [[GitHub](https://github.com/AI45Lab/ActorAttack)] [[Hugging Face](https://huggingface.co/datasets/SafeMTData/SafeMTData)] 
