@@ -46,7 +46,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 ### Instruction Following Tasks
 
-#### Instruction Following in General (Mixed)  (Total: 13)
+#### Instruction Following in General (Mixed)
 
 - Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena [[NeurIPS 2023](https://arxiv.org/abs/2306.05685)] [[GitHub](https://github.com/lm-sys/fastchat)] 
                   ![](https://img.shields.io/badge/Dataset-blue)  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Other-yellow)
@@ -77,7 +77,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 
 
 
-#### Instruction Following in Math (Total: 3)
+#### Instruction Following in Math
 - MathChat: Converse to Tackle Challenging Math Problems with LLM Agents [[ICLR 2024 Workshop](https://openreview.net/pdf/96ec2baf0844fd84504bb79f9230483b1a62f517.pdf)] 
                   ![](https://img.shields.io/badge/RL-purple)
 - Building Math Agents with Multi-Turn Iterative Preference Learning [[arXiv](https://arxiv.org/pdf/2409.02392)] 
@@ -86,7 +86,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
                   ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 
 
-#### Instruction Following in General Coding (Total: 13)
+#### Instruction Following in General Coding
 - Debug like a Human: A Large Language Model Debugger via Verifying Runtime Execution Step by Step [[ACL 2024](https://aclanthology.org/2024.findings-acl.49/)][[GitHub](https://github.com/FloridSleeves/LLMDebugger)] 
                   ![](https://img.shields.io/badge/Other-yellow)
 - Steering Large Language Models between Code Execution and Textual Reasoning [[ICLR 2025](https://openreview.net/forum?id=5X5Z7Ffrjb)][[GitHub](https://yongchao98.github.io/CodeSteer/)] [[Hugging Face](https://huggingface.co/yongchao98/CodeSteer-v1)] 
@@ -117,7 +117,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
   
 ### Conversational Engagement Tasks 
 
-#### Conversational Engagement in Roleplay (Total: 25)
+#### Conversational Engagement in Roleplay
 
 - PersonaLLM: Investigating the Ability of Large Language Models to Express Personality Traits [[ACL 2024](https://aclanthology.org/2024.findings-naacl.229.pdf)] [[GitHub](https://github.com/hjian42/PersonaLLM)]
 - CharacterChat: Learning towards Conversational AI with Personalized Social Support [[arXiv](https://arxiv.org/abs/2308.10278)]  [[GitHub](https://github.com/morecry/CharacterChat)] 
@@ -168,7 +168,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - Evaluating Character Understanding of Large Language Models via Character Profiling from Fictional Work [[EMNLP 2024](https://aclanthology.org/2024.emnlp-main.456/)] [[GitHub](https://github.com/Joanna0123/character_profiling)]  
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
-#### Conversational Engagement in Healthcare (Total: 21)
+#### Conversational Engagement in Healthcare
 - Data Set and Benchmark (MedGPTEval) to Evaluate Responses From Large Language Models in Medicine: Evaluation Development and Validation [[JMIR Med Inform](https://medinform.jmir.org/2024/1/e57674)]
                    ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Clinical Camel: An Open-Source Expert-Level Medical Language Model with Dialogue-Based Knowledge Encoding [[CoRR 2023](https://arxiv.org/pdf/2305.12031v2)]
@@ -213,7 +213,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
 
-#### Conversational Engagement in Education (Total: 12)
+#### Conversational Engagement in Education
 - SocraticLM: Exploring Socratic Personalized Teaching with Large Language Models [[NeurIPS 2024](https://openreview.net/pdf?id=qkoZgJhxsA)] [Code](https://github.com/Ljyustc/SocraticLM)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/Other-yellow)
 - MathDial: A Dialogue Tutoring Dataset with Rich Pedagogical Properties Grounded in Math Reasoning Problems [[EMNLP 2023](https://aclanthology.org/2023.findings-emnlp.372/)] [[GitHub](https://github.com/eth-nlped/mathdial)] [[Hugging Face](https://huggingface.co/datasets/eth-nlped/mathdial)]
@@ -232,7 +232,7 @@ A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Mult
 - Designing Safe and Relevant Generative Chats for Math Learning in Intelligent Tutoring Systems  [[Journal of Educational Data Mining (https://jedm.educationaldatamining.org/index.php/JEDM/article/view/840)]
 - Training LLM-based Tutors to Improve Student Learning Outcomes in Dialogues [[ArXiv](https://arxiv.org/abs/2503.06424)]  [[GitHub](https://github.com/umass-ml4ed/tutorbot-dpo)]
   
-#### Conversational Engagement in Jailbreak (Total: 8)
+#### Conversational Engagement in Jailbreak
 - Crescendo: Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack [[arXiv](https://arxiv.org/abs/2404.01833)] [[GitHub](https://crescendo-the-multiturn-jailbreak.github.io/)]
 - ActorAttack: Derail Yourself: Multi-turn LLM Jailbreak Attack through Self-discovered Clues [[arXiv](https://arxiv.org/abs/2410.10700)] [[GitHub](https://github.com/AI45Lab/ActorAttack)] [[Hugging Face](https://huggingface.co/datasets/SafeMTData/SafeMTData)] 
                   ![](https://img.shields.io/badge/Dataset-blue)
