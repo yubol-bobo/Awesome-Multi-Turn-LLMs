@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Beyond Single-Turn — A Survey on Multi-Turn Interactions with LLMs</title>
+<meta name="description" content="A CMU survey of multi-turn interactions with large language models: task-oriented taxonomy, benchmarks, improvement methods, open challenges." />
+<meta property="og:title" content="Beyond Single-Turn: A Survey on Multi-Turn Interactions with LLMs" />
+<meta property="og:description" content="Task-oriented taxonomy spanning instruction following and conversational engagement; benchmarks, improvement methods, and open challenges." />
+<meta property="og:type" content="article" />
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="grid" style="grid-template-columns: 1.35fr 1fr; align-items:center; gap: clamp(40px, 6vw, 80px);">
+      <div>
+        <span class="hero-badge"><span class="dot"></span> Carnegie Mellon University &nbsp;·&nbsp; Survey · April 2026</span>
+        <h1 class="hero-title">Beyond <em>Single-Turn</em>.<br/>A Survey on Multi-Turn Interactions with LLMs.</h1>
+        <p class="hero-sub">
+          Real conversations are not single prompts. This survey maps how large language models handle
+          extended, task-oriented dialogue — from math tutoring to medical consultation, from code refinement
+          to adversarial jailbreaks — and distills the benchmarks, methods, and open challenges that define
+          the frontier.
+        </p>
+        <div class="hero-authors">
+          <strong>Yubo Li</strong>, Xiaobin Shen, Yidi Miao, Xueying Ding, Xinyu Yao, Krishnan Ramayya, Rema Padman
+        </div>
+        <div class="hero-cta-row">
+          <a class="btn btn-primary" href="main.pdf" target="_blank" rel="noopener">Read the paper (PDF) →</a>
+          <a class="btn btn-outline" href="benchmarks.html">Explore the benchmarks</a>
+          <a class="btn btn-ghost" href="about.html#cite">Cite this survey</a>
+          <a class="btn btn-outline" href="https://github.com/yubol-cmu/Awesome-Multi-Turn-LLMs" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+      <div>
+        <div class="paper-frame">
+          <div class="paper-frame-inner">
+            <h3>Beyond Single-Turn</h3>
+            <div class="paper-meta">A Survey on Multi-Turn Interactions with LLMs</div>
+            <div style="text-align:center; font-size:0.78rem; color:var(--ink-faint); margin-bottom:16px;">
+              Li · Shen · Miao · Ding · Yao · Ramayya · Padman
+            </div>
+            <div style="font-size:0.78rem; line-height:1.7; color:var(--ink-mute);">
+              <strong style="color:var(--ink-soft);">Abstract.</strong> Recent advances in large language
+              models have improved single-turn task performance, yet real-world applications increasingly
+              demand sophisticated multi-turn interactions. We provide a comprehensive review of recent
+              progress in evaluating and enhancing multi-turn LLMs, organized around a task-oriented
+              taxonomy spanning instruction following in mathematics and coding, and conversational
+              engagement in role-play, healthcare, education, and adversarial jailbreak settings…
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats band -->
+<section class="section-tight section-alt">
+  <div class="container">
+    <div class="grid grid-4">
+      <div class="stat">
+        <div class="stat-num">85+</div>
+        <div class="stat-label">Benchmarks</div>
+        <div class="stat-sub">Across both IF and CE families, from 2018 through 2026.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">6</div>
+        <div class="stat-label">Task domains</div>
+        <div class="stat-sub">Math, coding, healthcare, education, role-play, jailbreak.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Improvement pillars</div>
+        <div class="stat-sub">Model-centric, external integration, agent-based.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Open-challenge areas</div>
+        <div class="stat-sub">Context, reasoning, adaptation, evaluation, ethics.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why this matters -->
+<section class="section">
+  <div class="container container-narrow">
+    <div class="section-header">
+      <div class="eyebrow">Why multi-turn is its own problem</div>
+      <h2>The hardest part of LLM deployment happens on turn&nbsp;three.</h2>
+      <p class="lead">Single-turn benchmarks optimize for a task that rarely exists in production. Real users clarify, backtrack, drift, and change their minds — and models that dominate one-shot leaderboards routinely collapse when those dynamics compound.</p>
+    </div>
+    <div class="prose dropcap">
+      <p>
+        Over the last three years, multi-turn LLM research has fragmented into a constellation
+        of sub-efforts: benchmark papers proliferating faster than any reader can absorb, method
+        papers often measured against incomparable tasks, and domain-specific deployments
+        (medical, educational, safety) evolving on their own protocols. The field lacks a
+        shared frame.
+      </p>
+      <p>
+        This survey proposes one. We argue that real-world multi-turn interaction is best
+        organized by <em>task family</em> — not by capability, not by method — because
+        reasoning, memory, adaptation, and safety don't operate in isolation. They co-activate
+        around a concrete conversational goal: <em>tutor this student through a derivation</em>,
+        <em>diagnose this patient without committing prematurely</em>, <em>help this developer
+        debug this module</em>. The task is the unit of analysis.
+      </p>
+      <p>
+        From that frame, we derive a two-family split — <strong>instruction following</strong>
+        (explicit intent, execution precision) and <strong>conversational engagement</strong>
+        (open intent, consultative dialogue) — and survey the benchmarks, methods, and open
+        problems that cohere within and across them. The pages below correspond to each part
+        of the paper and provide progressively more structure: dedicated task-family pages, a
+        searchable benchmark explorer, and cross-cutting views of improvements and challenges.
+      </p>
+    </div>
+
+    <div class="pull">
+      Multi-turn is not single-turn repeated. It is a distinct regime with its own failure modes, metrics, and design targets.
+    </div>
+  </div>
+</section>
+
+<!-- Four contributions -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Four contributions</div>
+      <h2>How this survey differs from prior work.</h2>
+      <p>We position the paper against capability-oriented surveys (Zhang et al., 2025), method-oriented surveys (Zhang et al., 2023), and domain surveys in healthcare — keeping what is valuable in each while re-organizing the field around the task families that best reflect real deployment.</p>
+    </div>
+    <div class="grid grid-2">
+      <div class="card card-accent-crimson">
+        <h3>A task-oriented organization</h3>
+        <p class="muted">The primary organization is <strong>IF × CE × domain</strong> rather than capability buckets. We give each family enough detail for readers to locate their own work and understand what distinguishes it from neighbors.</p>
+        <a class="card-link" href="tasks-if.html">Start with Instruction Following →</a>
+      </div>
+      <div class="card card-accent-crimson">
+        <h3>A unified benchmark audit</h3>
+        <p class="muted">For every benchmark we record dialogue count, average turns, whether data is human- or LLM-curated, the evaluation protocol (rule / human-judge / LLM-judge), and the rubric dimensions, so readers can compare benchmarks like-for-like.</p>
+        <a class="card-link" href="benchmarks.html">Explore benchmarks →</a>
+      </div>
+      <div class="card card-accent-crimson">
+        <h3>A three-pillar map of methods</h3>
+        <p class="muted"><strong>Model-centric</strong> (ICL, SFT, multi-turn RL, new architectures), <strong>external integration</strong> (memory, RAG, KGs), and <strong>agent-based</strong> approaches — each reviewed with the multi-turn angle that prior surveys miss.</p>
+        <a class="card-link" href="methods.html">Read the methods review →</a>
+      </div>
+      <div class="card card-accent-crimson">
+        <h3>A five-area challenge roadmap</h3>
+        <p class="muted">Context understanding, complex reasoning across turns, adaptation and learning, evaluation, and ethical &amp; safety issues — with concrete examples of failure and the research threads working on each.</p>
+        <a class="card-link" href="challenges.html">See open challenges →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Task-family preview -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">The core split</div>
+      <h2>Two task families, six domains, one frame.</h2>
+      <p>Instruction following tasks are judged by precision of execution — the user's intent is explicit. Conversational engagement tasks are judged by consultative competence — the user's intent is open, evolving, or only partially specified. Every domain below is surveyed in its own page.</p>
+    </div>
+
+    <div class="grid" style="grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+      <div class="pillar if">
+        <div class="pillar-num">IF</div>
+        <h3>Instruction Following</h3>
+        <p class="muted">Explicit intent. Judged on precision of adherence and execution across turns. Failure modes: context decay, sycophancy, poor clarification policy, forgetting distributed constraints.</p>
+        <div class="pill-row">
+          <span class="chip chip-if">General</span>
+          <span class="chip chip-if">Math</span>
+          <span class="chip chip-if">Coding</span>
+        </div>
+        <ul style="padding-left: 18px; font-size: 0.92rem; color: var(--ink-soft); margin-bottom: 0;">
+          <li><strong>General IF</strong> — MT-Bench family, MT-Eval, StructFlowBench, FIRM, TURNWISE.</li>
+          <li><strong>Math</strong> — MathDial, MINT, MathChat, MRBench, M-DPO/M-KTO.</li>
+          <li><strong>Coding</strong> — InterCode, OpenCodeInterpreter, CodeSteer, MMSQL, MT-Sec.</li>
+        </ul>
+        <a class="card-link mt-5" href="tasks-if.html">Go to Instruction Following →</a>
+      </div>
+
+      <div class="pillar ce">
+        <div class="pillar-num">CE</div>
+        <h3>Conversational Engagement</h3>
+        <p class="muted">Open intent, consultative role. Requires proactive information seeking, synthesis across topics, use of external knowledge and tools across sustained dialogue.</p>
+        <div class="pill-row">
+          <span class="chip chip-ce">Healthcare</span>
+          <span class="chip chip-ce">Education</span>
+          <span class="chip chip-ce">Role-Play</span>
+          <span class="chip chip-ce">Jailbreak</span>
+        </div>
+        <ul style="padding-left: 18px; font-size: 0.92rem; color: var(--ink-soft); margin-bottom: 0;">
+          <li><strong>Healthcare</strong> — HuatuoGPT, AMIE, MediQ, HealthBench, MindEval.</li>
+          <li><strong>Education</strong> — MathDial, SocraticLM, EduDial, SAFETUTORS, TeachLM.</li>
+          <li><strong>Role-Play</strong> — PIPPA, CharacterLLM, CharacterBench, RMTBench.</li>
+          <li><strong>Jailbreak</strong> — Crescendo, MHJ, ActorAttack, SafeDialBench.</li>
+        </ul>
+        <a class="card-link mt-5" href="tasks-ce.html">Go to Conversational Engagement →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Methods band -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">How do we make LLMs better at multi-turn?</div>
+      <h2>Three methodological pillars.</h2>
+      <p>The improvement landscape clusters into three complementary strategies. Most real deployments combine all three — an SFT'd domain model with retrieval over a medical KG and an agent-level clarification policy.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="pillar meth">
+        <div class="pillar-num">1</div>
+        <h3>Model-Centric</h3>
+        <p class="muted">Directly refine the LLM to handle sequential dialogue dynamics — in-context learning, SFT on realistic multi-turn data, multi-turn RL (DMPO, M-DPO, ArCHer), and memory-aware architectures (Recurrent Memory Transformer, HMT, RWKV).</p>
+      </div>
+      <div class="pillar meth">
+        <div class="pillar-num">2</div>
+        <h3>External Integration</h3>
+        <p class="muted">Leverage resources outside the model: episodic memory (LongMemEval, MemTree, HyperMem), retrieval augmentation (MTRAG, CORAL, RAD-Bench, RAGate), knowledge graphs (SURGE, D-SMART, GAP).</p>
+      </div>
+      <div class="pillar meth">
+        <div class="pillar-num">3</div>
+        <h3>Agent-Based</h3>
+        <p class="muted">Treat the LLM as part of a larger, proactive system: ReAct / Reflexion / Toolformer single agents; role-based multi-agent (CAMEL, ChatDev, MetaGPT); debate and dynamic composition (AutoAgents, AgentVerse).</p>
+      </div>
+    </div>
+    <div class="mt-6 center">
+      <a class="btn btn-outline" href="methods.html">Full methods review →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Challenges band -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">What's still hard</div>
+      <h2>Five open-challenge areas.</h2>
+      <p>The final third of the survey maps the open problems — not as a grab-bag list but as a structured diagnosis of <em>where</em> in the dialogue lifecycle things still break, and <em>which</em> current research threads are working on each failure.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card card-accent-chal">
+        <h3>Context Understanding</h3>
+        <p class="muted">Degradation over distance; anaphora / ellipsis; clarification policy; the "lost in conversation" problem.</p>
+      </div>
+      <div class="card card-accent-chal">
+        <h3>Complex Reasoning Across Turns</h3>
+        <p class="muted">Error propagation; topic switching; proactive information seeking; multilingual / code-switching contexts.</p>
+      </div>
+      <div class="card card-accent-chal">
+        <h3>Adaptation &amp; Learning</h3>
+        <p class="muted">Dynamic preference adaptation; persistent knowledge update; robustness to adversarial trajectories and drifting misinformation.</p>
+      </div>
+      <div class="card card-accent-chal">
+        <h3>Evaluation</h3>
+        <p class="muted">Scalable data curation; turn-level rubrics vs. trajectory-level metrics; LLM-judge biases (verbosity, self-enhancement).</p>
+      </div>
+      <div class="card card-accent-chal">
+        <h3>Ethical &amp; Safety Issues</h3>
+        <p class="muted">Bias amplification over turns; privacy leakage via iterative probes; human–AI overtrust, emotional dependence, companion-risk.</p>
+      </div>
+      <div class="card card-accent-chal" style="background: var(--ochre-tint); border-top-color: var(--ochre);">
+        <h3 style="color: var(--ochre);">→ Challenges page</h3>
+        <p class="muted">Each challenge gets its full story: where it breaks, what the community is trying, and which benchmarks test it.</p>
+        <a class="card-link" href="challenges.html">Open the roadmap →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-crimson">
+  <div class="container container-narrow center">
+    <div class="eyebrow" style="color: var(--crimson-ink);">Reference this work</div>
+    <h2 style="margin-top: 0;">Cite the survey.</h2>
+    <p class="muted" style="max-width: 50ch; margin: 0 auto var(--space-5);">
+      If this survey or its companion website has helped your research, please cite us. The BibTeX
+      record below is also available on the <a href="about.html#cite">Cite page</a> with one-click copy.
+    </p>
+    <div class="bib-box" style="text-align: left; max-width: 740px; margin: 0 auto;">
+      <button class="bib-copy">Copy</button>
+      <pre class="bib-body" style="background: transparent; border: none; padding: 0; color: inherit; line-height: 1.55; margin: 0;">@article{li2025beyond,
+  title   = {Beyond Single-Turn: A Survey on Multi-Turn Interactions with Large Language Models},
+  author  = {Li, Yubo and Shen, Xiaobin and Yao, Xinyu and Ding, Xueying and
+             Miao, Yidi and Krishnan, Ramayya and Padman, Rema},
+  journal = {arXiv preprint arXiv:2504.04717},
+  year    = {2025}
+}</pre>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/partials.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

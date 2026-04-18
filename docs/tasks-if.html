@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Instruction Following — Beyond Single-Turn</title>
+<meta name="description" content="Multi-turn instruction following: general IF benchmarks, math dialogue, and interactive coding." />
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="page-badge" style="color: var(--sage);">Task Family &nbsp;·&nbsp; Part II.A</div>
+    <h1 style="max-width: 22ch;">Multi-Turn Instruction Following.</h1>
+    <p class="lead" style="max-width: 68ch;">
+      When the user's intent is <em>explicit</em>, the job of the model is execution precision
+      over many turns: satisfy constraints, track evolving requirements, refuse to drift under
+      sycophantic pressure, ask a clarifying question when the request is ambiguous.
+      This page covers the three principal domains — <strong>General IF</strong>,
+      <strong>Math</strong>, and <strong>Coding</strong>.
+    </p>
+    <div class="pill-row">
+      <a class="anchor-chip" href="#general">General IF</a>
+      <a class="anchor-chip" href="#math">Math</a>
+      <a class="anchor-chip" href="#coding">Coding</a>
+    </div>
+  </div>
+</section>
+
+<!-- General IF -->
+<section id="general" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" style="color: var(--sage);">IF — Part 1</div>
+      <h2 style="margin-top:0;">General Instruction Following</h2>
+      <p>Cross-domain benchmarks that exercise instruction precision across mixed-topic conversations. This is where the multi-turn literature started — and where most of the methodological debates about judges, rubrics, and constraint tracking still play out.</p>
+    </div>
+
+    <div class="prose">
+      <p>
+        Multi-turn IF descends from <strong>MT-Bench</strong> — 80 two-turn dialogues with
+        GPT-4 as judge, introduced by Zheng et al. (2023). Its influence on the field is hard
+        to overstate: nearly every subsequent IF benchmark expands MT-Bench on one of four
+        axes. <strong>Length</strong> (MT-Bench++, MT-Bench-101) stretches the horizon past
+        two turns. <strong>Ability taxonomy</strong> (MT-Eval, bai et al.'s perceptivity /
+        adaptability / interactivity split) decomposes what "good IF" means. <strong>Multilinguality</strong>
+        (M2Lingual, Multi-IF) stresses cross-lingual constraint handling.
+        <strong>Fairness</strong> (FairMT-Bench, 10k conversations) probes whether biased
+        responses emerge over turns even when single-turn prompts look clean.
+      </p>
+      <p>
+        Later benchmarks sharpened "good IF" in subtler directions: <strong>clarification policy</strong>
+        — when should the model ask rather than guess? — has gone from aspirational
+        (AQA-Bench) to operational (Clarify-When-Necessary, Huang 2025). <strong>Structural
+        conversation flow</strong> (StructFlowBench) and <strong>instruction hierarchy</strong>
+        (IHEval) test whether models respect layered rules. <strong>Consistency under
+        pressure</strong> (FIRM, with its PWC and CARG metrics) measures how easily user
+        pushback flips a correct answer. <strong>TURNWISEEVAL</strong> pairs each multi-turn
+        dialogue with a semantically matched single-turn variant to cleanly isolate the
+        multi-turn effect.
+      </p>
+      <p>
+        The running theme across these benchmarks is <em>that adding turns doesn't solve
+        failures; it reveals new ones</em>. Context decay over distance (bai2024mt,
+        sirdeshmukh2025multichallenge, laban2025lost) degrades correctness even when every
+        individual instruction is trivially simple. Sycophancy gets worse as dialogue
+        lengthens. And basic clarification — the single most pedagogically valuable
+        multi-turn behavior — remains absent in most models.
+      </p>
+    </div>
+
+    <hr class="ornament"/>
+
+    <div class="grid grid-3">
+      <div class="card card-accent-if">
+        <h3>MT-Bench</h3>
+        <div class="chip chip-if">General · 2023</div>
+        <p class="muted mt-3">80 two-turn dialogs, GPT-4-as-judge. The foundation the rest of the field builds on.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>MT-Eval</h3>
+        <div class="chip chip-if">General · 2024</div>
+        <p class="muted mt-3">Four-ability taxonomy: follow-up, refinement, expansion, recollection.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>FairMT-Bench</h3>
+        <div class="chip chip-if">Fairness · 2024</div>
+        <p class="muted mt-3">10k dialogues; explicit and implicit bias amplification across turns.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>StructFlowBench</h3>
+        <div class="chip chip-if">Structure · 2025</div>
+        <p class="muted mt-3">155 dialogs × 4.15 turns; structural-flow adherence under multi-turn constraints.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>FIRM</h3>
+        <div class="chip chip-if">Consistency · 2025</div>
+        <p class="muted mt-3">700 dialogs × 9 turns; First Sway Round, PWC, CARG — how sycophantic is the model under challenge?</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>TURNWISEEVAL</h3>
+        <div class="chip chip-if">General · 2026</div>
+        <p class="muted mt-3">Paired single- vs. multi-turn variants to isolate the multi-turn effect cleanly.</p>
+      </div>
+    </div>
+    <p class="mt-5 muted" style="font-size: 0.9rem;">See the full audit on the <a href="benchmarks.html?family=IF&domain=General">Benchmarks page</a>.</p>
+  </div>
+</section>
+
+<!-- IF Math -->
+<section id="math" class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" style="color: var(--sage);">IF — Part 2</div>
+      <h2 style="margin-top:0;">Mathematical Dialogue</h2>
+      <p>Math is the first domain where multi-turn decisively out-performs single-turn — iterative correction, tool-assisted arithmetic, and teaching-oriented scaffolding each require conversational turns, not longer prompts.</p>
+    </div>
+
+    <div class="prose">
+      <p>
+        Multi-turn math benchmarks split cleanly into two evaluation families. The
+        <strong>solving family</strong> — MathChat-Bench, MINT, SBSC — measures whether
+        iterative feedback makes the model arrive at the correct final answer. MINT (≤5 turns)
+        formalizes interactive feedback; MathChat organizes four follow-up sub-tasks (QA,
+        error correction, error analysis, problem generation); SBSC pushes into Olympiad
+        territory with AMC / AIME / MathOdyssey-level step-by-step code execution.
+      </p>
+      <p>
+        The <strong>tutoring family</strong> measures something different and arguably harder:
+        pedagogical quality. Can the model scaffold, probe misconceptions, withhold the answer
+        when appropriate? <strong>MathDial</strong> introduced this frame with 2,861 tutoring
+        dialogues between teachers and student-LLM pairs, along with Success@k / Telling@k
+        metrics. <strong>MRBench</strong> and <strong>Beyond Final Answers</strong> added
+        rubric-driven evaluation; <strong>Intent Matters</strong> layered on pedagogical
+        intent annotations. A striking empirical finding: fine-tuning a small model on
+        MathDial outperforms prompting a much larger model on the same tutoring tasks.
+      </p>
+      <p>
+        On the methods side, <strong>M-DPO / M-KTO</strong> (xiong2409building) show that
+        multi-turn preference optimization pays off — MATH performance rises 77.5 → 83.9 —
+        and <strong>MathChat-Agent</strong> shows that the right protocol matters as much
+        as the model size. Multi-turn math is also where the earliest work on distinguishing
+        "solving" from "teaching" took shape; both frames now appear across CE domains too.
+      </p>
+    </div>
+
+    <blockquote>
+      "The most important finding from multi-turn math evaluation is not that bigger models do
+      better — it's that tutoring is a <em>different</em> capability from solving, and that
+      SFT on tutoring dialogues beats prompting on tutoring tasks." &mdash; adapted from
+      Macina et al., MathDial
+    </blockquote>
+
+    <div class="grid grid-3 mt-6">
+      <div class="card card-accent-if">
+        <h3>MathDial</h3>
+        <div class="chip chip-if">Tutor · 2023</div>
+        <p class="muted mt-3">2,861 tutoring dialogues; defines the teacher-student multi-turn frame.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>MINT</h3>
+        <div class="chip chip-if">Solve · 2023</div>
+        <p class="muted mt-3">Interactive reasoning with execution and language feedback; ≤5 turns.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>M-DPO / M-KTO</h3>
+        <div class="chip chip-if">Method · 2024</div>
+        <p class="muted mt-3">Multi-turn preference optimization; +6-10% on MATH.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>MRBench</h3>
+        <div class="chip chip-if">Tutor · 2025</div>
+        <p class="muted mt-3">Rubric-driven tutor evaluation over pedagogical dimensions.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>SBSC</h3>
+        <div class="chip chip-if">Olympiad · 2025</div>
+        <p class="muted mt-3">AMC / AIME / MathOdyssey step-by-step code-trace performance.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>Beyond Final Answers</h3>
+        <div class="chip chip-if">Tutor · 2025</div>
+        <p class="muted mt-3">Evaluates tutoring quality beyond correctness of the final answer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IF Coding -->
+<section id="coding" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" style="color: var(--sage);">IF — Part 3</div>
+      <h2 style="margin-top:0;">Interactive Coding</h2>
+      <p>Coding is inherently conversational — specify, generate, execute, debug. Multi-turn coding benchmarks pair generation with execution feedback and test whether the model can refine, clarify, and switch modalities (text ↔ code) appropriately.</p>
+    </div>
+
+    <div class="prose">
+      <p>
+        The interactive-coding lineage begins with <strong>CodeGen / MTPB</strong> (2022) and
+        <strong>InterCode</strong> (2023), which introduced a sandbox loop with Try-again /
+        ReAct / Plan-and-Solve protocols. The critical observation: pairing generation with
+        <em>execution feedback</em> closes most of the gap between small and large models on
+        many coding tasks — the model simply needs a signal to correct against.
+      </p>
+      <p>
+        Methods split along three axes. <strong>Data-driven refinement</strong> —
+        <strong>OpenCodeInterpreter</strong>'s 68k-pair Code-Feedback dataset shows that
+        training on iterative refinement dialogues transfers to real use.
+        <strong>Modality steering</strong> — <strong>CodeSteer</strong> learns when to reason
+        in text versus when to emit code and execute. <strong>Socratic debugging</strong> —
+        <strong>TreeInstruct</strong> structures questions, not fixes, as the bug-finding
+        signal; <strong>ClarifyGPT</strong> pushes the same idea into specification.
+      </p>
+      <p>
+        Domain-specific branches cover <strong>SQL</strong> (MMSQL's 6,493 dialogs with EM /
+        EX / Dual Assessment, DySQLBench's dynamic multi-turn text-to-SQL), <strong>EHR
+        agents</strong> (EHRAgent), and <strong>security</strong> (MT-Sec adds security-aware
+        scoring to correctness). The newest wave — <strong>CONVCODEWORLD</strong>,
+        <strong>CodeFlowBench</strong>, <strong>MultiCodeIF</strong> — pushes iterative
+        refinement horizons longer and formalizes fine-grained IF-with-feedback. The open
+        research question is <em>which iterative protocol converges fastest and on what
+        class of problem</em> — still unclear empirically.
+      </p>
+    </div>
+
+    <div class="pull">
+      Execution feedback is the single most effective signal in interactive coding. Almost every method in this space converges on some form of it — the question is how to structure the loop.
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card card-accent-if">
+        <h3>InterCode</h3>
+        <div class="chip chip-if">Coding · 2023</div>
+        <p class="muted mt-3">Try-again / ReAct / Plan-and-Solve; 10-turn coding interaction sandbox.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>OpenCodeInterpreter</h3>
+        <div class="chip chip-if">Method · 2024</div>
+        <p class="muted mt-3">68k Code-Feedback pairs; closes the gap with proprietary interpreters.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>CodeSteer</h3>
+        <div class="chip chip-if">Method · 2025</div>
+        <p class="muted mt-3">Learned text-vs-code modality switching.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>MMSQL · DySQLBench</h3>
+        <div class="chip chip-if">SQL · 2024-25</div>
+        <p class="muted mt-3">Conversational text-to-SQL with reformulation and follow-ups.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>TreeInstruct</h3>
+        <div class="chip chip-if">Debug · 2024</div>
+        <p class="muted mt-3">Tree-structured Socratic debugging — questions as the primary signal.</p>
+      </div>
+      <div class="card card-accent-if">
+        <h3>MT-Sec</h3>
+        <div class="chip chip-if">Security · 2025</div>
+        <p class="muted mt-3">Correctness + security scoring over multi-turn code generation.</p>
+      </div>
+    </div>
+    <p class="mt-5 muted" style="font-size: 0.9rem;">See the full coding benchmark audit on the <a href="benchmarks.html?family=IF&domain=Coding">Benchmarks page</a>.</p>
+  </div>
+</section>
+
+<!-- Summary strip -->
+<section class="section">
+  <div class="container container-narrow center">
+    <hr class="ornament" />
+    <div class="eyebrow">Continue</div>
+    <h2 style="margin-top: 0;">The other task family.</h2>
+    <p class="muted" style="max-width: 50ch; margin: 0 auto var(--space-5);">
+      Conversational Engagement — where intent is open and the model plays a consultative role —
+      covers healthcare, education, role-play, and jailbreak.
+    </p>
+    <a class="btn btn-primary" href="tasks-ce.html">Explore Conversational Engagement →</a>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/partials.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Improvement Methods — Beyond Single-Turn</title>
+<meta name="description" content="The three pillars of multi-turn LLM improvement: model-centric, external integration, and agent-based methods." />
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="page-badge" style="color: var(--indigo);">Improvement Methods · Part IV</div>
+    <h1 style="max-width: 30ch;">Three pillars of multi-turn improvement.</h1>
+    <p class="lead" style="max-width: 70ch;">
+      We organize the improvement literature into three complementary strategies. They are
+      rarely mutually exclusive — a deployed medical agent typically combines domain SFT,
+      retrieval over a medical KG, and an agent-level clarification policy. But each pillar
+      has its own internal structure, and understanding them separately clarifies what a given
+      method actually contributes.
+    </p>
+    <div class="pill-row">
+      <a class="anchor-chip" href="#model-centric">Model-Centric</a>
+      <a class="anchor-chip" href="#external">External Integration</a>
+      <a class="anchor-chip" href="#agent">Agent-Based</a>
+    </div>
+  </div>
+</section>
+
+<!-- Model-centric -->
+<section id="model-centric" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" style="color: var(--indigo);">Pillar 1</div>
+      <h2 style="margin-top: 0;">Model-Centric Approaches</h2>
+      <p>Directly refine the LLM to handle sequential dialogue dynamics. Four sub-families: in-context learning, supervised fine-tuning, multi-turn RL, and new architectures designed for long context.</p>
+    </div>
+
+    <div class="prose">
+      <p>
+        <strong>In-context learning (ICL).</strong> The simplest improvement path — shape the
+        prompt. Surveys include Dong et al. (2022) and the long Chain-of-Thought literature
+        (Wei 2022). An interesting multi-turn finding is that exemplar-based ICL sometimes
+        <em>hurts</em>: <strong>AQA-Bench</strong> observes that adding dialogue examples
+        distracts the model from the actual task. Recent work moves beyond raw-history prompts
+        to structural prompting (<strong>GraphIF</strong>) and state-update prompting
+        (Liu 2025), which explicitly represent the evolving dialogue state.
+      </p>
+      <p>
+        <strong>Supervised fine-tuning (SFT).</strong> The workhorse of multi-turn improvement.
+        Two themes dominate. First, <em>realistic data curation</em> — Vicuna, UltraChat,
+        PlatoLM, Parrot, and the newest wave: <strong>ConsistentChat</strong> (chen 2025),
+        <strong>ReSURE</strong> (du 2025), data selection (Li MDS 2026),
+        <strong>PERT</strong> (Ma 2025), <strong>DocTalk</strong> (Lee 2025). Second,
+        <em>optimized training</em> — loss weighting, FlashAttention, multi-query attention,
+        with method work extending into steering (<strong>CodeSteer</strong>). In domain
+        work, SFT is overwhelmingly the default: every medical LLM in the survey
+        (DISC-MedLLM, Zhongjing, BiMediX, HuatuoGPT, CPsyCoun) and most educational tutors
+        rely on domain-SFT.
+      </p>
+      <p>
+        <strong>Reinforcement learning.</strong> Single-turn foundations — <strong>PPO</strong>
+        (ouyang 2022), <strong>DPO</strong> (rafailov 2023), <strong>CaPO</strong>
+        (sun 2024), <strong>ACT</strong> (chen 2024) — extend to genuine multi-turn RL in
+        <strong>DMPO</strong> (shi 2024), <strong>M-DPO</strong> / <strong>M-KTO</strong>
+        (xiong 2024), <strong>ArCHer</strong> (zhou 2024), <strong>SCoRe</strong>
+        (kumar 2024), and <strong>REFUEL</strong> (gao 2024). Multi-turn RL benchmarks —
+        <strong>LMRL-Gym</strong> (abdulhai 2023), <strong>SWEET-RL / ColBench</strong>
+        (zhou 2025) — make systematic evaluation possible. Turn-level control enters with
+        <strong>ITPO</strong> (wang 2026) and <strong>MTSA</strong> (guo 2025).
+      </p>
+      <p>
+        <strong>New architectures.</strong> Long-context architectures with memory or state
+        carry-over: <strong>Cached Transformers</strong> (zhang 2024),
+        <strong>MemBART</strong> (wu 2023), <strong>Transformer-XL</strong> (dai 2019),
+        <strong>Recurrent Memory Transformer</strong> (bulatov 2022), <strong>HMT</strong>
+        (he 2024), and <strong>RWKV</strong> (peng 2023, pan 2025). These differ from RAG or
+        external memory: the state is <em>inside</em> the model.
+      </p>
+    </div>
+
+    <div class="grid grid-4 mt-6">
+      <div class="card card-accent-meth">
+        <h3>In-Context Learning</h3>
+        <p class="muted" style="font-size:0.88rem;">Prompt-based adaptation; structural / state-update prompts beat raw history on long horizons.</p>
+      </div>
+      <div class="card card-accent-meth">
+        <h3>SFT</h3>
+        <p class="muted" style="font-size:0.88rem;">Data curation + optimized training; dominant in domain work (medical, educational, roleplay).</p>
+      </div>
+      <div class="card card-accent-meth">
+        <h3>Multi-Turn RL</h3>
+        <p class="muted" style="font-size:0.88rem;">DMPO, M-DPO/M-KTO, ArCHer, SCoRe, REFUEL — with benchmarks LMRL-Gym and SWEET-RL / ColBench.</p>
+      </div>
+      <div class="card card-accent-meth">
+        <h3>Architectures</h3>
+        <p class="muted" style="font-size:0.88rem;">Memory-aware / recurrent / state-carrying: RMT, HMT, RWKV, Cached Transformers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- External integration -->
+<section id="external" class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" style="color: var(--indigo);">Pillar 2</div>
+      <h2 style="margin-top: 0;">External Integration Approaches</h2>
+      <p>Give the model resources outside its weights: episodic memory, retrieval, knowledge graphs. These methods shine in precisely the places model-centric ones struggle — very long horizons, fact-dense domains, personalization.</p>
+    </div>
+
+    <div class="prose">
+      <p>
+        <strong>Memory-augmented methods.</strong> The newest sub-field inside this pillar.
+        <strong>MemPrompt</strong> (madaan 2022) pioneered it; <strong>LongMemEval</strong>
+        (wu 2024) formalized evaluation. Modern work includes <strong>episodic memory</strong>
+        (pink 2025 position paper), <strong>MemTree</strong> (rezazadeh 2024),
+        <strong>RMM</strong> (tan 2025), <strong>HyperMem</strong> (yue 2026),
+        <strong>HingeMem</strong> (zhong 2026), <strong>TSUBASA</strong> (zhang 2026), and
+        <strong>PALACE</strong> (liu 2025). What distinguishes these from RAG is that memory
+        is <em>accumulated across sessions</em>, not just retrieved from a fixed corpus.
+      </p>
+      <p>
+        <strong>Retrieval-augmented generation (RAG).</strong> Foundations in Lewis 2020 and
+        Wizard-of-Wikipedia (dinan 2019); <strong>DPR</strong> (karpukhin 2020),
+        <strong>BlenderBot 2.0</strong> broadened to dialogue. Multi-turn benchmarks now
+        include <strong>MTRAG</strong> (katsis 2025), <strong>CORAL</strong> (cheng 2024),
+        <strong>RAD-Bench</strong> (kuo 2025). The most interesting development is
+        <em>adaptive</em> retrieval — <strong>RAGate</strong> (wang 2024) learns when to
+        retrieve at all, <strong>DH-RAG</strong> (zhang 2025) adapts to dialogue history,
+        <strong>CID-GraphRAG</strong> (zhu 2025) and alushi 2026 compare retrieval
+        strategies.
+      </p>
+      <p>
+        <strong>Knowledge graph integration.</strong> GNN + KG embeddings for conversational
+        augmentation (wang 2024, jain 2024, Gao 2025); dialogue-centred KGs —
+        <strong>SURGE</strong> (kang 2023), <strong>Paths-over-Graph</strong> (tan 2025).
+        <strong>Graph RAG</strong> variants — wang 2024 GARLIC, mavromatis 2024 GNN-RAG,
+        yang 2025 pseudo-graph. And dialogue-conditioned KG methods:
+        <strong>sheikhi 2025 attachment</strong>, <strong>D-SMART</strong> (lei 2025), and
+        <strong>GAP</strong> (zhong 2025) — the latter bridging graph reasoning with
+        dialogue plan-execute loops.
+      </p>
+    </div>
+
+    <div class="grid grid-3 mt-6">
+      <div class="card card-accent-meth">
+        <h3>Episodic memory</h3>
+        <p class="muted" style="font-size:0.88rem;">LongMemEval, MemTree, HyperMem, HingeMem, TSUBASA, PALACE — memory accumulating across sessions.</p>
+      </div>
+      <div class="card card-accent-meth">
+        <h3>Retrieval (RAG)</h3>
+        <p class="muted" style="font-size:0.88rem;">MTRAG, CORAL, RAD-Bench + adaptive variants (RAGate, DH-RAG, CID-GraphRAG).</p>
+      </div>
+      <div class="card card-accent-meth">
+        <h3>Knowledge graphs</h3>
+        <p class="muted" style="font-size:0.88rem;">SURGE, Paths-over-Graph, GARLIC, D-SMART, GAP — graph reasoning integrated with dialogue.</p>
+      </div>
+    </div>
+
+    <blockquote>
+      Memory, retrieval, and knowledge-graph methods are converging: the 2025-26 wave shows
+      hybrid systems that retrieve <em>from</em> graphs, store <em>in</em> episodic memory,
+      and dispatch retrieval decisions dynamically during dialogue.
+    </blockquote>
+  </div>
+</section>
+
+<!-- Agent-based -->
+<section id="agent" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" style="color: var(--indigo);">Pillar 3</div>
+      <h2 style="margin-top: 0;">Agent-Based Approaches</h2>
+      <p>The LLM becomes a component in a larger, proactive system: tool use, planning, memory control, or multi-agent coordination. The survey treats agents as adjacent scope, but they are essential for understanding how the best multi-turn systems are actually built.</p>
+    </div>
+
+    <div class="prose">
+      <p>
+        <strong>Single-agent approaches.</strong> The canonical primitives: <strong>ReAct</strong>
+        (yao 2023) interleaves reasoning and acting; <strong>Toolformer</strong> (schick 2023)
+        teaches the model when to call tools; <strong>HuggingGPT</strong> (shen 2023)
+        coordinates specialist models; <strong>Reflexion</strong> (shinn 2023) adds
+        self-critique; <strong>Voyager</strong> (wang 2023) is the flagship open-ended agent
+        demonstration. Evaluation lives in <strong>AgentBench</strong> (liu 2023).
+      </p>
+      <p>
+        <strong>Multi-agent approaches.</strong> Three architectures are emerging as patterns.
+        <em>Role-based</em>: <strong>CAMEL</strong> (li 2023), <strong>ChatDev</strong>
+        (qian 2024), <strong>SELF-COLLABORATION</strong> (dong 2024),
+        <strong>MetaGPT</strong> (hong 2023), <strong>MoSA</strong> (yang 2025),
+        <strong>BUTTON</strong> (chen 2024). <em>Debate</em>: Du-debate (du 2023),
+        <strong>Generative Agents</strong> (park 2023). <em>Dynamic composition</em>:
+        <strong>AutoAgents</strong> (chen 2024), <strong>AgentVerse</strong> (chen 2023).
+      </p>
+      <p>
+        The open problems in this pillar are different from the others: role misassignment,
+        communication overhead, verification, and — a concerning emerging thread — <em>emergent
+        collusion</em> among agents against safety objectives (han 2024, cemri 2025, hammond
+        2025). These become especially acute in multi-turn settings where agents remember
+        prior negotiation outcomes.
+      </p>
+    </div>
+
+    <div class="grid grid-3 mt-6">
+      <div class="card card-accent-meth">
+        <h3>Single agent</h3>
+        <p class="muted" style="font-size:0.88rem;">ReAct, Reflexion, Toolformer, HuggingGPT, Voyager — reasoning + tool use patterns.</p>
+      </div>
+      <div class="card card-accent-meth">
+        <h3>Role-based multi-agent</h3>
+        <p class="muted" style="font-size:0.88rem;">CAMEL, ChatDev, MetaGPT, MoSA, BUTTON — pre-assigned specialist roles.</p>
+      </div>
+      <div class="card card-accent-meth">
+        <h3>Debate &amp; dynamic</h3>
+        <p class="muted" style="font-size:0.88rem;">Du-debate, Generative Agents, AutoAgents, AgentVerse — emergent structure at inference time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Synthesis -->
+<section class="section">
+  <div class="container container-narrow">
+    <hr class="ornament" />
+    <div class="eyebrow">Synthesis</div>
+    <h2 style="margin-top: 0;">How the three pillars combine in practice.</h2>
+    <div class="prose">
+      <p>
+        Real deployments rarely live inside a single pillar. A production medical agent is
+        likely to combine (a) domain-SFT'd base model + RLHF on clinician preferences
+        (model-centric), (b) retrieval over a medical knowledge graph plus episodic memory of
+        patient context (external integration), and (c) a clarification sub-agent plus a
+        tool-use sub-agent for drug lookup (agent-based).
+      </p>
+      <p>
+        Similarly, a pedagogical agent might pair an SFT'd tutor model with a student-model
+        sub-agent (simulation-based preference tuning), plus retrieval over the textbook and
+        a safety-tutor sub-agent. The pillars are <em>design axes</em>, not mutually
+        exclusive strategies. Reading the methods section as a whole helps identify which
+        axis a given method targets — and which gaps remain.
+      </p>
+      <p>
+        For the open questions each pillar leaves unresolved — and the benchmarks that
+        expose them — see the next section on <a href="challenges.html">open challenges</a>.
+      </p>
+    </div>
+
+    <div class="center mt-6">
+      <a class="btn btn-primary" href="challenges.html">Go to Challenges →</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/partials.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

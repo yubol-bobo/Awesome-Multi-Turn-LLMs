@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About &amp; Cite — Beyond Single-Turn</title>
+<meta name="description" content="Authors, scope, review methodology, BibTeX citation, and links for the CMU multi-turn LLM survey." />
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="section">
+  <div class="container container-narrow">
+    <div class="page-badge">About &amp; Cite</div>
+    <h1 style="max-width: 22ch;">About this survey.</h1>
+    <p class="lead">
+      A task-oriented review of <em>multi-turn interaction with LLMs</em>, produced at Carnegie
+      Mellon University. The paper's first draft was completed in April 2025 and extended with a
+      transparent PRISMA-ScR-inspired review protocol through April 2026.
+    </p>
+
+    <hr class="ornament" />
+
+    <div class="eyebrow">Authors</div>
+    <h2 style="margin-top: 0;">Who wrote this.</h2>
+    <div class="grid grid-2 mt-3">
+      <div class="card">
+        <h3>Yubo Li <span class="faint mono" style="font-size:0.75rem;">(lead)</span></h3>
+        <p class="muted">Heinz College, Carnegie Mellon University.<br/>
+        <a href="mailto:yubol@andrew.cmu.edu" class="mono" style="font-size:0.88rem;">yubol@andrew.cmu.edu</a></p>
+      </div>
+      <div class="card">
+        <h3>Xiaobin Shen <span class="faint" style="font-size:0.8rem;">†</span></h3>
+        <p class="muted">Carnegie Mellon University.<br/>
+        <a href="mailto:xiaobins@andrew.cmu.edu" class="mono" style="font-size:0.88rem;">xiaobins@andrew.cmu.edu</a></p>
+      </div>
+      <div class="card">
+        <h3>Yidi Miao <span class="faint" style="font-size:0.8rem;">†</span></h3>
+        <p class="muted">Carnegie Mellon University.<br/>
+        <a href="mailto:yidim@andrew.cmu.edu" class="mono" style="font-size:0.88rem;">yidim@andrew.cmu.edu</a></p>
+      </div>
+      <div class="card">
+        <h3>Xueying Ding <span class="faint" style="font-size:0.8rem;">‡</span></h3>
+        <p class="muted">Carnegie Mellon University.<br/>
+        <a href="mailto:xding2@andrew.cmu.edu" class="mono" style="font-size:0.88rem;">xding2@andrew.cmu.edu</a></p>
+      </div>
+      <div class="card">
+        <h3>Xinyu Yao <span class="faint" style="font-size:0.8rem;">‡</span></h3>
+        <p class="muted">Carnegie Mellon University.<br/>
+        <a href="mailto:xinyuyao@andrew.cmu.edu" class="mono" style="font-size:0.88rem;">xinyuyao@andrew.cmu.edu</a></p>
+      </div>
+      <div class="card">
+        <h3>Krishnan Ramayya</h3>
+        <p class="muted">Carnegie Mellon University.<br/>
+        <a href="mailto:rk2x@andrew.cmu.edu" class="mono" style="font-size:0.88rem;">rk2x@andrew.cmu.edu</a></p>
+      </div>
+      <div class="card">
+        <h3>Rema Padman <span class="faint" style="font-size:0.8rem;">(advisor)</span></h3>
+        <p class="muted">Heinz College, Carnegie Mellon University.<br/>
+        <a href="mailto:rpadman@andrew.cmu.edu" class="mono" style="font-size:0.88rem;">rpadman@andrew.cmu.edu</a></p>
+      </div>
+    </div>
+    <p class="muted mt-4" style="font-size: 0.86rem;">
+      <span class="faint">†</span> Co-second authors (equal contribution).
+      <span class="faint">‡</span> Co-third authors (equal contribution).
+    </p>
+
+    <hr class="ornament" />
+
+    <div id="scope"></div>
+    <div class="eyebrow">Scope</div>
+    <h2 style="margin-top: 0;">What this survey covers — and what it doesn't.</h2>
+    <div class="prose">
+      <p>
+        The <strong>core scope</strong> is settings in which an LLM participates in sequential
+        text-based interaction and is evaluated on its ability to maintain context, adapt
+        across turns, and achieve task success along a dialogue trajectory. We organize this
+        literature into two task families (instruction following and conversational
+        engagement) spanning six high-impact domains (math, coding, healthcare, education,
+        role-play, jailbreak).
+      </p>
+      <p>
+        We treat <strong>LLM-based agents</strong> as adjacent rather than central. Agentic
+        systems often extend multi-turn interaction with tool use, explicit planning,
+        environment manipulation, or multi-agent coordination over richer action spaces. We
+        review them when they directly inform advances in multi-turn interaction but we do
+        not survey the agent literature exhaustively.
+      </p>
+      <p>
+        We exclude <strong>multimodal LLMs (MLLMs)</strong> from the main scope. Multimodal
+        systems involve substantially different observation spaces, task formulations, and
+        evaluation protocols. Limiting to non-multimodal settings keeps the scope coherent.
+      </p>
+      <p>
+        Borderline works are included when they directly inform multi-turn interaction. When
+        a paper's primary contribution lies in agent planning, environment control, or
+        multimodal perception, we treat it as adjacent rather than core.
+      </p>
+    </div>
+
+    <hr class="ornament" />
+
+    <div class="eyebrow">Methodology</div>
+    <h2 style="margin-top: 0;">How the corpus was built.</h2>
+    <div class="prose">
+      <p>
+        The original manuscript was largely completed in April 2025, and in the current
+        revision we retrospectively document the corpus-construction process used for that
+        version while extending the survey to papers available through April 2026 under the
+        same inclusion, exclusion, and boundary-setting rules.
+      </p>
+      <p>
+        Rather than claiming a fully prospective systematic review, we adopt a
+        PRISMA-ScR-inspired transparency protocol: the paper's Appendix
+        (<em>Review Methodology</em>) reports the search sources, keyword families, screening
+        stages, inclusion and exclusion criteria, and the logic by which papers were assigned
+        to the final corpus. This improves methodological transparency while remaining
+        consistent with the task-oriented narrative synthesis the survey provides.
+      </p>
+    </div>
+
+    <hr class="ornament" />
+
+    <div id="cite"></div>
+    <div class="eyebrow">Cite</div>
+    <h2 style="margin-top: 0;">BibTeX.</h2>
+    <p class="muted">If this survey or its companion website has helped your research, please cite us:</p>
+
+    <div class="bib-box">
+      <button class="bib-copy">Copy</button>
+      <pre class="bib-body" style="background: transparent; border: none; padding: 0; color: inherit; margin: 0;">@article{li2025beyond,
+  title   = {Beyond Single-Turn: A Survey on Multi-Turn Interactions with Large Language Models},
+  author  = {Li, Yubo and Shen, Xiaobin and Yao, Xinyu and Ding, Xueying and
+             Miao, Yidi and Krishnan, Ramayya and Padman, Rema},
+  journal = {arXiv preprint arXiv:2504.04717},
+  year    = {2025}
+}</pre>
+    </div>
+
+    <h3 class="mt-6">Quick links</h3>
+    <ul>
+      <li><a href="main.pdf" target="_blank" rel="noopener">Paper PDF</a> (if placed alongside this site in <code>docs/</code>)</li>
+      <li><a href="https://github.com/yubol-cmu/Awesome-Multi-Turn-LLMs" target="_blank" rel="noopener">GitHub repository</a> (source, paper LaTeX, supplemental data)</li>
+      <li><a href="benchmarks.html">Benchmark explorer</a></li>
+    </ul>
+
+    <hr class="ornament" />
+
+    <div class="eyebrow">Acknowledgements</div>
+    <div class="prose">
+      <p>
+        We thank collaborators and colleagues at Carnegie Mellon University for feedback
+        throughout the drafting of this survey. Bibliographic work, benchmark auditing, and
+        cross-cutting synthesis were aided by careful reviewer critique on the early version.
+        Any remaining errors or omissions are our own.
+      </p>
+    </div>
+
+    <hr class="ornament" />
+
+    <div class="eyebrow">Broader impact &amp; biases of this survey</div>
+    <h2 style="margin-top: 0;">Caveats.</h2>
+    <div class="prose">
+      <p>
+        This survey is itself subject to four biases, scoped to the review process (not
+        system-level ethics, which we treat in <a href="challenges.html#chal-ethics">Challenges</a>).
+      </p>
+      <ol>
+        <li><strong>Search / availability bias.</strong> Indexed English-language arXiv PDFs
+          are over-represented; lower-resource regions and proprietary deployments are
+          under-represented.</li>
+        <li><strong>Deliberate scope bias.</strong> We exclude agentic-first and multimodal
+          systems from the core taxonomy.</li>
+        <li><strong>Taxonomic interpretation bias.</strong> Boundary papers could plausibly be
+          reassigned between IF and CE, or between method and task families.</li>
+        <li><strong>Domain-emphasis bias.</strong> Healthcare, education, role-play, and
+          jailbreak receive deeper treatment than equally deployed but less benchmarked
+          settings (customer service, legal, translation).</li>
+      </ol>
+      <p>
+        We frame this survey as a transparent task-oriented synthesis rather than an
+        exhaustive canon, and hope it will serve as a starting point for future extensions
+        into multimodal, embodied, and fully agentic multi-turn systems.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/partials.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

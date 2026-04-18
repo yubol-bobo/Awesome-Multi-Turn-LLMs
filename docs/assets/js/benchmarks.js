@@ -14,16 +14,25 @@
   var sortDir = 1;
   var rows = [];
 
-  fetch('assets/data/benchmarks.json')
-    .then(function (r) { return r.json(); })
-    .then(function (data) {
-      rows = data;
-      populateDomains();
-      renderRows();
-    })
-    .catch(function (err) {
-      tbody.innerHTML = '<tr><td colspan="10">Unable to load benchmark data. Serve over http(s), not file://. (' + err.message + ')</td></tr>';
-    });
+  // Prefer the inline data bundle (works over file://); fall back to fetch for backward compat
+  function init(data) {
+    rows = data;
+    populateDomains();
+    renderRows();
+  }
+  if (window.__BENCHMARKS__) {
+    try { init(window.__BENCHMARKS__); }
+    catch (err) {
+      tbody.innerHTML = '<tr><td colspan="10">Unable to render benchmarks. (' + err.message + ')</td></tr>';
+    }
+  } else {
+    fetch('assets/data/benchmarks.json')
+      .then(function (r) { return r.json(); })
+      .then(init)
+      .catch(function (err) {
+        tbody.innerHTML = '<tr><td colspan="10">Unable to load benchmark data. Serve over http(s), not file://. (' + err.message + ')</td></tr>';
+      });
+  }
 
   function populateDomains() {
     if (!selDomain) return;

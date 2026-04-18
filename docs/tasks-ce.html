@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Conversational Engagement — Beyond Single-Turn</title>
+<meta name="description" content="Multi-turn conversational engagement: overview, healthcare, education, role-play, and jailbreak." />
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="page-badge" style="color: var(--terra);">Task Family · Part II.B</div>
+    <h1 style="max-width: 22ch;">Multi-Turn Conversational Engagement.</h1>
+    <p class="lead" style="max-width: 68ch;">
+      When intent is <em>open, partial, or evolving</em>, the model stops being an instruction-executor
+      and becomes a consultant: doctor, tutor, character, collaborator. Evaluation measures
+      trajectory quality — empathy, pedagogy, proactivity, safety, realism over long horizons —
+      not just final-turn correctness.
+    </p>
+    <div class="pill-row">
+      <a class="anchor-chip" href="#overview">Overview</a>
+      <a class="anchor-chip" href="#healthcare">Healthcare</a>
+      <a class="anchor-chip" href="#education">Education</a>
+      <a class="anchor-chip" href="#roleplay">Role-Play</a>
+      <a class="anchor-chip" href="#jailbreak">Jailbreak</a>
+    </div>
+  </div>
+</section>
+
+<!-- Overview -->
+<section id="overview" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" style="color: var(--terra);">CE — Part 1</div>
+      <h2 style="margin-top:0;">Overview &amp; general benchmarks</h2>
+      <p>The CE family has its own "trunk" of general benchmarks that pre-date or generalize across domains. Together they trace a methodological arc: from labour-intensive dimensional human evaluation to rubric-scaffolded LLM judging.</p>
+    </div>
+
+    <div class="prose">
+      <p>
+        The CE lineage starts with <strong>ABC-Eval</strong> (2023) — 400 human-authored
+        dialogues, each scored on 16 behavioral dimensions (consistency, emotion, understanding,
+        engagingness, grammar, informativeness, quality, proactivity, relevance). ABC-Eval is the
+        gold standard of what careful multi-turn evaluation <em>costs</em>: unreproducibly
+        expensive in its original form. <strong>BotChat</strong> and
+        <strong>DialogBench</strong> push toward LLM-judge paradigms (UniEval, PairEval, GTEval,
+        bilingual human-likeness) to scale evaluation to hundreds or thousands of dialogues.
+      </p>
+      <p>
+        The most important 2025 contribution in this space is <strong>MultiChallenge</strong>,
+        which introduces instance-level rubrics specifically over the hard multi-turn failure
+        modes — <em>retention</em>, <em>recall</em>, <em>revision</em>, and
+        <em>non-sycophancy</em> — and validates judge-human alignment on each. A parallel
+        methodological thread is <strong>SimulatorArena</strong>, which asks whether user
+        simulators (increasingly common in evaluation pipelines) are reliable stand-ins for
+        real humans, and proposes behavioral-realism checks.
+      </p>
+    </div>
+
+    <div class="grid grid-4">
+      <div class="stat">
+        <div class="stat-num">16</div>
+        <div class="stat-label">ABC-Eval dimensions</div>
+        <div class="stat-sub">Human-judged: consistency, emotion, proactivity, relevance, and twelve more.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4</div>
+        <div class="stat-label">MultiChallenge failure axes</div>
+        <div class="stat-sub">Retention, recall, revision, non-sycophancy.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">9.8k</div>
+        <div class="stat-label">DialogBench dialogs</div>
+        <div class="stat-sub">Bilingual human-likeness comparison at scale.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">~80%</div>
+        <div class="stat-label">LLM-judge agreement</div>
+        <div class="stat-sub">With human raters — but with self-enhancement and verbosity bias.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Healthcare -->
+<section id="healthcare" class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" style="color: var(--terra);">CE — Healthcare</div>
+      <h2 style="margin-top:0;">Medical consultation dialogue</h2>
+      <p>The most methodologically mature CE sub-domain. Medical dialogue must simulate a doctor: proactive clarification ("chain-of-questioning"), history retention across turns, and grounding in verified medical knowledge.</p>
+    </div>
+
+    <div class="prose">
+      <p>
+        Medical-LLM development follows three arcs. The <strong>SFT-based</strong> arc —
+        <strong>DISC-MedLLM</strong>, <strong>BianQue</strong> (whose
+        <em>chain-of-questioning</em> explicitly models the proactivity a good clinician
+        practises), <strong>BiMediX</strong> bilingual, <strong>CPsyCoun</strong> and
+        <strong>PsycoLLM</strong> for mental health, <strong>SMILE</strong> for counseling
+        sessions scaled from single-QA pairs into multi-turn dialogues. The
+        <strong>full pipeline</strong> arc — <strong>Zhongjing</strong> adds pretraining +
+        SFT on CMeKG + RLHF, and <strong>HuaTuoGPT I &amp; II</strong> unifies stylistic
+        transfer across dialogue and QA. The <strong>DPO-extended</strong> arc —
+        <strong>Aquila-Med</strong>, <strong>Qilin-Med</strong> — adds preference learning
+        over physician-style responses.
+      </p>
+      <p>
+        The methodological peak of this domain is Google's <strong>AMIE</strong>: a doctor
+        agent trained via self-play over chain-of-reasoning dialogues, whose consultation
+        quality matches or exceeds clinicians on several benchmarks. Evaluation has shifted
+        from static QA (MedGPTEval, Liao-2023) to <strong>simulation-based</strong>
+        (AIE/SAPS, MMD-Eval, MediQ), <strong>robustness</strong> (MedFuzz), and
+        <strong>rubric-driven</strong> (HealthBench — 5,000 dialogues and 48k+
+        physician-authored rubrics).
+      </p>
+      <p>
+        The 2026 wave sharpens the rubrics further. <strong>MedMT-Bench</strong> probes
+        long-horizon coherence (22-turn average). <strong>CPGBench</strong> grades guideline
+        adherence. <strong>MedDialBench</strong> formalizes differential diagnosis over
+        sustained dialogue. <strong>MedDialogRubrics</strong> brings large-scale
+        rubric-based evaluation. <strong>MEDPI</strong> adds accreditation-grade scenarios.
+        <strong>MindEval</strong> isolates long-horizon mental-health dialogue with
+        dual-annotator (patient + expert) quality scoring. <strong>MINT</strong> stresses
+        premature-commitment failure modes.
+      </p>
+    </div>
+
+    <blockquote>
+      The newest generation of medical benchmarks does not ask "did the model give the right
+      answer?" — it asks "did the model know when <em>not</em> to give an answer yet?"
+    </blockquote>
+
+    <div class="grid grid-3">
+      <div class="card card-accent-ce">
+        <h3>AMIE</h3>
+        <div class="chip chip-ce">Healthcare · 2024</div>
+        <p class="muted mt-3">Self-play chain-of-reasoning doctor agent; matches or exceeds clinicians on consultation benchmarks.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>HuatuoGPT I/II · Zhongjing</h3>
+        <div class="chip chip-ce">Healthcare</div>
+        <p class="muted mt-3">Full pipeline: pretrain + SFT + RLHF; Chinese medical knowledge graph grounding.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>MediQ</h3>
+        <div class="chip chip-ce">Healthcare · 2024</div>
+        <p class="muted mt-3">Active-inquiry benchmark: tests whether the model commits prematurely.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>HealthBench</h3>
+        <div class="chip chip-ce">Healthcare · 2025</div>
+        <p class="muted mt-3">5,000 dialogues × 48k+ rubrics, cross-language, physician-authored and annotated.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>MedMT-Bench</h3>
+        <div class="chip chip-ce">Healthcare · 2026</div>
+        <p class="muted mt-3">22-turn long-horizon coherence, memory, and reasoning over sustained medical dialogue.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>MindEval</h3>
+        <div class="chip chip-ce">Mental Health · 2026</div>
+        <p class="muted mt-3">Standalone long-horizon mental-health evaluation with patient + expert dual annotation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" style="color: var(--terra);">CE — Education</div>
+      <h2 style="margin-top:0;">Educational dialogue &amp; tutoring</h2>
+      <p>Three pillars: Intelligent Tutoring Systems, Automated Feedback &amp; Grading, and Scenario Simulation. Together they form the most practically deployed CE sub-field — LearnLM and Claude for Education are already in classrooms.</p>
+    </div>
+
+    <div class="prose">
+      <p>
+        <strong>Intelligent tutoring</strong> decomposes into Socratic / strategy-guided
+        agents (<strong>SocraticLM</strong>, <strong>TreeInstruct</strong>, <strong>StratL</strong>),
+        adaptive agents (<strong>PACE</strong>, <strong>JeepyTA</strong>,
+        <strong>CourseAssist</strong>), and math-tutoring benchmarks
+        (<strong>MathDial</strong>, <strong>SocraticMATH</strong>,
+        <strong>MathTutorBench</strong>, <strong>Levonian-Algebra-Align</strong>,
+        <strong>Scarlatos-DPO-Tutor</strong>). A recurring finding: fine-tuning small models on
+        tutoring dialogues outperforms prompting large models on the same tutoring task.
+      </p>
+      <p>
+        <strong>Automated feedback &amp; grading</strong> is where deployed-system research
+        concentrates. Stepwise verification (Daheim 2024), preference-optimized feedback
+        (Scarlatos 2024), iterative revision loops, and grading studies with mixed-but-encouraging
+        evidence: LLM grading reaches ~95% teacher-match on Spanish short-answer items, ~70%
+        within-10% on full-exam scoring, while essay scoring remains weak.
+      </p>
+      <p>
+        <strong>Scenario simulation</strong> spans generative students with personalities
+        (<strong>SimClass</strong>, multi-party classrooms), at-risk cohort simulators,
+        lesson-plan agents, and textbook-to-dialogue transformation (<strong>Book2Dial</strong>).
+        The 2025-26 wave brings <strong>KMP-Bench</strong> (key misconception probing),
+        <strong>MRBench</strong>, <strong>TutorBench</strong>, <strong>SAFETUTORS</strong>
+        (safety in tutoring), <strong>EduDial</strong> (34k tutoring conversations),
+        <strong>TeachLM</strong> (100k-hour corpus), and <strong>ConvoLearn</strong>
+        (live learner behavior at scale).
+      </p>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card card-accent-ce">
+        <h3>MathDial</h3>
+        <div class="chip chip-ce">Tutor · 2023</div>
+        <p class="muted mt-3">Teacher-student dialogues; defines the tutoring multi-turn frame.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>SocraticLM</h3>
+        <div class="chip chip-ce">Tutor · 2024</div>
+        <p class="muted mt-3">Socratic questioning at scale (35k dialogues, ~5 turns).</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>EduDial</h3>
+        <div class="chip chip-ce">Tutor · 2026</div>
+        <p class="muted mt-3">34,250 tutoring conversations — one of the largest corpora in the domain.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>SAFETUTORS</h3>
+        <div class="chip chip-ce">Safety · 2026</div>
+        <p class="muted mt-3">Safety probes specifically in tutoring deployments.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>TeachLM</h3>
+        <div class="chip chip-ce">Production · 2026</div>
+        <p class="muted mt-3">100k-hour corpus of real tutor-student interactions.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>ConvoLearn</h3>
+        <div class="chip chip-ce">Production · 2026</div>
+        <p class="muted mt-3">Live learner behavior at scale; 2,134 long-form sessions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Roleplay -->
+<section id="roleplay" class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" style="color: var(--terra);">CE — Role-Play</div>
+      <h2 style="margin-top:0;">Role-play &amp; persona-grounded dialogue</h2>
+      <p>Role-play is the one CE sub-family we organize by technical pathway rather than application domain — because persona techniques transfer across every other domain too (medical role-play, student role-play, jailbreak persona attacks).</p>
+    </div>
+
+    <div class="prose">
+      <p>
+        The role-play lineage traces the whole LLM-alignment playbook in miniature.
+        <strong>ICL-era persona prompting</strong> — PersonaLLM, CharacterChat, role-play
+        prompting (which improves not just consistency but also reasoning). <strong>SFT-era
+        persona data</strong> — <strong>PIPPA</strong> (1M messages from forums), <strong>UltraChat</strong>,
+        <strong>PRODIGy</strong> (movie-profile grounded). <strong>Character-specific SFT</strong>
+        — <strong>ChatHaruhi</strong>, <strong>CharacterGLM</strong>,
+        <strong>RoleCraft-GLM</strong>, <strong>Ditto</strong> (self-alignment), and
+        <strong>CharacterLLM</strong> (Wikipedia-to-dialogue pipelines).
+      </p>
+      <p>
+        On top of full SFT sit <strong>personalization modules</strong>:
+        <strong>PersonaPKT</strong> (persona embeddings), <strong>PPlug</strong> (user
+        encoders), <strong>Neeko</strong> (dynamic LoRA), <strong>MIDI-Tuning</strong>.
+        Then <strong>RL for consistency</strong>: <strong>Shea-Yu Offline RL</strong>,
+        <strong>COMEDY</strong> (compressive memory), <strong>Abdulhai-Consistent-Persona</strong>.
+      </p>
+      <p>
+        Evaluation has developed in parallel as a layered ladder:
+        <strong>LaMP</strong> → <strong>CharacterEval</strong> → <strong>RoleEval</strong> →
+        <strong>TimeChara</strong> (temporal consistency) →
+        <strong>InCharacter</strong> (psychology-grounded) →
+        <strong>RoleInteract</strong> (social dynamics) →
+        <strong>CROSS</strong> (profile synthesis) →
+        <strong>SocialBench</strong>, <strong>RoleLLM</strong>, <strong>RAIDEN</strong>,
+        <strong>RMTBench</strong>, <strong>CharacterBench</strong>, <strong>RoleMRC</strong>,
+        <strong>PersonaConvBench</strong>, <strong>PERSONAMEM</strong>. The persistent
+        open problem is <strong>long-conversation degradation</strong> —
+        persona fidelity decays as context grows.
+      </p>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card card-accent-ce">
+        <h3>PIPPA</h3>
+        <div class="chip chip-ce">Data · 2023</div>
+        <p class="muted mt-3">25,940 conversations averaging 40 turns; foundational persona SFT corpus.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>CharacterLLM</h3>
+        <div class="chip chip-ce">Method · 2023</div>
+        <p class="muted mt-3">Wikipedia-to-dialogue pipeline; character-grounded SFT at scale.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>Neeko</h3>
+        <div class="chip chip-ce">Method · 2024</div>
+        <p class="muted mt-3">Dynamic LoRA per persona for multi-character dialogue.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>InCharacter</h3>
+        <div class="chip chip-ce">Eval · 2024</div>
+        <p class="muted mt-3">Psychology-grounded persona evaluation.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>RMTBench</h3>
+        <div class="chip chip-ce">Eval · 2025</div>
+        <p class="muted mt-3">Role memory over ~20-turn long-horizon conversations.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>PERSONAMEM</h3>
+        <div class="chip chip-ce">Eval · 2025</div>
+        <p class="muted mt-3">Personalization memory: does the model remember what <em>you</em> told it earlier?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Jailbreak -->
+<section id="jailbreak" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow" style="color: var(--terra);">CE — Jailbreak</div>
+      <h2 style="margin-top:0;">Adversarial multi-turn dialogue</h2>
+      <p>Multi-turn dialogue enables attacks that single-turn defences do not anticipate. Two dominant strategies — implicit shift and decomposition — plus a rapidly growing set of human-authored benchmarks that expose auto-eval blind spots.</p>
+    </div>
+
+    <div class="prose">
+      <p>
+        Single-turn jailbreak attacks — GCG, AutoDAN, Carlini 2024 — evolved into conversational
+        refinement (<strong>PAIR</strong>, <strong>Johnny/PAP</strong> with 92%+ ASR on frontier
+        models). From there, two dominant multi-turn strategies emerged.
+      </p>
+      <p>
+        <strong>Implicit shift (Crescendo)</strong>: begin with a benign seed, gradually pivot
+        toward the target over multiple turns. <strong>ActorAttack</strong> extends Crescendo
+        by self-discovering clue chains grounded in Latour's actor-network theory — it finds
+        intermediate entities that plausibly bridge benign to harmful.
+        <strong>Decomposition</strong>: split a harmful request into innocuous sub-requests,
+        then re-aggregate at the last turn (zhou2024speak, <strong>MR.JA</strong>,
+        <strong>RED QUEEN</strong> with scenario disguise, <strong>Liu-ImposterAI</strong>).
+      </p>
+      <p>
+        Dataset evolution traces AdvBench/HarmBench seeds → cipher / decomposed variants
+        (<strong>Gibbs 2024</strong>'s 6,536-dialog cipher jailbreak) → native multi-turn
+        corpora (<strong>MHJ</strong> — 537 expert-authored dialogs with a tactic taxonomy,
+        <strong>SafeDialBench</strong> — 4,053 dialogs across 22 scenarios,
+        <strong>MTJ-Bench</strong>, <strong>FITD</strong>, <strong>RACE</strong>,
+        <strong>SEMA</strong>, <strong>Tempest</strong>, <strong>Siren</strong>). A
+        consistent finding: expert human attackers reach 70%+ ASR on frontier models, even
+        when automated benchmarks report single-digit ASR on the same models.
+      </p>
+      <p>
+        Defenses remain scarce. <strong>CoSafe</strong> explores CoT-based harm detection,
+        <strong>NeMoGuardrails</strong> implements guardrails that overblock, and
+        <strong>X-Boundary</strong> targets the safety-usability boundary explicitly. A
+        darker thread of recent work — <strong>Persona Jailbreaking</strong>, <strong>Echo
+        Chamber</strong>, <strong>Mastermind</strong> — weaponizes the model's own history
+        and persona scaffolding to bypass its later safety checks.
+      </p>
+    </div>
+
+    <div class="pull">
+      Automated multi-turn jailbreak evaluation systematically under-reports real attack success. Human red-teamers consistently achieve 10-20× higher ASR on the same models.
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card card-accent-ce">
+        <h3>Crescendo</h3>
+        <div class="chip chip-ce">Attack · 2024</div>
+        <p class="muted mt-3">Implicit-shift multi-turn: benign priming → gradual pivot to target.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>ActorAttack</h3>
+        <div class="chip chip-ce">Attack · 2024</div>
+        <p class="muted mt-3">Self-discovered clue chains via actor-network-theoretic search.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>MHJ</h3>
+        <div class="chip chip-ce">Bench · 2024</div>
+        <p class="muted mt-3">537 expert-authored human multi-turn jailbreaks; tactic taxonomy; exposes auto-eval gap.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>SafeDialBench</h3>
+        <div class="chip chip-ce">Bench · 2025</div>
+        <p class="muted mt-3">4,053 dialogues across 22 scenarios with fine-grained safety taxonomy.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>CoSafe</h3>
+        <div class="chip chip-ce">Defense · 2024</div>
+        <p class="muted mt-3">CoT-based harm detection as a defensive pattern.</p>
+      </div>
+      <div class="card card-accent-ce">
+        <h3>X-Boundary</h3>
+        <div class="chip chip-ce">Defense · 2025</div>
+        <p class="muted mt-3">Explicit targeting of the safety-usability trade-off boundary.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-narrow center">
+    <hr class="ornament" />
+    <div class="eyebrow">Continue</div>
+    <h2 style="margin-top: 0;">How the field improves these systems.</h2>
+    <p class="muted" style="max-width: 50ch; margin: 0 auto var(--space-5);">
+      The methods review covers the three improvement pillars — model-centric, external
+      integration, and agent-based — spanning every domain on this page.
+    </p>
+    <a class="btn btn-primary" href="methods.html">Go to Methods →</a>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/partials.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

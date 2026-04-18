@@ -16,20 +16,18 @@
           <span class="brand-mark">M×T</span>
           <span>
             Beyond&nbsp;Single-Turn
-            <small>A CMU survey on multi-turn LLMs</small>
+            <small>A survey on multi-turn LLMs</small>
           </span>
         </a>
         <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
         <nav>
           <ul class="nav-links">
-            <li><a href="taxonomy.html">Taxonomy</a></li>
             <li><a href="tasks-if.html">Instruction&nbsp;Following</a></li>
             <li><a href="tasks-ce.html">Conversational&nbsp;Engagement</a></li>
             <li><a href="benchmarks.html">Benchmarks</a></li>
             <li><a href="methods.html">Methods</a></li>
             <li><a href="challenges.html">Challenges</a></li>
             <li><a href="about.html">Cite</a></li>
-            <li><a class="nav-cta" href="https://github.com/yubol-cmu/Awesome-Multi-Turn-LLMs" target="_blank" rel="noopener">GitHub ↗</a></li>
           </ul>
         </nav>
       </div>
@@ -54,7 +52,6 @@
             <h4>Navigate</h4>
             <ul>
               <li><a href="index.html">Overview</a></li>
-              <li><a href="taxonomy.html">Task taxonomy</a></li>
               <li><a href="benchmarks.html">Benchmark explorer</a></li>
               <li><a href="methods.html">Improvement methods</a></li>
               <li><a href="challenges.html">Open challenges</a></li>

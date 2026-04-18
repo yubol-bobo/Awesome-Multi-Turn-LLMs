@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Open Challenges — Beyond Single-Turn</title>
+<meta name="description" content="Five open-challenge areas in multi-turn LLM interactions: context, reasoning, adaptation, evaluation, ethics." />
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="page-badge" style="color: var(--ochre);">Open Challenges · Part V</div>
+    <h1 style="max-width: 26ch;">Five open-challenge areas that define the frontier.</h1>
+    <p class="lead" style="max-width: 70ch;">
+      The final third of the survey diagnoses where multi-turn LLM interaction still breaks —
+      not as a grab-bag list, but as a structured map of <em>where</em> in the dialogue
+      lifecycle things fail and <em>which</em> research threads are working on each.
+    </p>
+
+    <!-- Matrix -->
+    <div class="chal-matrix mt-6">
+      <div class="chal-cell" data-chal="context">
+        <h4>Context Understanding &amp; Management</h4>
+        <p>Coherent state across many turns as instructions, attributes, and intent evolve.</p>
+        <ul>
+          <li>Context retention &amp; coherence</li>
+          <li>Anaphora &amp; ellipsis resolution</li>
+          <li>Ambiguity &amp; clarification</li>
+        </ul>
+      </div>
+      <div class="chal-cell" data-chal="reasoning">
+        <h4>Complex Reasoning Across Turns</h4>
+        <p>Compounding errors, topic switching, and proactive information seeking.</p>
+        <ul>
+          <li>Error propagation</li>
+          <li>Topic switching &amp; discontinuous reasoning</li>
+          <li>Proactive info-seeking</li>
+          <li>Multilingual &amp; code-switching</li>
+        </ul>
+      </div>
+      <div class="chal-cell" data-chal="adapt">
+        <h4>Adaptation &amp; Learning</h4>
+        <p>Persistent personalization and on-the-fly knowledge update, without over-accommodation.</p>
+        <ul>
+          <li>Dynamic preference adaptation</li>
+          <li>Knowledge adaptation</li>
+          <li>Robustness to misinformation / adversarial inputs</li>
+        </ul>
+      </div>
+      <div class="chal-cell" data-chal="eval">
+        <h4>Evaluations</h4>
+        <p>Data curation and metrics lag behind the complexity of multi-turn breakdown modes.</p>
+        <ul>
+          <li>Scalable data curation</li>
+          <li>Metric design</li>
+          <li>LLM-judge vs. human-judge biases</li>
+        </ul>
+      </div>
+      <div class="chal-cell" data-chal="ethics">
+        <h4>Ethical &amp; Safety</h4>
+        <p>Prolonged dialogue amplifies bias, privacy leakage, overtrust, emotional dependence.</p>
+        <ul>
+          <li>Bias amplification</li>
+          <li>Privacy leakage</li>
+          <li>Human-AI bonding &amp; overtrust</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Detail sections -->
+<section id="chal-context" class="section section-alt">
+  <div class="container container-narrow">
+    <div class="eyebrow" style="color: var(--ochre);">Challenge 1</div>
+    <h2 style="margin-top:0;">Context Understanding &amp; Management</h2>
+    <div class="prose">
+      <p>
+        LLMs struggle to maintain a coherent, consistent state over many turns. The
+        performance gap between early- and late-turn accuracy is the most robust finding in
+        multi-turn evaluation (Kwan 2024, Bai 2024, sirdeshmukh 2025, laban 2025, liu 2026,
+        yang 2026, chen 2026 ESMemEval, choi 2026 DyCP). Sub-challenges:
+      </p>
+      <dl class="defs">
+        <dt>Context retention &amp; coherence</dt>
+        <dd>Performance degrades with query-to-context distance. Context is distributed,
+          evolving state, not a fixed prefix — effective retention requires selective emphasis,
+          not uniform recall.</dd>
+        <dt>Anaphora &amp; ellipsis resolution</dt>
+        <dd>Models conflate or forget attributes that were explicitly stated earlier. MultiChallenge's
+          recall axis is the clearest probe.</dd>
+        <dt>Ambiguity recognition &amp; clarification</dt>
+        <dd>Models tend to hedge or guess rather than ask. Chen 2024 (Learning-to-Ask),
+          Shaikh 2025 (RIFTS), Zhao 2026 (AskBench), Luo 2025 (ClarifyMTBench), and Huang 2025
+          (teaching clarification) make the most direct interventions here.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="chal-reasoning" class="section">
+  <div class="container container-narrow">
+    <div class="eyebrow" style="color: var(--ochre);">Challenge 2</div>
+    <h2 style="margin-top:0;">Complex Reasoning Across Turns</h2>
+    <div class="prose">
+      <p>
+        Errors in early turns compound. Topic switches break attention allocation. Proactive
+        information seeking — arguably the single highest-value multi-turn behavior —
+        remains largely absent. Sub-challenges:
+      </p>
+      <dl class="defs">
+        <dt>Error propagation &amp; compounding</dt>
+        <dd>Early wrong answers persist. Self-correction is weak (Kwan 2024). Fixing this
+          requires both train-time signals and inference-time protocols (Reflexion-style).</dd>
+        <dt>Topic switching &amp; discontinuous reasoning</dt>
+        <dd>Models drop prior threads on topic change or inappropriately carry old context
+          into new problems (Zheng 2023, Bai 2024).</dd>
+        <dt>Proactive information seeking</dt>
+        <dd>LLMs trained on single-turn QA default to answering rather than asking. Benchmarks:
+          Chen 2024, Zhao 2026 AskBench, Fang 2026 (HoldLureSelfCorrect), Li 2026 (Beyond
+          Idealized).</dd>
+        <dt>Multilingual &amp; code-switching scenarios</dt>
+        <dd>Cross-lingual context loss; safety-filter bypass via language mixing (RedCode).</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="chal-adapt" class="section section-alt">
+  <div class="container container-narrow">
+    <div class="eyebrow" style="color: var(--ochre);">Challenge 3</div>
+    <h2 style="margin-top:0;">Adaptation &amp; Learning</h2>
+    <div class="prose">
+      <p>
+        LLMs lack persistent personalization and on-the-fly knowledge update. Worse, naïve
+        adaptation becomes a <em>liability</em>: a model that eagerly updates its persona in
+        response to user pressure also updates when that pressure is adversarial.
+        Sub-challenges:
+      </p>
+      <dl class="defs">
+        <dt>Dynamic preference &amp; objective adaptation</dt>
+        <dd>No persistent persona or user profile update across sessions. Subtle cues are
+          missed (Chen 2026 ESMemEval).</dd>
+        <dt>Knowledge adaptation</dt>
+        <dd>Fixed knowledge bases; context-only updates are lost on session reset (Wu 2024).</dd>
+        <dt>Robustness to misinformation &amp; adversarial inputs</dt>
+        <dd>Staged attacks bypass static safety training. State-dependent safety collapse is
+          a growing concern: Zhou 2025 (Siege), Li 2026 (State-Dependent), Yang 2025
+          (FraudR1), Au 2026 (Epistemic Attacks), Xu 2026 (DoNoHarm).</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="chal-eval" class="section">
+  <div class="container container-narrow">
+    <div class="eyebrow" style="color: var(--ochre);">Challenge 4</div>
+    <h2 style="margin-top:0;">Evaluations</h2>
+    <div class="prose">
+      <p>
+        Data curation and metrics lag behind the complexity of multi-turn breakdown modes.
+        Automated judges bring their own biases. Sub-challenges:
+      </p>
+      <dl class="defs">
+        <dt>Scalable data curation</dt>
+        <dd>Synthetic data lacks spontaneity; healthcare uniquely benefits from real dialogue
+          corpora. Key probes: Qiu 2024 (SMILE), Wang 2024 (Book2Dial), Yang 2023 (Zhongjing),
+          Ding 2023 (Enhancing), Maheshwary 2024 (M2Lingual), Xu 2023 (WizardLM), Seddik 2024,
+          Chen 2024 (Unveiling), Tian 2025 (CMtEval), Zhao 2026 (AskBench), Luo 2025
+          (ClarifyMTBench).</dd>
+        <dt>Metric design</dt>
+        <dd>Fine-grained turn-level rubrics (Bai 2024, Sirdeshmukh 2025, Tian 2025, Yang 2026),
+          long-term effectiveness (Kwan 2024, Shen 2026 EvolMem, Pakhomov 2025 ConvoMem,
+          Rosenthal 2026 MTRAG-UN, Ali 2026 RecoR), cultural / sociolinguistic diversity
+          (Fan 2024 FairMT).</dd>
+        <dt>LLM-based vs. human judging</dt>
+        <dd>~80% human-agreement, but self-enhancement and verbosity bias are documented
+          (Zheng 2023, Chen 2024, Zhu 2023 JudgeLM, Yang 2026, Owiredu-Ashley 2026 AdversA,
+          Tang 2025 MTDEval).</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="chal-ethics" class="section section-alt">
+  <div class="container container-narrow">
+    <div class="eyebrow" style="color: var(--ochre);">Challenge 5</div>
+    <h2 style="margin-top:0;">Ethical &amp; Safety Issues</h2>
+    <div class="prose">
+      <p>
+        Prolonged dialogue magnifies demographic bias, privacy leakage, and attachment /
+        companion risks. Safety needs to be modeled as a <em>trajectory property</em>, not a
+        per-turn property. Sub-challenges:
+      </p>
+      <dl class="defs">
+        <dt>Bias amplification</dt>
+        <dd>Multi-turn accumulates bias faster than single-turn (Fan 2024); sycophancy
+          (Hong 2025 SyCon); epistemic attacks (Au 2026); deception (Abdulhai 2025).</dd>
+        <dt>Privacy leakage</dt>
+        <dd>Iterative probes extract memorized training data (Nasr 2023); state-dependent
+          safety collapse enables multi-turn extraction (Li 2026, Owiredu-Ashley 2026,
+          Yang 2025).</dd>
+        <dt>Human-AI bonding, overtrust &amp; companion risks</dt>
+        <dd>Anthropomorphic cues, emotional dependence, toxic empathy (Akbulut 2024, Beatty
+          2022, Fang 2025, Chu 2025, Zhang 2025 DarkSide, Xu 2026 DoNoHarm, Boine 2023).</dd>
+      </dl>
+    </div>
+
+    <div class="pull">
+      Multi-turn safety cannot be reduced to per-turn safety. A model can refuse every individual
+      harmful turn and still end up producing harm — through incremental drift, persona capture,
+      or compositional decomposition.
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-narrow center">
+    <hr class="ornament" />
+    <div class="eyebrow">Conclude</div>
+    <h2 style="margin-top: 0;">Where to go next.</h2>
+    <p class="muted" style="max-width: 52ch; margin: 0 auto var(--space-5);">
+      If you are starting a multi-turn LLM research project, we recommend pairing this challenges
+      roadmap with the benchmark explorer to find the existing evaluation that most closely
+      probes your target failure mode.
+    </p>
+    <a class="btn btn-primary" href="benchmarks.html">Go to Benchmark Explorer →</a>
+    <a class="btn btn-outline" href="about.html">Cite the survey</a>
+  </div>
+</section>
+
+<script>
+// simple highlight interaction on matrix cells → link to respective detail section
+document.querySelectorAll('.chal-cell').forEach(function (cell) {
+  cell.addEventListener('click', function () {
+    var key = cell.getAttribute('data-chal');
+    var sec = document.getElementById('chal-' + key);
+    if (sec) {
+      document.querySelectorAll('.chal-cell').forEach(function (x) { x.classList.remove('active'); });
+      cell.classList.add('active');
+      sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+
+<div id="site-footer"></div>
+<script src="assets/js/partials.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

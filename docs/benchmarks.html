@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Benchmark Explorer — Beyond Single-Turn</title>
+<meta name="description" content="Searchable, filterable table of 85+ multi-turn LLM benchmarks across IF and CE families." />
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="page-badge">Benchmark Explorer · Part III</div>
+    <h1 style="max-width: 28ch;">A unified audit of multi-turn LLM benchmarks.</h1>
+    <p class="lead" style="max-width: 70ch;">
+      Search and filter across 85+ benchmarks from 2018-2026 — both instruction-following and
+      conversational-engagement families. For each benchmark we record the dialogue count,
+      average turns, whether data was human- or LLM-curated, and the evaluation protocol
+      (rule-based, human-judge, LLM-judge). Columns sort on click.
+    </p>
+
+    <div class="controls">
+      <input id="bench-search" type="search" class="control-input" placeholder="Search benchmark, criteria, or cite key…" />
+      <label class="control-label" for="bench-family">Family</label>
+      <select id="bench-family" class="control-select">
+        <option value="all">All</option>
+        <option value="IF">Instruction Following</option>
+        <option value="CE">Conversational Engagement</option>
+      </select>
+      <label class="control-label" for="bench-domain">Domain</label>
+      <select id="bench-domain" class="control-select">
+        <option value="all">All</option>
+      </select>
+      <label class="control-label" for="bench-eval">Evaluation</label>
+      <select id="bench-eval" class="control-select">
+        <option value="all">Any protocol</option>
+        <option value="rule">Rule-based</option>
+        <option value="human">Human judge</option>
+        <option value="llm">LLM judge</option>
+      </select>
+      <span id="bench-count" class="count-chip"></span>
+    </div>
+
+    <div class="table-wrap">
+      <table class="data" aria-label="Benchmarks">
+        <thead>
+          <tr>
+            <th data-sort="name">Benchmark</th>
+            <th>Family · Domain</th>
+            <th data-sort="year" class="num">Year</th>
+            <th data-sort="dialogs" class="num">Dialogs</th>
+            <th class="num">Avg&nbsp;Turns</th>
+            <th>Rule</th>
+            <th>Human</th>
+            <th>LLM</th>
+            <th>Criteria</th>
+          </tr>
+        </thead>
+        <tbody id="bench-tbody">
+          <tr><td colspan="9" class="muted center">Loading benchmarks…</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-caption">
+      Dialog counts are paper-reported; some list sizes are approximate. Turns are averages
+      where available. "Rule / Human / LLM" columns indicate the evaluation protocol(s) used in
+      the benchmark's own paper — many benchmarks combine several. For complete methodology
+      details, see the paper's benchmark-data-overview appendix.
+    </p>
+  </div>
+</section>
+
+<section class="section-tight section-alt">
+  <div class="container">
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Why this table exists</h3>
+        <p class="muted">Prior surveys often listed benchmarks without comparable schema. We standardized every benchmark on the same columns so that like-for-like comparison across methodological choices is possible.</p>
+      </div>
+      <div class="card">
+        <h3>How to read the ✓/✗ columns</h3>
+        <p class="muted">A <span class="cm">✓</span> under <em>Rule</em> means the benchmark uses at least one deterministic rule-based metric. Multiple ticks indicate combined evaluation — for example, HealthBench uses both human and LLM judging with physician-authored rubrics.</p>
+      </div>
+      <div class="card">
+        <h3>What's missing</h3>
+        <p class="muted">Benchmarks without explicit multi-turn design are excluded, even if they test dialogue. Agentic or multi-modal benchmarks are out of scope — see the paper's Introduction for the full boundary-setting criteria.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/partials.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/data/benchmarks.data.js?v=2"></script>
+<script src="assets/js/benchmarks.js?v=2"></script>
+</body>
+</html>
