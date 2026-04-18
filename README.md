@@ -97,7 +97,9 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 - SAPIENT: Mastering Multi-turn Conversational Recommendation with Strategic Planning and Monte Carlo Tree Search [[NAACL 2025](http://arxiv.org/abs/2410.09580)]
 - Towards empathetic conversational recommender systems [[Preprint](https://doi.org/10.1145/3640457.3688133)]
 - Clarify When Necessary: Resolving Ambiguity Through Interaction with LMs [[Findings of NAACL 2025](https://doi.org/10.18653/v1/2025.findings-naacl.306)]
+                  ![](https://img.shields.io/badge/Benchmark-red)
 - Teaching Language Models To Gather Information Proactively [[Findings of EMNLP 2025](https://doi.org/10.18653/v1/2025.findings-emnlp.843)]
+                  ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/RL-purple)
 - StructFlowBench: A Structured Flow Benchmark for Multi-turn Instruction Following [[Findings of ACL 2025](https://doi.org/10.18653/v1/2025.findings-acl.486)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - TRUEBench: Can LLM Response Meet Real-world Constraints as Productivity Assistant' [[Findings of EMNLP 2025](https://doi.org/10.18653/v1/2025.findings-emnlp.776)]
@@ -105,8 +107,11 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 - One Battle After Another: Probing LLMs' Limits on Multi-Turn Instruction Following with a Benchmark Evolving Framework [[arXiv](https://doi.org/10.48550/arxiv.2511.03508)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - TURNWISE: The Gap between Single- and Multi-turn Language Model Capabilities [[arXiv](http://arxiv.org/abs/2603.16759)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet)
 - IHEval: Evaluating Language Models on Following the Instruction Hierarchy [[NAACL 2025](https://doi.org/10.18653/v1/2025.naacl-long.425)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Another Turn, Better Output': A Turn-Wise Analysis of Iterative LLM Prompting [[arXiv](http://arxiv.org/abs/2509.06770)]
+                  ![](https://img.shields.io/badge/Benchmark-red)
 
 #### Instruction Following in Math
 
@@ -125,11 +130,15 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 - MathDial: A Dialogue Tutoring Dataset with Rich Pedagogical Properties Grounded in Math Reasoning Problems [[Findings of EMNLP 2023](https://doi.org/10.18653/v1/2023.findings-emnlp.372)] [[GitHub](https://github.com/eth-nlped/mathdial)] [[Hugging Face](https://huggingface.co/datasets/eth-nlped/mathdial)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance [[arXiv](http://arxiv.org/abs/2502.16666)]
+                  ![](https://img.shields.io/badge/Other-yellow)
 - From Solver to Tutor: Evaluating the Pedagogical Intelligence of LLMs with KMP-Bench [[AAAI 2026](https://doi.org/10.1609/aaai.v40i39.40578)]
-                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet)
 - Unifying AI Tutor Evaluation: An Evaluation Taxonomy for Pedagogical Ability Assessment of LLM-Powered AI Tutors [[NAACL 2025](https://doi.org/10.18653/v1/2025.naacl-long.57)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Intent Matters: Enhancing AI Tutoring with Fine-Grained Pedagogical Intent Annotation [[arXiv](http://arxiv.org/abs/2506.07626)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - Beyond Final Answers: Evaluating Large Language Models for Math Tutoring [[Preprint](https://doi.org/10.1007/978-3-031-98414-3_23)]
+                  ![](https://img.shields.io/badge/Benchmark-red)
 
 #### Instruction Following in Coding
 
@@ -168,6 +177,7 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Other-yellow)
 - Instruct, Not Assist: LLM-based Multi-Turn Planning and Hierarchical Questioning for Socratic Code Debugging [[Findings of EMNLP 2024](https://doi.org/10.18653/v1/2024.findings-emnlp.553)] [[GitHub](https://github.com/agarwalishika/TreeInstruct)]
 - ClarifyGPT: Empowering LLM-based Code Generation with Intention Clarification [[arXiv](http://arxiv.org/abs/2310.10996)]
+                  ![](https://img.shields.io/badge/Other-yellow)
 - When Benchmarks Talk: Re-Evaluating Code LLMs with Interactive Feedback [[arXiv](http://arxiv.org/abs/2502.18413)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - CONVCODEWORLD: Benchmarking Conversational Code Generation in Reproducible Feedback Environments [[arXiv](http://arxiv.org/abs/2502.19852)]
@@ -179,6 +189,7 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 - Benchmarking Correctness and Security in Multi-Turn Code Generation [[arXiv](http://arxiv.org/abs/2510.13859v1)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Rethinking Text-to-SQL: Dynamic Multi-turn SQL Interaction for Real-world Database Exploration [[arXiv](http://arxiv.org/abs/2510.26495v2)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
 #### Instruction Following in Discussion
 
@@ -199,6 +210,7 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 - DialogBench: Evaluating LLMs as Human-like Dialogue Systems [[NAACL 2024](https://doi.org/10.18653/v1/2024.naacl-long.341)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - SimulatorArena: Are User Simulators Reliable Proxies for Multi-Turn Evaluation of AI Assistants' [[arXiv](http://arxiv.org/abs/2510.05444)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
 #### Conversational Engagement in Roleplay
 
@@ -252,7 +264,7 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Evaluating Character Understanding of Large Language Models via Character Profiling from Fictional Works [[EMNLP 2024](https://doi.org/10.18653/v1/2024.emnlp-main.456)]
 - RoleLLM: Benchmarking, Eliciting, and Enhancing Role-Playing Abilities of Large Language Models [[Findings of ACL 2024](https://doi.org/10.18653/v1/2024.findings-acl.878)]
-                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet)
 - RAIDEN Benchmark: Evaluating Role-playing Conversational Agents with Measurement-Driven Custom Dialogues [[COLING 2025](https://aclanthology.org/2025.coling-main.735/)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - RMTBench: Benchmarking LLMs Through Multi-Turn User-Centric Role-Playing [[Findings of EMNLP 2025](https://doi.org/10.18653/v1/2025.findings-emnlp.730)]
@@ -265,9 +277,11 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 - CharacterBench: Benchmarking Character Customization of Large Language Models [[AAAI 2025](https://doi.org/10.1609/aaai.v39i24.34806)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - OpenCharacter: Training Customizable Role-Playing LLMs with Large-Scale Synthetic Personas [[arXiv](http://arxiv.org/abs/2501.15427)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - Consistently Simulating Human Personas with Multi-Turn Reinforcement Learning [[arXiv](http://arxiv.org/abs/2511.00222)]
+                  ![](https://img.shields.io/badge/RL-purple)
 - RoleMRC: A Fine-Grained Composite Benchmark for Role-Playing and Instruction-Following [[arXiv](http://arxiv.org/abs/2502.11387)]
-                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet)
 
 #### Conversational Engagement in Healthcare
 
@@ -332,6 +346,7 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 - Healthbench: Evaluating large language models towards improved human health [[arXiv](http://arxiv.org/abs/2505.08775v1)]
                   ![](https://img.shields.io/badge/Benchmark-red)
 - Stop Listening to Me! How Multi-turn Conversations Can Degrade LLM Diagnostic Reasoning [[arXiv](http://arxiv.org/abs/2603.11394)]
+                  ![](https://img.shields.io/badge/Benchmark-red)
 - A Decade-Scale Benchmark Evaluating LLMs' Clinical Practice Guidelines Detection and Adherence in Multi-turn Conversations [[arXiv](http://arxiv.org/abs/2603.25196)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Benchmarking Multi-turn Medical Diagnosis: Hold, Lure, and Self-Correction [[arXiv](http://arxiv.org/abs/2604.04325)]
@@ -339,6 +354,7 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 - MedDialBench: Benchmarking LLM Diagnostic Robustness under Parametric Adversarial Patient Behaviors [[arXiv](http://arxiv.org/abs/2604.06846)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Measuring What Matters!! Assessing Therapeutic Principles in Mental-Health Conversation [[arXiv](https://doi.org/10.48550/arxiv.2604.05795)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - MedDialogRubrics: A Comprehensive Benchmark and Evaluation Framework for Multi-Turn Medical Consultations in Large Language Models [[arXiv](http://arxiv.org/abs/2601.03023)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - MedMT-Bench: Can LLMs Memorize and Understand Long Multi-Turn Conversations in Medical Scenarios' [[arXiv](http://arxiv.org/abs/2603.23519)]
@@ -348,7 +364,9 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 - MindEval: Benchmarking Language Models on Multi-turn Mental Health Support [[arXiv](https://doi.org/10.48550/arxiv.2511.18491)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Dr. Assistant: Enhancing Clinical Diagnostic Inquiry via Structured Diagnostic Reasoning Data and Reinforcement Learning [[arXiv](http://arxiv.org/abs/2601.13690)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
 - MEDPI: Evaluating AI Systems in Medical Patient-Facing Interactions [[Preprint](https://doi.org/10.64898/2025.12.24.25342982)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 
 #### Conversational Engagement in Education
 
@@ -392,14 +410,16 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 - SAFETUTORS: Benchmarking Pedagogical Safety in AI Tutoring Systems [[arXiv](http://arxiv.org/abs/2603.17373)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Simulated Students in Tutoring Dialogues: Substance or Illusion' [[arXiv](https://doi.org/10.48550/arxiv.2601.04025)]
+                  ![](https://img.shields.io/badge/Benchmark-red)
 - On the Effectiveness of Prompt-Moderated LLMs for Math Tutoring at the Tertiary Level [[Findings of EMNLP 2025](https://doi.org/10.18653/v1/2025.findings-emnlp.605)]
 - From Solver to Tutor: Evaluating the Pedagogical Intelligence of LLMs with KMP-Bench [[AAAI 2026](https://doi.org/10.1609/aaai.v40i39.40578)]
-                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet)
 - Unifying AI Tutor Evaluation: An Evaluation Taxonomy for Pedagogical Ability Assessment of LLM-Powered AI Tutors [[NAACL 2025](https://doi.org/10.18653/v1/2025.naacl-long.57)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - EduDial: Constructing a Large-Scale Multi-Turn Teacher-Student Dialogue Corpus [[arXiv](http://arxiv.org/abs/2510.12899)]
-                  ![](https://img.shields.io/badge/Dataset-blue)
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet)
 - TeachLM: Post-Training LLMs for Education Using Authentic Learning Data [[arXiv](http://arxiv.org/abs/2510.05087)]
-                  ![](https://img.shields.io/badge/SFT-blueviolet)
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet)
 - TutorBench: A Benchmark to Assess Tutoring Capabilities of Large Language Models [[arXiv](http://arxiv.org/abs/2510.02663)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - ConvoLearn: A Learning Sciences Grounded Dataset for Fine-Tuning Dialogic AI Tutors [[arXiv](https://arxiv.org/abs/2601.08950)]
@@ -436,16 +456,21 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 - Reasoning-Augmented Conversation for Multi-Turn Jailbreak Attacks on Large Language Models [[Findings of EMNLP 2025](https://doi.org/10.18653/v1/2025.findings-emnlp.929)]
 - Persona Jailbreaking in Large Language Models [[arXiv](http://arxiv.org/abs/2601.16466)]
 - A Multi-Turn Framework for Evaluating AI Misuse in Fraud and Cybercrime Scenarios [[arXiv](http://arxiv.org/abs/2602.21831)]
+                  ![](https://img.shields.io/badge/Benchmark-red)
 - SafeDialBench: A Fine-Grained Safety Evaluation Benchmark for Large Language Models in Multi-Turn Dialogues with Diverse Jailbreak Attacks [[arXiv](http://arxiv.org/abs/2502.11090)]
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Many-Turn Jailbreaking [[arXiv](http://arxiv.org/abs/2508.06755)]
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - SEMA: Simple yet Effective Learning for Multi-Turn Jailbreak Attacks [[arXiv](http://arxiv.org/abs/2602.06854)]
+                  ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
 - X-Boundary: Establishing Exact Safety Boundary to Shield LLMs from Jailbreak Attacks without Compromising Usability [[Findings of EMNLP 2025](https://doi.org/10.18653/v1/2025.findings-emnlp.282)]
+                  ![](https://img.shields.io/badge/Other-yellow)
 - The Echo Chamber Multi-Turn LLM Jailbreak [[arXiv](https://doi.org/10.48550/arxiv.2601.05742)]
 - Knowledge-Driven Multi-Turn Jailbreaking on Large Language Models [[arXiv](https://doi.org/10.48550/arxiv.2601.05445)]
 - Multi-Turn Jailbreaks Are Simpler Than They Seem [[arXiv](http://arxiv.org/abs/2508.07646)]
 - Tempest: Autonomous Multi-Turn Jailbreaking of Large Language Models with Tree Search [[ACL 2025](https://arxiv.org/abs/2503.10619)]
 - Siren: A Learning-Based Multi-Turn Attack Framework for Simulating Real-World Human Jailbreak Behaviors [[arXiv](http://arxiv.org/abs/2501.14250)]
+                  ![](https://img.shields.io/badge/SFT-blueviolet)
 
 ## Improvement Methods
 
@@ -543,7 +568,7 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 - CodeSteer: Symbolic-Augmented Language Models via Code/Text Guidance [[ICML 2025](http://arxiv.org/abs/2502.04350)] [[GitHub](https://github.com/yongchao98/CodeSteer-v1.0?tab=readme-ov-file)] [[Hugging Face](https://huggingface.co/yongchao98/CodeSteer-v1)]
                   ![](https://img.shields.io/badge/Benchmark-red) ![](https://img.shields.io/badge/SFT-blueviolet) ![](https://img.shields.io/badge/RL-purple)
 - ConsistentChat: Building Skeleton-Guided Consistent Multi-Turn Dialogues for Large Language Models from Scratch [[arXiv](http://arxiv.org/abs/2506.03558)]
-                  ![](https://img.shields.io/badge/SFT-blueviolet)
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 - ReSURE: Regularizing Supervision Unreliability for Multi-turn Dialogue Fine-tuning [[arXiv](https://arxiv.org/abs/2508.19996)]
                   ![](https://img.shields.io/badge/SFT-blueviolet)
 - Data Selection for Multi-turn Dialogue Instruction Tuning [[arXiv](https://arxiv.org/abs/2604.07892)]
@@ -551,7 +576,7 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 - Prefix-Enhanced Large Language Models with Reused Training Data in Multi-Turn Medical Dialogue [[Preprint](https://doi.org/10.18653/v1/2025.cl4health-1.3)]
                   ![](https://img.shields.io/badge/SFT-blueviolet)
 - DocTalk: Scalable Graph-based Dialogue Synthesis for Enhancing LLM Conversational Capabilities [[arXiv](http://arxiv.org/abs/2507.05750)]
-                  ![](https://img.shields.io/badge/SFT-blueviolet)
+                  ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/SFT-blueviolet)
 
 #### Reinforcement Learning
 
