@@ -112,6 +112,7 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
                   ![](https://img.shields.io/badge/Dataset-blue) ![](https://img.shields.io/badge/Benchmark-red)
 - Another Turn, Better Output': A Turn-Wise Analysis of Iterative LLM Prompting [[arXiv](http://arxiv.org/abs/2509.06770)]
                   ![](https://img.shields.io/badge/Benchmark-red)
+- Confidence Should Be Calibrated More Than One Turn Deep [[ACL 2026](https://arxiv.org/pdf/2604.05397)]
 
 #### Instruction Following in Math
 
