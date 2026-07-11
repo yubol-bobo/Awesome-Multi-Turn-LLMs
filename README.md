@@ -3,10 +3,11 @@
 ![](https://img.shields.io/badge/PaperNumber-379-brightgreen)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![TMLR](https://img.shields.io/badge/TMLR-2026-b31b1b.svg)](https://openreview.net/forum?id=UYNQXPevpF)
 
 A curated list of **Papers**, **Datasets** and **Code Repositories** for ***Multi-turn Interactions with Large Language Models***. This repository compiles a majority of research works in the multi-turn LLM field, though it may not be fully exhaustive.
 
-Our detailed survey of multi-turn LLMs, covering task types, improvement methods, and open challenges, is available here: [**Beyond Single-Turn: A Survey on Multi-Turn Interactions with Large Language Models**](https://arxiv.org/abs/2504.04717).
+Our detailed survey of multi-turn LLMs, covering task types, improvement methods, and open challenges, is published in **Transactions on Machine Learning Research (TMLR) 2026** (with Survey Certification): [**Beyond Single-Turn: A Survey on Multi-Turn Interactions with Large Language Models**](https://openreview.net/forum?id=UYNQXPevpF). A companion website is available at [yubol-bobo.github.io/Awesome-Multi-Turn-LLMs](https://yubol-bobo.github.io/Awesome-Multi-Turn-LLMs/).
 > If you notice any missing research works or spot inaccuracies, feel free to reach out or open an issue. We also welcome submissions of multi-turn related work from everyone!
 
 Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo/Awesome-Multi-Turn-LLMs/main/audio/Multi_Turn_LLM_Survey.wav)
@@ -41,6 +42,7 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
       - [Retrieval-Augmented Generation](#retrieval-augmented-generation)
       - [Knowledge Graph Integration](#knowledge-graph-integration)
   - [Open Challenges](#open-challenges)
+  - [Citation](#citation)
   - [Star History](#star-history)
 
 ### Keywords Convention
@@ -790,9 +792,26 @@ Audio demo: [Play the survey audio](https://raw.githubusercontent.com/yubol-bobo
 
 ## Open Challenges
 
-In our survey paper on multi-turn interactions and tasks for large language models (LLMs), we categorize a wide range of tasks, including instruction-following scenarios and more complex conversational engagement tasks. To complement this, we also include an illustration highlighting key open challenges in this domain. If you're interested in the detailed improvement methods and a deeper discussion of the open challenges, please refer to our [Full Paper](https://arxiv.org/abs/2504.04717).
+In our survey paper on multi-turn interactions and tasks for large language models (LLMs), we categorize a wide range of tasks, including instruction-following scenarios and more complex conversational engagement tasks. To complement this, we also include an illustration highlighting key open challenges in this domain. If you're interested in the detailed improvement methods and a deeper discussion of the open challenges, please refer to our [Full Paper](https://openreview.net/forum?id=UYNQXPevpF).
 
 ![](figs/challenges.png)
+
+## Citation
+
+If this survey or repository has helped your research, please cite us:
+
+```bibtex
+@article{li2026beyond,
+  title   = {Beyond Single-Turn: A Survey on Multi-Turn Interactions with Large Language Models},
+  author  = {Yubo Li and Xiaobin Shen and Yidi Miao and Xinyu Yao and
+             Xueying Ding and Ramayya Krishnan and Rema Padman},
+  journal = {Transactions on Machine Learning Research},
+  issn    = {2835-8856},
+  year    = {2026},
+  url     = {https://openreview.net/forum?id=UYNQXPevpF},
+  note    = {Survey Certification}
+}
+```
 
 ## Star History
 
