@@ -4,9 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Beyond Single-Turn — A Survey on Multi-Turn Interactions with LLMs</title>
-<meta name="description" content="A CMU survey of multi-turn interactions with large language models: task-oriented taxonomy, benchmarks, improvement methods, open challenges." />
+<meta name="description" content="A CMU survey of multi-turn interactions with large language models (TMLR 2026): task-family-oriented taxonomy, benchmarks, improvement methods, open challenges." />
 <meta property="og:title" content="Beyond Single-Turn: A Survey on Multi-Turn Interactions with LLMs" />
-<meta property="og:description" content="Task-oriented taxonomy spanning instruction following and conversational engagement; benchmarks, improvement methods, and open challenges." />
+<meta property="og:description" content="Task-family-oriented taxonomy spanning instruction following and conversational engagement; benchmarks, improvement methods, and open challenges." />
 <meta property="og:type" content="article" />
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,14 +30,17 @@
           the frontier.
         </p>
         <div class="hero-authors">
-          <strong>Yubo Li</strong>, Xiaobin Shen, Yidi Miao, Xueying Ding, Xinyu Yao, Krishnan Ramayya, Rema Padman
+          <strong>Yubo Li</strong>, Xiaobin Shen<sup>†</sup>, Yidi Miao<sup>†</sup>, Xueying Ding<sup>‡</sup>, Xinyu Yao<sup>‡</sup>, Ramayya Krishnan, Rema Padman
+        </div>
+        <div class="hero-authors" style="font-size:0.8rem; color:var(--ink-faint); margin-top:4px;">
+          Carnegie Mellon University · <sup>†</sup>Equal contribution (co-second) · <sup>‡</sup>Equal contribution (co-third)
         </div>
         <div class="hero-cta-row">
           <a class="btn btn-primary" href="https://openreview.net/forum?id=UYNQXPevpF" target="_blank" rel="noopener">Read the paper (TMLR) →</a>
           <a class="btn btn-outline" href="main.pdf" target="_blank" rel="noopener">PDF</a>
           <a class="btn btn-outline" href="benchmarks.html">Explore the benchmarks</a>
           <a class="btn btn-ghost" href="about.html#cite">Cite this survey</a>
-          <a class="btn btn-outline" href="https://github.com/yubol-cmu/Awesome-Multi-Turn-LLMs" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn-outline" href="https://github.com/yubol-bobo/Awesome-Multi-Turn-LLMs" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
       </div>
       <div>
@@ -46,15 +49,17 @@
             <h3>Beyond Single-Turn</h3>
             <div class="paper-meta">A Survey on Multi-Turn Interactions with LLMs</div>
             <div style="text-align:center; font-size:0.78rem; color:var(--ink-faint); margin-bottom:16px;">
-              Li · Shen · Miao · Ding · Yao · Ramayya · Padman
+              Li · Shen · Miao · Ding · Yao · Krishnan · Padman
             </div>
             <div style="font-size:0.78rem; line-height:1.7; color:var(--ink-mute);">
               <strong style="color:var(--ink-soft);">Abstract.</strong> Recent advances in large language
               models have improved single-turn task performance, yet real-world applications increasingly
-              demand sophisticated multi-turn interactions. We provide a comprehensive review of recent
-              progress in evaluating and enhancing multi-turn LLMs, organized around a task-oriented
+              demand sophisticated multi-turn interactions. This survey provides a structured review of recent
+              progress in evaluating and enhancing multi-turn LLM interactions, centered on a task-family-oriented
               taxonomy spanning instruction following in mathematics and coding, and conversational
-              engagement in role-play, healthcare, education, and adversarial jailbreak settings…
+              engagement in role-play, healthcare, education, and adversarial jailbreak settings. We systematically
+              examine the challenges of maintaining context, coherence, fairness, and responsiveness across
+              prolonged dialogues…
             </div>
           </div>
         </div>
@@ -68,14 +73,14 @@
   <div class="container">
     <div class="grid grid-4">
       <div class="stat">
-        <div class="stat-num">85+</div>
+        <div class="stat-num">115+</div>
         <div class="stat-label">Benchmarks</div>
         <div class="stat-sub">Across both IF and CE families, from 2018 through 2026.</div>
       </div>
       <div class="stat">
-        <div class="stat-num">6</div>
-        <div class="stat-label">Task domains</div>
-        <div class="stat-sub">Math, coding, healthcare, education, role-play, jailbreak.</div>
+        <div class="stat-num">7</div>
+        <div class="stat-label">Task subdomains</div>
+        <div class="stat-sub">General, math, coding, healthcare, education, role-play, jailbreak.</div>
       </div>
       <div class="stat">
         <div class="stat-num">3</div>
@@ -169,7 +174,7 @@
   <div class="container">
     <div class="section-header">
       <div class="eyebrow">The core split</div>
-      <h2>Two task families, six domains, one frame.</h2>
+      <h2>Two task families, seven subdomains, one frame.</h2>
       <p>Instruction following tasks are judged by precision of execution — the user's intent is explicit. Conversational engagement tasks are judged by consultative competence — the user's intent is open, evolving, or only partially specified. Every domain below is surveyed in its own page.</p>
     </div>
 
@@ -295,8 +300,8 @@
       <button class="bib-copy">Copy</button>
       <pre class="bib-body" style="background: transparent; border: none; padding: 0; color: inherit; line-height: 1.55; margin: 0;">@article{li2026beyond,
   title   = {Beyond Single-Turn: A Survey on Multi-Turn Interactions with Large Language Models},
-  author  = {Yubo Li and Xiaobin Shen and Yidi Miao and Xinyu Yao and
-             Xueying Ding and Ramayya Krishnan and Rema Padman},
+  author  = {Yubo Li and Xiaobin Shen and Yidi Miao and Xueying Ding and
+             Xinyu Yao and Ramayya Krishnan and Rema Padman},
   journal = {Transactions on Machine Learning Research},
   issn    = {2835-8856},
   year    = {2026},

@@ -71,7 +71,7 @@
           <div>
             <h4>Resources</h4>
             <ul>
-              <li><a href="https://github.com/yubol-cmu/Awesome-Multi-Turn-LLMs" target="_blank" rel="noopener">GitHub repository</a></li>
+              <li><a href="https://github.com/yubol-bobo/Awesome-Multi-Turn-LLMs" target="_blank" rel="noopener">GitHub repository</a></li>
               <li><a href="about.html">Authors &amp; BibTeX</a></li>
               <li><a href="about.html#scope">Scope &amp; methodology</a></li>
               <li><a href="mailto:yubol@andrew.cmu.edu">Contact</a></li>
@@ -80,7 +80,7 @@
         </div>
         <div class="footer-bottom">
           <span>© <span id="year">2026</span> Li, Shen, Miao, Ding, Yao, Ramayya, Padman · Carnegie Mellon University</span>
-          <span>Built as a companion site for the survey &nbsp;·&nbsp; <a href="https://github.com/yubol-cmu/Awesome-Multi-Turn-LLMs" target="_blank" rel="noopener">Source on GitHub</a></span>
+          <span>Built as a companion site for the survey &nbsp;·&nbsp; <a href="https://github.com/yubol-bobo/Awesome-Multi-Turn-LLMs" target="_blank" rel="noopener">Source on GitHub</a></span>
         </div>
       </div>
     </footer>
